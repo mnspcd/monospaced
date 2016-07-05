@@ -36,7 +36,9 @@ include '../_function/php/db.php';
 				} else {
 					$domain = '.monospaced.local';
 				}
-				foreach($_SESSION['subdomains'] as $key=>$value)
+				$subdomains = $_SESSION['subdomains'];
+				asort($subdomains);
+				foreach($subdomains as $key=>$value)
 				{
 					$sql="SELECT subdomains.path FROM subdomains WHERE subdomain='$value'";
 					$result=mysql_query($sql);
