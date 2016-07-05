@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule .*\.svn/.* - [F]
+RewriteCond %{HTTP_HOST} ^monospaced.co.uk$ [NC]
+RewriteRule ^(.*)$ http://monospaced.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.monospaced.co.uk$ [NC]
+RewriteRule ^(.*)$ http://monospaced.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.monospaced.com$ [NC]
+RewriteRule ^(.*)$ http://monospaced.com/$1 [R=301,L]

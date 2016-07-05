@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "grunt": "^0.4.5",
+    "grunt-rsync": "^1.0.1"
+  },
+  "engines": {
+    "node": "=4.3.0"
+  }
+}
