@@ -1,8 +1,9 @@
 {
+  "parser": "babel-eslint",
   "rules": {
     "comma-dangle": [
       2,
-      "always"
+      "always-multiline"
     ],
     "curly": 2,
     "dot-location": [
@@ -46,6 +47,6 @@
     "no-with": 2,
     "semi": 2,
     "use-isnan": 2,
-    "wrap-iife": 2
+    "wrap-iife": 2,
   }
 }

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markdown component should render correctly 1`] = `
+<div
+  class="Markdown"
+>
+  children
+</div>
+`;

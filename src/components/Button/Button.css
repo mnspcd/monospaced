@@ -1,0 +1,308 @@
+.Button {
+  background-color: var(--mnspcd-color-blue-6);
+  border-color: transparent;
+  border-radius: 0.25em;
+  border-style: solid;
+  border-width: calc(1rem / 16);
+  color: var(--mnspcd-color-white);
+  font-family: var(--font-functional);
+  font-size: 1em;
+  -webkit-font-smoothing: auto;
+  height: calc(var(--leading) * 1.5em);
+  line-height: 1;
+  min-width: calc(48rem / 16);
+  -moz-osx-font-smoothing: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.Button:hover {
+  background-color: var(--mnspcd-color-blue-7);
+  outline: 0;
+}
+
+.Button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.Button:active {
+  background-color: var(--mnspcd-color-blue-8);
+  outline: 0;
+}
+
+/* dark background */
+
+.Button--onDarkBackground {
+  background-color: var(--mnspcd-color-blue-5);
+  color: var(--mnspcd-color-grey-9);
+}
+
+.Button--onDarkBackground:hover {
+  background-color: var(--mnspcd-color-blue-4);
+}
+
+.Button--onDarkBackground:active {
+  background-color: var(--mnspcd-color-blue-3);
+}
+
+/* danger */
+
+.Button--colorDanger {
+  background-color: var(--mnspcd-color-red-6);
+}
+
+.Button--colorDanger:hover {
+  background-color: var(--mnspcd-color-red-7);
+}
+
+.Button--colorDanger:active {
+  background-color: var(--mnspcd-color-red-8);
+}
+
+/* danger on dark background */
+
+.Button--colorDanger.Button--onDarkBackground {
+  background-color: var(--mnspcd-color-red-5);
+}
+
+.Button--colorDanger.Button--onDarkBackground:hover {
+  background-color: var(--mnspcd-color-red-4);
+}
+
+.Button--colorDanger.Button--onDarkBackground:active {
+  background-color: var(--mnspcd-color-red-3);
+}
+
+/* flat
+   ========================================================================== */
+
+.Button--styleFlat {
+  background-color: transparent;
+  color: var(--mnspcd-color-blue-6);
+}
+
+.Button--styleFlat:hover {
+  background-color: rgba(var(--mnspcd-color-blue-7-rgb), var(--opacity-hover));
+  color: var(--mnspcd-color-blue-7);
+}
+
+.Button--styleFlat:active  {
+  background-color: rgba(var(--mnspcd-color-blue-8-rgb), var(--opacity-active));
+  color: var(--mnspcd-color-blue-8);
+}
+
+/* flat on dark background */
+
+.Button--styleFlat.Button--onDarkBackground {
+  color: var(--mnspcd-color-blue-5);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Button--styleFlat.Button--onDarkBackground:hover {
+  background-color: rgba(var(--mnspcd-color-blue-4-rgb), var(--opacity-hover));
+  color: var(--mnspcd-color-blue-4);
+}
+
+.Button--styleFlat.Button--onDarkBackground:active  {
+  background-color: rgba(var(--mnspcd-color-blue-3-rgb), var(--opacity-active));
+  color: var(--mnspcd-color-blue-3);
+}
+
+/* flat danger */
+
+.Button--styleFlat.Button--colorDanger {
+  background-color: transparent;
+  color: var(--mnspcd-color-red-6);
+}
+
+.Button--styleFlat.Button--colorDanger:hover {
+  background-color: rgba(var(--mnspcd-color-red-7-rgb), var(--opacity-hover));
+  color: var(--mnspcd-color-red-7);
+}
+
+.Button--styleFlat.Button--colorDanger:active {
+  background-color: rgba(var(--mnspcd-color-red-8-rgb), var(--opacity-active));
+  color: var(--mnspcd-color-red-8);
+}
+
+/* flat danger on dark background */
+
+.Button--styleFlat.Button--colorDanger.Button--onDarkBackground {
+  color: var(--mnspcd-color-red-5);
+}
+
+.Button--styleFlat.Button--colorDanger.Button--onDarkBackground:hover {
+  background-color: rgba(var(--mnspcd-color-red-4-rgb), var(--opacity-hover));
+  color: var(--mnspcd-color-red-4);
+}
+
+.Button--styleFlat.Button--colorDanger.Button--onDarkBackground:active {
+  background-color: rgba(var(--mnspcd-color-red-3-rgb), var(--opacity-active));
+  color: var(--mnspcd-color-red-3);
+}
+
+/* outlined
+   ========================================================================== */
+
+.Button--styleOutlined {
+  background-color: transparent;
+  border-color: var(--mnspcd-color-grey-4);
+  color: var(--mnspcd-color-blue-6);
+}
+
+.Button--styleOutlined:hover {
+  background-color: rgba(var(--mnspcd-color-blue-7-rgb), var(--opacity-hover));
+  color: var(--mnspcd-color-blue-7);
+}
+
+.Button--styleOutlined:active  {
+  background-color: rgba(var(--mnspcd-color-blue-8-rgb), var(--opacity-active));
+  color: var(--mnspcd-color-blue-8);
+}
+
+/* outlined on dark background */
+
+.Button--styleOutlined.Button--onDarkBackground {
+  border-color: var(--mnspcd-color-grey-7);
+  color: var(--mnspcd-color-blue-5);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Button--styleOutlined.Button--onDarkBackground:hover {
+  background-color: rgba(var(--mnspcd-color-blue-4-rgb), var(--opacity-hover));
+  color: var(--mnspcd-color-blue-4);
+}
+
+.Button--styleOutlined.Button--onDarkBackground:active  {
+  background-color: rgba(var(--mnspcd-color-blue-3-rgb), var(--opacity-active));
+  color: var(--mnspcd-color-blue-3);
+}
+
+/* outlined danger */
+
+.Button--styleOutlined.Button--colorDanger {
+  background-color: transparent;
+  color: var(--mnspcd-color-red-6);
+}
+
+.Button--styleOutlined.Button--colorDanger:hover {
+  background-color: rgba(var(--mnspcd-color-red-7-rgb), var(--opacity-hover));
+  color: var(--mnspcd-color-red-7);
+}
+
+.Button--styleOutlined.Button--colorDanger:active {
+  background-color: rgba(var(--mnspcd-color-red-8-rgb), var(--opacity-active));
+  color: var(--mnspcd-color-red-8);
+}
+
+/* outlined danger on dark background */
+
+.Button--styleOutlined.Button--colorDanger.Button--onDarkBackground {
+  color: var(--mnspcd-color-red-5);
+}
+
+.Button--styleOutlined.Button--colorDanger.Button--onDarkBackground:hover {
+  background-color: rgba(var(--mnspcd-color-red-4-rgb), var(--opacity-hover));
+  color: var(--mnspcd-color-red-4);
+}
+
+.Button--styleOutlined.Button--colorDanger.Button--onDarkBackground:active {
+  background-color: rgba(var(--mnspcd-color-red-3-rgb), var(--opacity-active));
+  color: var(--mnspcd-color-red-3);
+}
+
+/* disabled
+   ========================================================================== */
+
+.Button:disabled,
+.Button--colorDanger:disabled {
+  background-color: var(--mnspcd-color-grey-3);
+  color: var(--mnspcd-color-grey-5);
+}
+
+.Button.Button--onDarkBackground:disabled,
+.Button--colorDanger.Button--onDarkBackground:disabled {
+  background-color: var(--mnspcd-color-grey-8);
+  color: var(--mnspcd-color-grey-6);
+}
+
+.Button--styleFlat:disabled,
+.Button--styleFlat.Button--colorDanger:disabled {
+  background-color: transparent;
+  color: var(--mnspcd-color-grey-4);
+}
+
+.Button--styleFlat.Button--onDarkBackground:disabled,
+.Button--styleFlat.Button--colorDanger.Button--onDarkBackground:disabled {
+  background-color: transparent;
+  color: var(--mnspcd-color-grey-7);
+}
+
+.Button--styleOutlined:disabled,
+.Button--styleOutlined.Button--colorDanger:disabled {
+  background-color: transparent;
+  border-color: var(--mnspcd-color-grey-3);
+  color: var(--mnspcd-color-grey-4);
+}
+
+.Button--styleOutlined.Button--onDarkBackground:disabled,
+.Button--styleOutlined.Button--colorDanger.Button--onDarkBackground:disabled {
+  background-color: transparent;
+  border-color: var(--mnspcd-color-grey-8);
+  color: var(--mnspcd-color-grey-7);
+}
+
+/* text
+   ========================================================================== */
+
+.Button-text {
+  position: relative;
+}
+
+.Button--withIcon .Button-text {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+/* icon
+   ========================================================================== */
+
+.Button-icon {
+  display: inline-block;
+  height: calc(20rem / 16);
+  position: relative;
+  vertical-align: middle;
+  width: calc(20rem / 16);
+}
+
+@media (--larger-viewport) {
+  .Button-icon {
+    height: calc(24rem / 16);
+    width: calc(24rem / 16);
+  }
+}
+
+.Button--iconOnly {
+  height: calc(48rem / 16);
+  min-width: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: calc(48rem / 16);
+}
+
+.Button--iconOnly .Button-icon {
+  height: calc(24rem / 16);
+  width: calc(24rem / 16);
+}
+
+@media (--larger-viewport) {
+  .Button--iconOnly {
+    height: calc(45rem / 16);
+    width: calc(45rem / 16);
+  }
+}

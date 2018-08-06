@@ -1,0 +1,33 @@
+.List {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  max-width: var(--measure);
+  padding-left: 0;
+}
+
+.List--ordered {
+  counter-reset: list;
+}
+
+.List li {
+  padding-left: 1.5em;
+  position: relative;
+}
+
+.List li::before {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 1.5em;
+}
+
+.List > li::before {
+  content: "•";
+}
+
+.List--ordered > li::before {
+  content: counter(list) ".";
+  counter-increment: list;
+  font-family: var(--font-small-caps);
+}

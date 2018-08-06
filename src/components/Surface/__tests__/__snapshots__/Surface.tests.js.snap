@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Surface component should render correctly 1`] = `
+<div
+  class="Surface"
+  style="background-color:#ffffff"
+>
+  children
+</div>
+`;
+
+exports[`Surface component should render dark background correctly 1`] = `
+<div
+  class="Surface Surface--backgroundDark"
+  style="background-color:#161616"
+>
+  children
+</div>
+`;
+
+exports[`Surface component should render padding correctly 1`] = `
+<div
+  class="Surface"
+  style="background-color:#ffffff;padding:1em"
+>
+  children
+</div>
+`;

@@ -1,0 +1,38 @@
+.Surface--backgroundDark {
+  color: var(--mnspcd-color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Surface--backgroundDark a {
+  color: var(--mnspcd-color-blue-5);
+}
+
+.Surface--backgroundDark a:hover {
+  color: var(--mnspcd-color-blue-4);
+}
+
+.Surface--backgroundDark a:active {
+  color: var(--mnspcd-color-blue-3);
+}
+
+.Surface--backgroundLightBlue {
+  color: var(--mnspcd-color-blue-9);
+}
+
+.Surface--graphPaper {
+  background-image:
+    linear-gradient(to right, var(--mnspcd-color-blue-2) calc(1rem / 16),
+    transparent calc(1rem / 16)),
+    linear-gradient(to bottom, var(--mnspcd-color-blue-2) calc(1rem / 16),
+    transparent calc(1rem / 16));
+  background-size: 1.5em 1.5em;
+}
+
+.Surface--graphPaper.Surface--backgroundDark {
+  background-image:
+    linear-gradient(to right, var(--mnspcd-color-blue-8) calc(1rem / 16),
+    transparent calc(1rem / 16)),
+    linear-gradient(to bottom, var(--mnspcd-color-blue-8) calc(1rem / 16),
+    transparent calc(1rem / 16));
+}

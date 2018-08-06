@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog component should render correctly 1`] = `
+<Fragment>
+  <SideEffect(DocumentMeta)
+    description="Modern front-end web development"
+    title="Monospaced Blog"
+  />
+  <Space>
+    <Masthead
+      activePath="/blog/"
+      links={
+        Array [
+          Object {
+            "href": "/blog/",
+            "routerLink": true,
+            "text": "blog",
+          },
+          Object {
+            "href": "http://localhost:9001",
+            "text": "design-system",
+          },
+          Object {
+            "href": "mailto:info@monospaced.com",
+            "text": "info@monospaced.com",
+          },
+        ]
+      }
+      logo={
+        <Logotype
+          height="1.5em"
+        />
+      }
+    />
+    <Surface
+      backgroundColor="blue-light"
+    >
+      <Rule />
+    </Surface>
+  </Space>
+  <Space
+    size="l"
+  >
+    <Space>
+      <Grid>
+        <Component
+          colSpan="4"
+          colStart="2"
+        >
+          <Heading
+            level="1"
+            size="xxxl"
+          >
+            Blog
+          </Heading>
+        </Component>
+      </Grid>
+    </Space>
+    <Grid>
+      <Component
+        colSpan="4"
+        colStart="3"
+      >
+        <Space
+          size="s"
+        >
+          <Rule />
+        </Space>
+        <Toc>
+          <Component
+            date="2018-10-07"
+            key="slug"
+            slug="slug"
+            title="title"
+          />
+        </Toc>
+      </Component>
+    </Grid>
+  </Space>
+</Fragment>
+`;

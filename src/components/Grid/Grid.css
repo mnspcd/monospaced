@@ -1,0 +1,28 @@
+.Grid {
+  margin: 0 auto;
+  max-width: 56.75em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (--larger-viewport) {
+  .Grid {
+    display: grid;
+    grid-gap: 0.75em;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.Grid-item {
+  margin-bottom: 0.75em;
+}
+
+@media (--larger-viewport) {
+  .Grid-item {
+    margin-bottom: 0;
+  }
+}
+
+.Grid-item:last-child {
+  margin-bottom: 0;
+}

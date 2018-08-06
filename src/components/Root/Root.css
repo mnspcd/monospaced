@@ -1,0 +1,114 @@
+@import url("../../system/fonts/index.css");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--brand-primary-light-color);
+  color: var(--text-color);
+  font-family: var(--font-body-text);
+  font-variant: common-ligatures contextual;
+  line-height: var(--leading);
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+}
+
+@media (--larger-viewport) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+
+@media (--largest-viewport) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+a {
+  color: var(--mnspcd-color-blue-6);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--mnspcd-color-blue-7);
+  outline: 0;
+}
+
+a:active {
+  color: var(--mnspcd-color-blue-8);
+  outline: 0;
+}
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th {
+  font-weight: 400; /* never bold */
+}
+
+code {
+  font-family: var(--font-monospaced);
+  font-size: calc(1em * var(--type-scale-s));
+  font-variant: slashed-zero;
+}
+
+pre {
+  font-family: var(--font-monospaced);
+  margin: 0;
+}
+
+small {
+  font-size: calc(1em * var(--type-scale-m));
+}
+
+@media (--larger-viewport) {
+  small {
+    font-size: calc(1em * var(--type-scale-s));
+  }
+}
+
+sub {
+  font-variant-position: sub;
+}
+
+sup {
+  font-variant-position: super;
+}
+
+time {
+  font-family: var(--font-monospaced);
+  font-size: calc(1em * var(--type-scale-m));
+  font-variant: slashed-zero;
+}
+
+@media (--larger-viewport) {
+  time {
+    font-size: calc(1em * var(--type-scale-s));
+  }
+}
+
+.Root {
+  background-color: var(--background-color);
+}
+
+.u-monospaced {
+  font-family: var(--font-monospaced);
+  font-variant: slashed-zero;
+}
+
+.u-smallCaps {
+  font-family: var(--font-small-caps);
+  text-transform: lowercase;
+}
