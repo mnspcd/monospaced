@@ -26,12 +26,12 @@ const Masthead = ({ activePath, headingLevel, links, logo }) => {
                 styleVariant="flat"
               />
             ) : (
-              <form action={links[0].href}>
+              <a href={links[0].href}>
                 <Button
                   icon={<Mail aria-label="Email" role="img" size="100%" />}
                   styleVariant="flat"
                 />
-              </form>
+              </a>
             ))}
         </div>
         {links && (

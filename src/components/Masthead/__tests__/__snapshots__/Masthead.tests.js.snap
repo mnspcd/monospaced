@@ -160,8 +160,8 @@ exports[`Masthead component should render single link correctly 1`] = `
     <div
       class="Masthead-menuButton"
     >
-      <form
-        action="href"
+      <a
+        href="href"
       >
         <button
           class="Button Button--styleFlat Button--withIcon Button--iconOnly"
@@ -191,7 +191,7 @@ exports[`Masthead component should render single link correctly 1`] = `
             </svg>
           </span>
         </button>
-      </form>
+      </a>
     </div>
     <nav
       class="Masthead-nav"
