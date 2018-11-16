@@ -1,0 +1,18 @@
+.Rule {
+  background-color: var(--mnspcd-color-grey-3);
+  border: 0;
+  color: var(--mnspcd-color-grey-3);
+  height: calc(1rem / 16);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.Rule--onDarkBackground {
+  background-color: var(--mnspcd-color-grey-6);
+  color: var(--mnspcd-color-grey-6);
+}
+
+.Rule--onLightBlueBackground {
+  background-color: var(--mnspcd-color-blue-2);
+  color: var(--mnspcd-color-blue-2);
+}

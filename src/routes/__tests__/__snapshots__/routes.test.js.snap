@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes should convert correctly to an array 1`] = `
+Array [
+  "/",
+  "/blog",
+  "/slug",
+  "/legal",
+  "/404",
+]
+`;

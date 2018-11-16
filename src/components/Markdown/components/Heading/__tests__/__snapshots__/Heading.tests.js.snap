@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading component should render an H1 correctly 1`] = `
+<h1
+  class="Heading Heading--xxxl"
+>
+  children
+</h1>
+`;
+
+exports[`Heading component should render an H2 correctly 1`] = `
+<h2
+  class="Heading Heading--xxl"
+>
+  children
+</h2>
+`;
+
+exports[`Heading component should render an H3 correctly 1`] = `
+<h3
+  class="Heading Heading--xl"
+>
+  children
+</h3>
+`;
+
+exports[`Heading component should render an H4 correctly 1`] = `
+<h4
+  class="Heading Heading--l"
+>
+  children
+</h4>
+`;
+
+exports[`Heading component should render an H5 correctly 1`] = `
+<h5
+  class="Heading Heading--m"
+>
+  children
+</h5>
+`;
+
+exports[`Heading component should render an H6 correctly 1`] = `
+<h6
+  class="Heading Heading--s"
+>
+  children
+</h6>
+`;
+
+exports[`Heading component should render correctly 1`] = `
+<span
+  class="Heading"
+>
+  children
+</span>
+`;
+
+exports[`Heading component should render heading color correctly 1`] = `
+<span
+  class="Heading"
+  style="color:#000a6e"
+>
+  children
+</span>
+`;
+
+exports[`Heading component should render heading level correctly 1`] = `
+<h1
+  class="Heading"
+>
+  children
+</h1>
+`;

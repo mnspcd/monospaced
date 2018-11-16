@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Code component should render a code block correctly 1`] = `
+<code
+  class="Code Code--block"
+>
+  children
+</code>
+`;
+
+exports[`Code component should render a code block correctly in light mode 1`] = `
+<code
+  class="Code Code--block Code--lightMode"
+>
+  children
+</code>
+`;
+
+exports[`Code component should render correctly 1`] = `
+<code
+  class="Code"
+>
+  children
+</code>
+`;
