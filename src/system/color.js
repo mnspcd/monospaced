@@ -230,7 +230,7 @@ const colorTokens = {
   "text-color": mnspcdColor["mnspcd-color-grey-9"],
   "border-color": mnspcdColor["mnspcd-color-grey-3"],
   "brand-primary-dark-color": mnspcdColor["mnspcd-color-blue-9"],
-  "brand-primary": mnspcdColor["mnspcd-color-blue-6"],
+  "brand-primary-color": mnspcdColor["mnspcd-color-blue-6"],
   "brand-primary-light-color": mnspcdColor["mnspcd-color-blue-1"],
   "error-color": mnspcdColor["mnspcd-color-red-6"],
   "warning-color": mnspcdColor["mnspcd-color-yellow-6"],

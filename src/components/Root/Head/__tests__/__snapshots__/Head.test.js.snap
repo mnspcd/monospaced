@@ -6,9 +6,11 @@ Array [
     charset="utf-8"
   />,
   <meta
+    content="#0060d8"
     name="msapplication-TileColor"
   />,
   <meta
+    content="#0060d8"
     name="theme-color"
   />,
   <meta
@@ -37,6 +39,7 @@ Array [
     rel="manifest"
   />,
   <link
+    color="#0060d8"
     href="/safari-pinned-tab.svg"
     rel="mask-icon"
   />,
