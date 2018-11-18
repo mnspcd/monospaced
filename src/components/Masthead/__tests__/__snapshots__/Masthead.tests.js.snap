@@ -9,7 +9,6 @@ exports[`Masthead component should render correctly 1`] = `
   >
     <a
       class="Masthead-logo"
-      href="/"
     >
       <div />
     </a>
@@ -33,7 +32,6 @@ exports[`Masthead component should render heading level correctly 1`] = `
   >
     <a
       class="Masthead-logo"
-      href="/"
     >
       <div />
     </a>
@@ -57,7 +55,6 @@ exports[`Masthead component should render links correctly 1`] = `
   >
     <a
       class="Masthead-logo"
-      href="/"
     >
       <div />
     </a>
@@ -149,7 +146,6 @@ exports[`Masthead component should render single link correctly 1`] = `
   >
     <a
       class="Masthead-logo"
-      href="/"
     >
       <div />
     </a>

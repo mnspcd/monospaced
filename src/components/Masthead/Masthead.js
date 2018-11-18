@@ -13,9 +13,9 @@ const Masthead = ({ activePath, headingLevel, links, logo }) => {
   return (
     <div className="Masthead">
       <Heading level={headingLevel}>
-        <a className="Masthead-logo" href="/">
+        <Link className="Masthead-logo" to="/">
           {logo}
-        </a>
+        </Link>
       </Heading>
       <div className="Masthead-menu">
         <div className="Masthead-menuButton">
