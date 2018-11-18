@@ -52,7 +52,7 @@ module.exports = {
       icon: "Ogilvy",
     },
     {
-      href: "https://www.social360monitoring.com",
+      href: "http://www.social360monitoring.com",
       icon: "Social360",
     },
     {
