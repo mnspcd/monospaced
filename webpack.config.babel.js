@@ -37,7 +37,10 @@ module.exports = env => {
         },
         {
           test: /\.(ico|png|svg|webmanifest|xml)$/,
-          exclude: [path.resolve(__dirname, "src/assets/clients")],
+          exclude: [
+            path.resolve(__dirname, "src/assets/clients"),
+            path.resolve(__dirname, "src/assets/images"),
+          ],
           loader: "file-loader",
           options: { name: "[name].[ext]" },
         },
@@ -60,6 +63,12 @@ module.exports = env => {
               options: { mdPlugins: [emoji, highlight] },
             },
           ],
+        },
+        {
+          test: /\.png$/,
+          include: [path.resolve(__dirname, "src/assets/images")],
+          loader: "file-loader",
+          options: { name: "assets/[name].[ext]" },
         },
       ],
     },
