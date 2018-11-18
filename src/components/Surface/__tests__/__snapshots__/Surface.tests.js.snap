@@ -17,12 +17,3 @@ exports[`Surface component should render dark background correctly 1`] = `
   children
 </div>
 `;
-
-exports[`Surface component should render padding correctly 1`] = `
-<div
-  class="Surface"
-  style="background-color:#ffffff;padding:1em"
->
-  children
-</div>
-`;

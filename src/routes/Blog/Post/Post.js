@@ -7,7 +7,6 @@ import { Heading, List, Rule } from "../../../components/Markdown";
 import Logotype from "../../../components/Logotype";
 import Masthead from "../../../components/Masthead";
 import Space from "../../../components/Space";
-import Surface from "../../../components/Surface";
 
 const Post = ({
   content: { blog, description, mastheadLinks, title },
@@ -33,20 +32,16 @@ const Post = ({
           links={mastheadLinks}
           logo={<Logotype height="1.5em" />}
         />
-        <Surface backgroundColor="blue-light">
-          <Rule />
-        </Surface>
+        <Rule />
       </Space>
-      <Space>
-        <Surface>
-          <Grid>
-            <Grid.Item colSpan="4" colStart="2">
-              <Layout>
-                <Mdx />
-              </Layout>
-            </Grid.Item>
-          </Grid>
-        </Surface>
+      <Space size="l">
+        <Grid>
+          <Grid.Item colSpan="4" colStart="2">
+            <Layout>
+              <Mdx />
+            </Layout>
+          </Grid.Item>
+        </Grid>
       </Space>
     </React.Fragment>
   );

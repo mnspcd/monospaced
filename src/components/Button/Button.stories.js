@@ -38,7 +38,6 @@ storiesOf("Components/Button", module)
           "white",
           "Surface",
         )}
-        padding={text("padding", "", "Surface")}
       >
         <Button
           colorVariant={colorVariant}
@@ -72,7 +71,6 @@ storiesOf("Components/Button", module)
           "white",
           "Surface",
         )}
-        padding={text("padding", "", "Surface")}
       >
         {buttonText &&
           Icon && (

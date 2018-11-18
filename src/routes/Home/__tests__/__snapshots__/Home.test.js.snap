@@ -32,10 +32,8 @@ exports[`Home component should render correctly 1`] = `
         />
       }
     />
-    <Surface
-      backgroundColor="white"
-      graphPaper={true}
-      padding="2.4em 0 3.65em"
+    <Poster
+      padding="5.5em 0 6em"
     >
       <Grid>
         <Component
@@ -48,7 +46,7 @@ exports[`Home component should render correctly 1`] = `
           </Heading>
         </Component>
       </Grid>
-    </Surface>
+    </Poster>
   </Space>
   <Space
     size="l"

@@ -30,12 +30,7 @@
 
 .Table--onDarkBackground td,
 .Table--onDarkBackground th {
-  border: calc(1rem / 16) solid var(--mnspcd-color-grey-6);
-}
-
-.Table--onLightBlueBackground td,
-.Table--onLightBlueBackground th {
-  border-color: var(--mnspcd-color-blue-2);
+  border: calc(1rem / 16) solid var(--mnspcd-color-grey-8);
 }
 
 @media (--larger-viewport) {

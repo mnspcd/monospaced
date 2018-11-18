@@ -15,8 +15,6 @@ storiesOf("Components/Surface", module).add("Component", () => {
           Surface.backgroundColors,
           "white",
         )}
-        graphPaper={boolean("graphPaper", false)}
-        padding={text("padding", "1.5em 1em 1.55em")}
       >
         Text color <br />
         <a href="#">Link color</a>

@@ -13,7 +13,6 @@ storiesOf("Components/Markdown/Table", module).add("Component", () => (
       "white",
       "Surface",
     )}
-    padding={text("padding", "", "Surface")}
   >
     <Table>
       <thead>

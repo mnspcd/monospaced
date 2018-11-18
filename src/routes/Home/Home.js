@@ -7,8 +7,8 @@ import { Heading, Paragraph } from "../../components/Markdown";
 import Logotype from "../../components/Logotype";
 import Masthead from "../../components/Masthead";
 import Tile from "../../components/Tile";
+import Poster from "../../components/Poster";
 import Space from "../../components/Space";
-import Surface from "../../components/Surface";
 
 const clientIcons = require("../../assets/clients");
 
@@ -22,13 +22,13 @@ const Home = ({ content: { clients, description, mastheadLinks, title } }) => {
           links={mastheadLinks}
           logo={<Logotype height="1.5em" />}
         />
-        <Surface padding="2.4em 0 3.65em" graphPaper>
+        <Poster padding="5.5em 0 6em">
           <Grid>
             <Grid.Item colSpan="5">
               <Heading size="xxxl">{description}</Heading>
             </Grid.Item>
           </Grid>
-        </Surface>
+        </Poster>
       </Space>
       <Space size="l">
         <Grid>

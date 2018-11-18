@@ -32,7 +32,6 @@ storiesOf("Components/Markdown/Code", module)
           "white",
           "Surface",
         )}
-        padding={text("padding", "", "Surface")}
       >
         <Code>{code}</Code>
       </Surface>

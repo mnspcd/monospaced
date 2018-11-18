@@ -15,9 +15,4 @@ describe("Surface component", () => {
     );
     expect(component).toMatchSnapshot();
   });
-
-  it("should render padding correctly", () => {
-    const component = render(<Surface padding="1em">children</Surface>);
-    expect(component).toMatchSnapshot();
-  });
 });

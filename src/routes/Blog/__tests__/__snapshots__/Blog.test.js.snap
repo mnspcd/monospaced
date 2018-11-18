@@ -32,35 +32,24 @@ exports[`Blog component should render correctly 1`] = `
         />
       }
     />
-    <Surface
-      backgroundColor="blue-light"
-    >
-      <Rule />
-    </Surface>
+    <Rule />
   </Space>
   <Space
     size="l"
   >
-    <Space>
-      <Grid>
-        <Component
-          colSpan="4"
-          colStart="2"
-        >
+    <Grid>
+      <Component
+        colSpan="4"
+        colStart="2"
+      >
+        <Space>
           <Heading
             level="1"
             size="xxxl"
           >
             Blog
           </Heading>
-        </Component>
-      </Grid>
-    </Space>
-    <Grid>
-      <Component
-        colSpan="4"
-        colStart="3"
-      >
+        </Space>
         <Space
           size="s"
         >

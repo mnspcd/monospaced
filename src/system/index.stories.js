@@ -6,18 +6,17 @@ import * as Icons from "react-feather";
 import { Heading } from "../components/Markdown";
 import Logotype from "../components/Logotype";
 import Space from "../components/Space";
-import Surface from "../components/Surface";
 
 import colors, { colorKeys, colorTokens, defaultColors } from "./color";
 import typography from "./typography";
 
 storiesOf("System", module).add("Introduction", () => (
-  <Surface padding="1em">
+  <div>
     <Space size="s">
       <Logotype height="3em" color="mnspcd-color-blue-9" />
     </Space>
     <Heading size="xxl">Design System</Heading>
-  </Surface>
+  </div>
 ));
 
 const swatch = colorKey => {

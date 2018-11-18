@@ -6,21 +6,18 @@ import { Heading, Paragraph, Rule } from "../../components/Markdown";
 import Logotype from "../../components/Logotype";
 import Masthead from "../../components/Masthead";
 import Space from "../../components/Space";
-import Surface from "../../components/Surface";
 
 const Legal = ({ content: { description, mastheadLinks, title } }) => {
   return (
     <React.Fragment>
       <DocumentMeta description={description} title={`Legal | ${title}`} />
+      <Space>
+        <Masthead links={mastheadLinks} logo={<Logotype height="1.5em" />} />
+        <Rule />
+      </Space>
       <Space size="l">
-        <Space>
-          <Masthead links={mastheadLinks} logo={<Logotype height="1.5em" />} />
-          <Surface backgroundColor="blue-light">
-            <Rule />
-          </Surface>
-        </Space>
         <Grid>
-          <Grid.Item colSpan="6">
+          <Grid.Item colSpan="5">
             <Heading level="1" size="xxxl">
               Legal matters
             </Heading>

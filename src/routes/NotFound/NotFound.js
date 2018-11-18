@@ -6,7 +6,6 @@ import { Heading, Paragraph, Rule } from "../../components/Markdown";
 import Logotype from "../../components/Logotype";
 import Masthead from "../../components/Masthead";
 import Space from "../../components/Space";
-import Surface from "../../components/Surface";
 
 const Legal = ({ content: { description, mastheadLinks, title } }) => {
   return (
@@ -15,13 +14,11 @@ const Legal = ({ content: { description, mastheadLinks, title } }) => {
         description={description}
         title={`Page not found | ${title}`}
       />
+      <Space>
+        <Masthead links={mastheadLinks} logo={<Logotype height="1.5em" />} />
+        <Rule />
+      </Space>
       <Space size="l">
-        <Space>
-          <Masthead links={mastheadLinks} logo={<Logotype height="1.5em" />} />
-          <Surface backgroundColor="blue-light">
-            <Rule />
-          </Surface>
-        </Space>
         <Grid>
           <Grid.Item colSpan="6">
             <Space size="s">

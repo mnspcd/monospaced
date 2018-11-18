@@ -7,7 +7,7 @@ import { backgroundColors } from "../../system/color";
 
 const { Consumer, Provider } = React.createContext();
 
-const Surface = ({ backgroundColor, children, graphPaper, padding }) => {
+const Surface = ({ backgroundColor, children, graphPaper }) => {
   const surfaceBackground =
     backgroundColor.endsWith("dark") || backgroundColor === "black"
       ? "dark"
@@ -18,13 +18,10 @@ const Surface = ({ backgroundColor, children, graphPaper, padding }) => {
       <div
         className={classNames({
           Surface: true,
-          [`Surface--backgroundLightBlue`]: surfaceBackground === "blue-light",
           [`Surface--backgroundDark`]: surfaceBackground === "dark",
-          [`Surface--graphPaper`]: graphPaper,
         })}
         style={{
           backgroundColor: backgroundColors[backgroundColor],
-          padding,
         }}
       >
         {children}
@@ -40,8 +37,6 @@ Surface.defaultProps = { backgroundColor: "white" };
 Surface.propTypes = {
   backgroundColor: PropTypes.oneOf(Surface.backgroundColors),
   children: PropTypes.node.isRequired,
-  graphPaper: PropTypes.bool,
-  padding: PropTypes.string,
 };
 
 export default Surface;

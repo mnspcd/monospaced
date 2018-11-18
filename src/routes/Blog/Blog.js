@@ -7,7 +7,6 @@ import { Heading, List, Rule } from "../../components/Markdown";
 import Logotype from "../../components/Logotype";
 import Masthead from "../../components/Masthead";
 import Space from "../../components/Space";
-import Surface from "../../components/Surface";
 import Toc from "../../components/Toc";
 
 const Blog = ({ content: { blog, description, mastheadLinks, title } }) => {
@@ -20,22 +19,16 @@ const Blog = ({ content: { blog, description, mastheadLinks, title } }) => {
           links={mastheadLinks}
           logo={<Logotype height="1.5em" />}
         />
-        <Surface backgroundColor="blue-light">
-          <Rule />
-        </Surface>
+        <Rule />
       </Space>
       <Space size="l">
-        <Space>
-          <Grid>
-            <Grid.Item colSpan="4" colStart="2">
+        <Grid>
+          <Grid.Item colSpan="4" colStart="2">
+            <Space>
               <Heading level="1" size="xxxl">
                 Blog
               </Heading>
-            </Grid.Item>
-          </Grid>
-        </Space>
-        <Grid>
-          <Grid.Item colSpan="4" colStart="3">
+            </Space>
             <Space size="s">
               <Rule />
             </Space>

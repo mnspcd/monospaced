@@ -32,27 +32,21 @@ exports[`Post component should render correctly 1`] = `
         />
       }
     />
-    <Surface
-      backgroundColor="blue-light"
-    >
-      <Rule />
-    </Surface>
+    <Rule />
   </Space>
-  <Space>
-    <Surface
-      backgroundColor="white"
-    >
-      <Grid>
-        <Component
-          colSpan="4"
-          colStart="2"
-        >
-          <layout>
-            <_default />
-          </layout>
-        </Component>
-      </Grid>
-    </Surface>
+  <Space
+    size="l"
+  >
+    <Grid>
+      <Component
+        colSpan="4"
+        colStart="2"
+      >
+        <layout>
+          <_default />
+        </layout>
+      </Component>
+    </Grid>
   </Space>
 </Fragment>
 `;

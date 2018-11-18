@@ -13,7 +13,6 @@ storiesOf("Components/Markdown/Rule", module).add("Component", () => (
       "white",
       "Surface",
     )}
-    padding={text("padding", "1em", "Surface")}
   >
     <Rule />
   </Surface>

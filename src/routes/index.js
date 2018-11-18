@@ -3,7 +3,6 @@ import { MDXProvider } from "@mdx-js/tag";
 import React from "react";
 
 import Footer from "../components/Footer";
-import Surface from "../components/Surface";
 import { components, Rule } from "../components/Markdown";
 import content from "./content";
 
@@ -23,10 +22,8 @@ const App = ({
     <MDXProvider components={components}>
       <React.Fragment>
         {React.cloneElement(children, { content }, routes)}
-        <Surface backgroundColor="blue-light">
-          <Rule />
-          <Footer copyright={title} links={footerLinks} routes={routes} />
-        </Surface>
+        <Rule />
+        <Footer copyright={title} links={footerLinks} routes={routes} />
       </React.Fragment>
     </MDXProvider>
   );

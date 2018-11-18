@@ -7,7 +7,7 @@
 }
 
 html {
-  background-color: var(--brand-primary-light-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-body-text);
   font-variant: common-ligatures contextual;
@@ -97,10 +97,6 @@ time {
   time {
     font-size: calc(1em * var(--type-scale-s));
   }
-}
-
-.Root {
-  background-color: var(--background-color);
 }
 
 .u-monospaced {

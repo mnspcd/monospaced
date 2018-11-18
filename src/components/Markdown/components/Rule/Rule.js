@@ -11,7 +11,6 @@ const Rule = () => (
         className={classNames({
           Rule: true,
           [`Rule--onDarkBackground`]: surfaceBackground === "dark",
-          [`Rule--onLightBlueBackground`]: surfaceBackground === "blue-light",
         })}
       />
     )}

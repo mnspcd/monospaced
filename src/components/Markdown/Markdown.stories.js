@@ -14,7 +14,6 @@ storiesOf("Components/Markdown", module).add("Sample", () => (
       "white",
       "Surface",
     )}
-    padding={text("padding", "", "Surface")}
   >
     <Mdx components={components} />
   </Surface>
