@@ -1,0 +1,10 @@
+.Poster {
+  background-blend-mode: overlay;
+  background-color: var(--mnspcd-color-blue-6);
+  background-image: url(../../assets/desk.png);
+  background-position: bottom;
+  background-size: cover;
+  color: var(--mnspcd-color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
