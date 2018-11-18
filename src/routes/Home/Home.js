@@ -22,7 +22,7 @@ const Home = ({ content: { clients, description, mastheadLinks, title } }) => {
           links={mastheadLinks}
           logo={<Logotype height="1.5em" />}
         />
-        <Poster padding="5.5em 0 6em">
+        <Poster padding="2.5em 0 3em">
           <Grid>
             <Grid.Item colSpan="5">
               <Heading size="xxxl">{description}</Heading>

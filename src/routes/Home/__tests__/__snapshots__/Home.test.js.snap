@@ -33,7 +33,7 @@ exports[`Home component should render correctly 1`] = `
       }
     />
     <Poster
-      padding="5.5em 0 6em"
+      padding="2.5em 0 3em"
     >
       <Grid>
         <Component
