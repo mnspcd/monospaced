@@ -6,65 +6,75 @@ import classNames from "classnames";
 import Button from "../Button";
 import { Heading } from "../Markdown";
 import { Mail, Menu } from "react-feather";
+import { PosterConsumer } from "../Poster";
 
 import "./Masthead.css";
 
 const Masthead = ({ activePath, headingLevel, links, logo }) => {
   return (
-    <div className="Masthead">
-      <Heading level={headingLevel}>
-        <Link className="Masthead-logo" to="/">
-          {logo}
-        </Link>
-      </Heading>
-      <div className="Masthead-menu">
-        <div className="Masthead-menuButton">
-          {links &&
-            (links.length > 1 ? (
-              <Button
-                icon={<Menu aria-label="Menu" role="img" size="100%" />}
-                styleVariant="flat"
-              />
-            ) : (
-              <a href={links[0].href}>
-                <Button
-                  icon={<Mail aria-label="Email" role="img" size="100%" />}
-                  styleVariant="flat"
-                />
-              </a>
-            ))}
-        </div>
-        {links && (
-          <nav className="Masthead-nav">
-            <ul className="Masthead-navList">
-              {links.map(link => {
-                const { href, routerLink, text } = link;
+    <PosterConsumer>
+      {poster => (
+        <div
+          className={classNames({
+            Masthead: true,
+            [`Masthead--onPoster`]: poster,
+          })}
+        >
+          <Heading level={headingLevel}>
+            <Link className="Masthead-logo" to="/">
+              {logo}
+            </Link>
+          </Heading>
+          <div className="Masthead-menu">
+            <div className="Masthead-menuButton">
+              {links &&
+                (links.length > 1 ? (
+                  <Button
+                    icon={<Menu aria-label="Menu" role="img" size="100%" />}
+                    styleVariant="flat"
+                  />
+                ) : (
+                  <a href={links[0].href}>
+                    <Button
+                      icon={<Mail aria-label="Email" role="img" size="100%" />}
+                      styleVariant="flat"
+                    />
+                  </a>
+                ))}
+            </div>
+            {links && (
+              <nav className="Masthead-nav">
+                <ul className="Masthead-navList">
+                  {links.map(link => {
+                    const { href, routerLink, text } = link;
 
-                return (
-                  <li className="Masthead-navItem" key={text}>
-                    {routerLink ? (
-                      <Link
-                        className={classNames({
-                          [`Masthead-navLink`]: true,
-                          [`Masthead-navLinkActive`]: href === activePath,
-                        })}
-                        to={href}
-                      >
-                        {text}
-                      </Link>
-                    ) : (
-                      <a className="Masthead-navLink" href={href}>
-                        {text}
-                      </a>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
-        )}
-      </div>
-    </div>
+                    return (
+                      <li className="Masthead-navItem" key={text}>
+                        {routerLink ? (
+                          <Link
+                            className={classNames({
+                              [`Masthead-navLink`]: true,
+                              [`Masthead-navLinkActive`]: href === activePath,
+                            })}
+                            to={href}
+                          >
+                            {text}
+                          </Link>
+                        ) : (
+                          <a className="Masthead-navLink" href={href}>
+                            {text}
+                          </a>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </nav>
+            )}
+          </div>
+        </div>
+      )}
+    </PosterConsumer>
   );
 };
 

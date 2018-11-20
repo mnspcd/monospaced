@@ -7,34 +7,36 @@ exports[`Home component should render correctly 1`] = `
     title="Monospaced"
   />
   <Space>
-    <Masthead
-      headingLevel="1"
-      links={
-        Array [
-          Object {
-            "href": "/blog/",
-            "routerLink": true,
-            "text": "blog",
-          },
-          Object {
-            "href": "http://localhost:9001",
-            "text": "design-system",
-          },
-          Object {
-            "href": "mailto:info@monospaced.com",
-            "text": "info@monospaced.com",
-          },
-        ]
-      }
-      logo={
-        <Logotype
-          height="1.5em"
-        />
-      }
-    />
     <Poster
-      padding="2.5em 0 3em"
+      padding="0 0 3em"
     >
+      <Space>
+        <Masthead
+          headingLevel="1"
+          links={
+            Array [
+              Object {
+                "href": "/blog/",
+                "routerLink": true,
+                "text": "blog",
+              },
+              Object {
+                "href": "http://localhost:9001",
+                "text": "design-system",
+              },
+              Object {
+                "href": "mailto:info@monospaced.com",
+                "text": "info@monospaced.com",
+              },
+            ]
+          }
+          logo={
+            <Logotype
+              height="1.5em"
+            />
+          }
+        />
+      </Space>
       <Grid>
         <Component
           colSpan="5"

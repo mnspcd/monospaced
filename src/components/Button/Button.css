@@ -215,6 +215,39 @@
   color: var(--mnspcd-color-red-3);
 }
 
+/* on Poster
+   ========================================================================== */
+
+.Button--onPoster {
+  background-color: transparent;
+  border: none;
+  color: var(--mnspcd-color-white);
+}
+
+.Button--onPoster:hover {
+  background-color: rgba(var(--mnspcd-color-blue-7-rgb), var(--opacity-hover));
+  color: var(--mnspcd-color-blue-2);
+}
+
+.Button--onPoster:active {
+  background-color: rgba(var(--mnspcd-color-blue-8-rgb), var(--opacity-active));
+  color: var(--mnspcd-color-blue-3);
+}
+
+.Button--onPoster.Button--colorDanger {
+  color: var(--mnspcd-color-red-5);
+}
+
+.Button--onPoster.Button--colorDanger:hover {
+  background-color: rgba(var(--mnspcd-color-red-7-rgb), var(--opacity-hover));
+  color: var(--mnspcd-color-red-4);
+}
+
+.Button--onPoster.Button--colorDanger:active {
+  background-color: rgba(var(--mnspcd-color-red-8-rgb), var(--opacity-active));
+  color: var(--mnspcd-color-red-3);
+}
+
 /* disabled
    ========================================================================== */
 
@@ -254,6 +287,11 @@
   background-color: transparent;
   border-color: var(--mnspcd-color-grey-8);
   color: var(--mnspcd-color-grey-7);
+}
+
+.Button--onPoster:disabled {
+  background-color: transparent;
+  color: var(--mnspcd-color-grey-4);
 }
 
 /* text

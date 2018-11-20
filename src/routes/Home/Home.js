@@ -17,12 +17,14 @@ const Home = ({ content: { clients, description, mastheadLinks, title } }) => {
     <React.Fragment>
       <DocumentMeta description={description} title={title} />
       <Space>
-        <Masthead
-          headingLevel="1"
-          links={mastheadLinks}
-          logo={<Logotype height="1.5em" />}
-        />
-        <Poster padding="2.5em 0 3em">
+        <Poster padding="0 0 3em">
+          <Space>
+            <Masthead
+              headingLevel="1"
+              links={mastheadLinks}
+              logo={<Logotype height="1.5em" />}
+            />
+          </Space>
           <Grid>
             <Grid.Item colSpan="5">
               <Heading size="xxxl">{description}</Heading>

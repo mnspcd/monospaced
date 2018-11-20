@@ -3,10 +3,14 @@ import React from "react";
 
 import "./Poster.css";
 
+const { Consumer, Provider } = React.createContext();
+
 const Poster = ({ children, padding }) => (
-  <div className="Poster" style={{ padding }}>
-    {children}
-  </div>
+  <Provider value={true}>
+    <div className="Poster" style={{ padding }}>
+      {children}
+    </div>
+  </Provider>
 );
 
 Poster.propTypes = {
@@ -15,3 +19,4 @@ Poster.propTypes = {
 };
 
 export default Poster;
+export { Consumer as PosterConsumer };

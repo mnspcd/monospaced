@@ -26,6 +26,13 @@
   color: var(--mnspcd-color-blue-9);
 }
 
+.Masthead--onPoster .Masthead-logo,
+.Masthead--onPoster .Masthead-logo:hover,
+.Masthead--onPoster .Masthead-logo:active {
+  background: none;
+  color: var(--mnspcd-color-white);
+}
+
 .Masthead-menu {
   display: flex;
 }

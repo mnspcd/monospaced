@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import classNames from "classnames";
 
+import { PosterConsumer } from "../Poster";
 import { SurfaceConsumer } from "../Surface";
 import "./Button.css";
 
@@ -14,26 +15,31 @@ const Button = ({
   styleVariant,
 }) => {
   return (
-    <SurfaceConsumer>
-      {surfaceBackground => (
-        <button
-          className={classNames({
-            Button: true,
-            [`Button--colorDanger`]: colorVariant === "danger",
-            [`Button--styleFlat`]: styleVariant === "flat",
-            [`Button--styleOutlined`]: styleVariant === "outlined",
-            [`Button--withIcon`]: icon,
-            [`Button--iconOnly`]: icon && !children,
-            [`Button--onDarkBackground`]: surfaceBackground === "dark",
-          })}
-          disabled={disabled}
-          style={{ minWidth }}
-        >
-          {icon && <span className="Button-icon">{icon}</span>}
-          {children && <span className="Button-text">{children}</span>}
-        </button>
+    <PosterConsumer>
+      {poster => (
+        <SurfaceConsumer>
+          {surfaceBackground => (
+            <button
+              className={classNames({
+                Button: true,
+                [`Button--colorDanger`]: colorVariant === "danger",
+                [`Button--styleFlat`]: styleVariant === "flat",
+                [`Button--styleOutlined`]: styleVariant === "outlined",
+                [`Button--withIcon`]: icon,
+                [`Button--iconOnly`]: icon && !children,
+                [`Button--onDarkBackground`]: surfaceBackground === "dark",
+                [`Button--onPoster`]: poster,
+              })}
+              disabled={disabled}
+              style={{ minWidth }}
+            >
+              {icon && <span className="Button-icon">{icon}</span>}
+              {children && <span className="Button-text">{children}</span>}
+            </button>
+          )}
+        </SurfaceConsumer>
       )}
-    </SurfaceConsumer>
+    </PosterConsumer>
   );
 };
 

@@ -1,13 +1,14 @@
 import React from "react";
 import { Route, Router } from "react-router";
 import createMemoryHistory from "react-router/lib/createMemoryHistory";
-import { number, select, text } from "@storybook/addon-knobs";
+import { boolean, number, select, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 
 import Masthead from "./Masthead";
 
 import { Heading } from "../Markdown";
 import Logotype from "../Logotype";
+import Poster from "../Poster";
 
 const history = createMemoryHistory();
 
@@ -24,6 +25,8 @@ storiesOf("Components/Masthead", module)
     return <RenderRouter />;
   })
   .add("Component", () => {
+    const Element = boolean("on Poster", false, "Story") ? Poster : "div";
+
     const numberOfItems = number(
       "number of links",
       3,
@@ -36,7 +39,7 @@ storiesOf("Components/Masthead", module)
     );
 
     return (
-      <div>
+      <Element>
         <Masthead
           headingLevel={
             select(
@@ -52,6 +55,6 @@ storiesOf("Components/Masthead", module)
           }))}
           logo={<Logotype height="1.5em" />}
         />
-      </div>
+      </Element>
     );
   });

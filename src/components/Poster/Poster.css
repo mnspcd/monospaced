@@ -1,5 +1,5 @@
 .Poster {
-  background-blend-mode: overlay;
+  background-blend-mode: darken;
   background-color: var(--mnspcd-color-blue-6);
   background-image: url(../../assets/images/desk.png);
   background-position: bottom;
@@ -7,4 +7,16 @@
   color: var(--mnspcd-color-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.Poster a {
+  color: var(--mnspcd-color-white);
+}
+
+.Poster a:hover {
+  color: var(--mnspcd-color-blue-2);
+}
+
+.Poster a:active {
+  color: var(--mnspcd-color-blue-3);
 }
