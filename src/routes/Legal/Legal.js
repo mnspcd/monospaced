@@ -27,13 +27,13 @@ const Legal = ({ content: { description, mastheadLinks, title } }) => {
       <Space size="l">
         <Grid>
           <Grid.Item colSpan="2">
-            <Heading level="3" size="xl">
+            <Heading color="brand-primary-dark-color" level="2" size="xl">
               Company details
             </Heading>
           </Grid.Item>
           <Grid.Item colSpan="4" colStart="3">
             <Space>
-              <Heading level="4" size="xl">
+              <Heading level="3" size="xl">
                 Monospaced Ltd
               </Heading>
               <Paragraph>
@@ -53,13 +53,13 @@ const Legal = ({ content: { description, mastheadLinks, title } }) => {
       <Space size="l">
         <Grid>
           <Grid.Item colSpan="2">
-            <Heading level="3" size="xl">
+            <Heading color="brand-primary-dark-color" level="2" size="xl">
               Privacy policy
             </Heading>
           </Grid.Item>
           <Grid.Item colSpan="4" colStart="3">
             <Space>
-              <Heading level="4" size="xl">
+              <Heading level="3" size="xl">
                 Email
               </Heading>
               <Paragraph>
@@ -69,7 +69,7 @@ const Legal = ({ content: { description, mastheadLinks, title } }) => {
                 newsletters and no spam. That’s it!
               </Paragraph>
             </Space>
-            <Heading level="4" size="xl">
+            <Heading level="3" size="xl">
               Website
             </Heading>
             <Paragraph>
