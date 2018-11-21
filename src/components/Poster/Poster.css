@@ -1,5 +1,4 @@
 .Poster {
-  background-blend-mode: darken;
   background-color: var(--mnspcd-color-blue-6);
   background-image: url(../../assets/images/desk.png);
   background-position: bottom;
