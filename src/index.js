@@ -1,3 +1,4 @@
+import "core-js/fn/array/includes";
 import { browserHistory, createMemoryHistory, Router } from "react-router";
 import DocumentMeta from "react-document-meta";
 import React from "react";
