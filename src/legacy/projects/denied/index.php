@@ -11,7 +11,7 @@ include '../../_function/php/db.php';
 <meta http-equiv="X-UA-Compatible" content="IE=7">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<title>Projects | Monospaced Ltd</title>
+<title>Projects | Monospaced</title>
 <meta name="description" content="London based web development consultancy, specialising in modern front-end web development, web standards and accessibility.">
 <meta name="keywords" content="monospaced, monospaced ltd, monospaced.com">
 
