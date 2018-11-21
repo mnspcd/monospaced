@@ -1,8 +1,14 @@
 .Grid {
   margin: 0 auto;
-  max-width: 56.75em;
+  max-width: 36.25em;
   padding-left: 1em;
   padding-right: 1em;
+}
+
+@supports (display: grid) {
+  .Grid {
+    max-width: 56.75em;
+  }
 }
 
 @media (--larger-viewport) {
@@ -14,12 +20,14 @@
 }
 
 .Grid-item {
-  margin-bottom: 0.75em;
+  margin-bottom: 1.5em;
 }
 
-@media (--larger-viewport) {
-  .Grid-item {
-    margin-bottom: 0;
+@supports (display: grid) {
+  @media (--larger-viewport) {
+    .Grid-item {
+      margin-bottom: 0;
+    }
   }
 }
 
