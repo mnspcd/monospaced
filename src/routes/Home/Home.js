@@ -17,7 +17,7 @@ const Home = ({ content: { clients, description, mastheadLinks, title } }) => {
     <React.Fragment>
       <DocumentMeta description={description} title={title} />
       <Space>
-        <Poster padding="0 0 3em">
+        <Poster padding="0 0 3.5em">
           <Space>
             <Masthead
               headingLevel="1"
