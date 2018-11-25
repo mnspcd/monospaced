@@ -47,7 +47,9 @@
 }
 
 @media (--larger-viewport) {
-  margin-right: 1.5em;
+  .Footer-listItem {
+    margin-right: 1.5em;
+  }
 }
 
 .Footer-listItem:last-child {
