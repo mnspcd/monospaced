@@ -21,6 +21,7 @@
     "classnames": "^2.2.6",
     "copy-webpack-plugin": "^4.5.2",
     "core-js": "^2.5.7",
+    "coveralls": "^3.0.2",
     "css-loader": "^1.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -64,7 +65,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn lint && yarn test"
+      "pre-push": "yarn lint && yarn test && cat coverage/lcov.info | coveralls"
     }
   },
   "jest": {
