@@ -8,7 +8,7 @@ exports[`Home component should render correctly 1`] = `
   />
   <Space>
     <Poster
-      padding="0 0 3em"
+      padding="0 0 3.5em"
     >
       <Space>
         <Masthead
@@ -38,7 +38,7 @@ exports[`Home component should render correctly 1`] = `
         />
       </Space>
       <Grid>
-        <Component
+        <Grid.Item
           colSpan="5"
         >
           <Heading
@@ -46,7 +46,7 @@ exports[`Home component should render correctly 1`] = `
           >
             Modern front-end web development
           </Heading>
-        </Component>
+        </Grid.Item>
       </Grid>
     </Poster>
   </Space>
@@ -54,7 +54,7 @@ exports[`Home component should render correctly 1`] = `
     size="l"
   >
     <Grid>
-      <Component
+      <Grid.Item
         colSpan="2"
       >
         <Heading
@@ -64,8 +64,8 @@ exports[`Home component should render correctly 1`] = `
         >
           Our services
         </Heading>
-      </Component>
-      <Component
+      </Grid.Item>
+      <Grid.Item
         colSpan="4"
         colStart="3"
       >
@@ -109,14 +109,14 @@ exports[`Home component should render correctly 1`] = `
             Web applications
           </Heading>
         </Space>
-      </Component>
+      </Grid.Item>
     </Grid>
   </Space>
   <Space
     size="l"
   >
     <Grid>
-      <Component
+      <Grid.Item
         colSpan="2"
       >
         <Heading
@@ -126,15 +126,15 @@ exports[`Home component should render correctly 1`] = `
         >
           Selected clients
         </Heading>
-      </Component>
-      <Component
+      </Grid.Item>
+      <Grid.Item
         colSpan="4"
         colStart="3"
       >
         <Group
           tessellate={true}
         >
-          <Component
+          <Group.Item
             key="BladudFlies"
           >
             <Tile
@@ -148,8 +148,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="Chartwells"
           >
             <Tile
@@ -163,8 +163,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="Digitas"
           >
             <Tile
@@ -178,8 +178,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="DowJones"
           >
             <Tile
@@ -193,8 +193,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="FindMyPast"
           >
             <Tile
@@ -208,8 +208,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="Freeform"
           >
             <Tile
@@ -223,8 +223,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="GrandUnion"
           >
             <Tile
@@ -238,8 +238,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="Hanno"
           >
             <Tile
@@ -253,8 +253,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="MajorPlayers"
           >
             <Tile
@@ -268,8 +268,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="NationalLottery"
           >
             <Tile
@@ -283,8 +283,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="Nhs"
           >
             <Tile
@@ -298,8 +298,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="Ogilvy"
           >
             <Tile
@@ -313,8 +313,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="Social360"
           >
             <Tile
@@ -328,8 +328,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="Stordis"
           >
             <Tile
@@ -343,8 +343,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="Suburb"
           >
             <Tile
@@ -358,8 +358,8 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
-          <Component
+          </Group.Item>
+          <Group.Item
             key="ThomsonReuters"
           >
             <Tile
@@ -373,9 +373,9 @@ exports[`Home component should render correctly 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               />
             </Tile>
-          </Component>
+          </Group.Item>
         </Group>
-      </Component>
+      </Grid.Item>
     </Grid>
   </Space>
 </Fragment>

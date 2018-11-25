@@ -1,5 +1,5 @@
 import React from "react";
-import { boolean, select, text } from "@storybook/addon-knobs";
+import { select } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 
 import Surface from "./Surface";

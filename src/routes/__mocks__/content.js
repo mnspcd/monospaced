@@ -1,3 +1,6 @@
+import React from "react";
+
+/* eslint-disable react/display-name */
 module.exports = {
   blog: [
     {
@@ -119,3 +122,4 @@ module.exports = {
   ],
   title: "Monospaced",
 };
+/* eslint-enable */

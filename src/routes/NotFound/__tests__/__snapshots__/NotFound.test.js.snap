@@ -37,7 +37,7 @@ exports[`NotFound component should render correctly 1`] = `
     size="l"
   >
     <Grid>
-      <Component
+      <Grid.Item
         colSpan="6"
       >
         <Space
@@ -64,7 +64,7 @@ exports[`NotFound component should render correctly 1`] = `
             The requested URL was not found on this server
           </small>
         </Paragraph>
-      </Component>
+      </Grid.Item>
     </Grid>
   </Space>
 </Fragment>

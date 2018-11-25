@@ -35,5 +35,5 @@ export default ({ path }, callback) => {
     <Root meta={meta} router={router} />,
   );
 
-  callback(null, "<!DOCTYPE html>" + html);
+  callback(null, `<!DOCTYPE html>${html}`);
 };

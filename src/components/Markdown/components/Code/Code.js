@@ -22,11 +22,26 @@ const Code = ({ block, children, lightMode }) => (
   </SurfaceConsumer>
 );
 
+Code.propTypes = {
+  block: PropTypes.bool,
+  children: PropTypes.node.isRequired,
+  lightMode: PropTypes.bool,
+};
+
 Code.Block = ({ children, lightMode }) => (
   <Code block lightMode={lightMode}>
     {children}
   </Code>
 );
+
+Code.Block.displayName = "Code.Block";
+
+Code.Block.propTypes = {
+  children: PropTypes.node.isRequired,
+  lightMode: PropTypes.bool,
+};
+
+/* eslint-disable react/display-name, react/prop-types */
 
 Code.Block.LightMode = ({ children }) => (
   <Code block lightMode>
@@ -34,10 +49,12 @@ Code.Block.LightMode = ({ children }) => (
   </Code>
 );
 
-Code.propTypes = {
-  block: PropTypes.bool,
+Code.Block.LightMode.displayName = "Code.Block.LightMode";
+
+Code.Block.LightMode.propTypes = {
   children: PropTypes.node.isRequired,
-  lightMode: PropTypes.bool,
 };
+
+/* eslint-enable */
 
 export default Code;

@@ -19,7 +19,7 @@ exports[`Root component should render correctly 1`] = `
     />
     <div
       className="Root"
-      dangerouslySetInnerHTML={<div />}
+      dangerouslySetInnerHTML={Array []}
       id="router"
     />
     <script

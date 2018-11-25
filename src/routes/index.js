@@ -1,5 +1,6 @@
 import { IndexRoute, Route } from "react-router";
 import { MDXProvider } from "@mdx-js/tag";
+import PropTypes from "prop-types";
 import React from "react";
 
 import Footer from "../components/Footer";
@@ -29,6 +30,17 @@ const App = ({
   );
 };
 
+const forceTrailingSlash = (nextState, replace) => {
+  const path = nextState.location.pathname;
+  if (path.slice(-1) !== "/") {
+    replace({ ...nextState.location, pathname: `${path}/` });
+  }
+};
+
+const forceTrailingSlashOnChange = (prevState, nextState, replace) => {
+  forceTrailingSlash(nextState, replace);
+};
+
 const Routes = (
   <Route onChange={forceTrailingSlashOnChange} onEnter={forceTrailingSlash}>
     <Route component={App} content={content} path="/">
@@ -38,23 +50,17 @@ const Routes = (
         const { slug } = post;
         return <Route component={Post} key={slug} path={slug} />;
       })}
-      }<Route component={Legal} path="legal" />
+      <Route component={Legal} path="legal" />
       <Route component={NotFound} path="404" />
       <Route component={NotFound} path="*" />
     </Route>
   </Route>
 );
 
-function forceTrailingSlash(nextState, replace) {
-  const path = nextState.location.pathname;
-
-  if (path.slice(-1) !== "/") {
-    replace({ ...nextState.location, pathname: path + "/" });
-  }
-}
-
-function forceTrailingSlashOnChange(prevState, nextState, replace) {
-  forceTrailingSlash(nextState, replace);
-}
+App.propTypes = {
+  children: PropTypes.node,
+  route: PropTypes.object,
+  routes: PropTypes.array,
+};
 
 module.exports = Routes;

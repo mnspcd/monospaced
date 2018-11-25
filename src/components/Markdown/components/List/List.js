@@ -18,11 +18,17 @@ const List = ({ children, ordered }) => {
   );
 };
 
-List.Ordered = ({ children }) => <List ordered>{children}</List>;
-
 List.propTypes = {
   children: PropTypes.node.isRequired,
   ordered: PropTypes.bool,
+};
+
+List.Ordered = ({ children }) => <List ordered>{children}</List>;
+
+List.Ordered.displayName = "List.Ordered";
+
+List.Ordered.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default List;

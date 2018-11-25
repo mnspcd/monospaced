@@ -1,5 +1,5 @@
 import React from "react";
-import { number, select, text } from "@storybook/addon-knobs";
+import { number, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 
 import Toc from "./Toc";

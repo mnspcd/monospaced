@@ -43,6 +43,8 @@ Grid.Item = ({
   </div>
 );
 
+Grid.Item.displayName = "Grid.Item";
+
 Grid.Item.propTypes = {
   align: PropTypes.oneOf(Grid.alignments),
   children: PropTypes.node,

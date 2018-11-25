@@ -7,7 +7,7 @@ import { backgroundColors } from "../../system/color";
 
 const { Consumer, Provider } = React.createContext();
 
-const Surface = ({ backgroundColor, children, graphPaper }) => {
+const Surface = ({ backgroundColor, children }) => {
   const surfaceBackground =
     backgroundColor.endsWith("dark") || backgroundColor === "black"
       ? "dark"

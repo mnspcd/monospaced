@@ -38,7 +38,7 @@ exports[`Blog component should render correctly 1`] = `
     size="l"
   >
     <Grid>
-      <Component
+      <Grid.Item
         colSpan="4"
         colStart="2"
       >
@@ -56,14 +56,14 @@ exports[`Blog component should render correctly 1`] = `
           <Rule />
         </Space>
         <Toc>
-          <Component
+          <Toc.Item
             date="2018-10-07"
             key="slug"
             slug="slug"
             title="title"
           />
         </Toc>
-      </Component>
+      </Grid.Item>
     </Grid>
   </Space>
 </Fragment>

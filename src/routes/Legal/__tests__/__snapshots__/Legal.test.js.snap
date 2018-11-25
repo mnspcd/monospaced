@@ -37,7 +37,7 @@ exports[`Legal component should render correctly 1`] = `
     size="l"
   >
     <Grid>
-      <Component
+      <Grid.Item
         colSpan="5"
       >
         <Heading
@@ -46,14 +46,14 @@ exports[`Legal component should render correctly 1`] = `
         >
           Legal matters
         </Heading>
-      </Component>
+      </Grid.Item>
     </Grid>
   </Space>
   <Space
     size="l"
   >
     <Grid>
-      <Component
+      <Grid.Item
         colSpan="2"
       >
         <Heading
@@ -63,8 +63,8 @@ exports[`Legal component should render correctly 1`] = `
         >
           Company details
         </Heading>
-      </Component>
-      <Component
+      </Grid.Item>
+      <Grid.Item
         colSpan="4"
         colStart="3"
       >
@@ -86,14 +86,14 @@ exports[`Legal component should render correctly 1`] = `
             Monospaced Ltd is a company registered in England and Wales with company number 6151329 and VAT number 899547930.
           </small>
         </Paragraph>
-      </Component>
+      </Grid.Item>
     </Grid>
   </Space>
   <Space
     size="l"
   >
     <Grid>
-      <Component
+      <Grid.Item
         colSpan="2"
       >
         <Heading
@@ -103,8 +103,8 @@ exports[`Legal component should render correctly 1`] = `
         >
           Privacy policy
         </Heading>
-      </Component>
-      <Component
+      </Grid.Item>
+      <Grid.Item
         colSpan="4"
         colStart="3"
       >
@@ -128,7 +128,7 @@ exports[`Legal component should render correctly 1`] = `
         <Paragraph>
           This website does not store your personal data. At all. We don’t have a database to store it in. No cookies and no analytics. For compliance with web font licences, we call a third-party hit counter on each page load. But that’s all!
         </Paragraph>
-      </Component>
+      </Grid.Item>
     </Grid>
   </Space>
 </Fragment>

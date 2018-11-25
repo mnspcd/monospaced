@@ -1,9 +1,9 @@
 import DocumentMeta from "react-document-meta";
-import { Link } from "react-router";
+import PropTypes from "prop-types";
 import React from "react";
 
 import Grid from "../../components/Grid";
-import { Heading, List, Rule } from "../../components/Markdown";
+import { Heading, Rule } from "../../components/Markdown";
 import Logotype from "../../components/Logotype";
 import Masthead from "../../components/Masthead";
 import Space from "../../components/Space";
@@ -36,13 +36,18 @@ const Blog = ({ content: { blog, description, mastheadLinks, title } }) => {
               {blog.map(post => {
                 const {
                   mdx: {
-                    meta: { date, title },
+                    meta: { date, title: postTitle },
                   },
                   slug,
                 } = post;
 
                 return (
-                  <Toc.Item date={date} key={slug} slug={slug} title={title} />
+                  <Toc.Item
+                    date={date}
+                    key={slug}
+                    slug={slug}
+                    title={postTitle}
+                  />
                 );
               })}
             </Toc>
@@ -52,5 +57,7 @@ const Blog = ({ content: { blog, description, mastheadLinks, title } }) => {
     </React.Fragment>
   );
 };
+
+Blog.propTypes = { content: PropTypes.object };
 
 export default Blog;

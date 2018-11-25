@@ -1,3 +1,8 @@
+const fontStackEmoji = `
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol"
+`;
 const fontStackBodyText = `
   DollyPro,
   Charter,
@@ -5,11 +10,6 @@ const fontStackBodyText = `
   Georgia,
   serif,
   ${fontStackEmoji}
-`;
-const fontStackEmoji = `
-  "Apple Color Emoji",
-  "Segoe UI Emoji",
-  "Segoe UI Symbol"
 `;
 const fontStackMonospaced = `
   FFLetterGothicMono,

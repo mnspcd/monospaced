@@ -1,20 +1,19 @@
 import CopyWebpackPlugin from "copy-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import OptimizeCSSAssetsPlugin from "optimize-css-assets-webpack-plugin";
-import ReactRouterToArray from "react-router-to-array";
 import StaticSiteGeneratorPlugin from "static-site-generator-webpack-plugin";
 import UglifyJsPlugin from "uglifyjs-webpack-plugin";
 import emoji from "remark-emoji";
 import highlight from "remark-highlight.js";
 import path from "path";
-import webpack from "webpack";
+import reactRouterToArray from "react-router-to-array";
 
-module.exports = env => {
+module.exports = () => {
   // Prevent webpack from trying to process files before loaders are configured
   require.extensions[".css"] = () => {};
   require.extensions[".mdx"] = () => {};
 
-  const routes = ReactRouterToArray(require("./src/routes"));
+  const routes = reactRouterToArray(require("./src/routes"));
 
   const config = {
     devServer: { inline: false, stats: "minimal" },
@@ -82,7 +81,7 @@ module.exports = env => {
       filename: "bundle.js",
       globalObject: "this",
       libraryTarget: "umd",
-      path: __dirname + "/build",
+      path: `${__dirname}/build`,
       publicPath: "/",
     },
     plugins: [

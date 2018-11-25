@@ -1,4 +1,5 @@
 import DocumentMeta from "react-document-meta";
+import PropTypes from "prop-types";
 import React from "react";
 
 import Grid from "../../components/Grid";
@@ -84,5 +85,7 @@ const Legal = ({ content: { description, mastheadLinks, title } }) => {
     </React.Fragment>
   );
 };
+
+Legal.propTypes = { content: PropTypes.object };
 
 export default Legal;

@@ -11,18 +11,18 @@ import colors, { colorKeys, colorTokens, defaultColors } from "./color";
 import typography from "./typography";
 
 storiesOf("System", module).add("Introduction", () => (
-  <div>
+  <React.Fragment>
     <Space size="s">
-      <Logotype height="3em" color="mnspcd-color-blue-9" />
+      <Logotype color="mnspcd-color-blue-9" height="3em" />
     </Space>
     <Heading size="xxl">Design System</Heading>
-  </div>
+  </React.Fragment>
 ));
 
-const swatch = colorKey => {
+const getSwatch = colorKey => {
   const backgroundColor = colors[colorKey];
   const colorRampIndex = parseInt(
-    colorKeys.find(colorKey => colors[colorKey] === backgroundColor).slice(-1),
+    colorKeys.find(key => colors[key] === backgroundColor).slice(-1),
   );
   const colorRampLength = 9;
   const color =
@@ -55,17 +55,17 @@ storiesOf("System/Color", module)
   .add("Colors", () => (
     <div style={{ fontFamily: typography["font-monospaced"] }}>
       {Object.keys(defaultColors).map(colorKey => (
-        <Space key={colorKey}>{swatch(colorKey)}</Space>
+        <Space key={colorKey}>{getSwatch(colorKey)}</Space>
       ))}
       {colorKeys
         .slice(2) // remove black & white
-        .map(colorKey => swatch(colorKey))}
+        .map(colorKey => getSwatch(colorKey))}
     </div>
   ))
   .add("Tokens", () => (
     <div style={{ fontFamily: typography["font-monospaced"] }}>
       {Object.keys(colorTokens).map(colorKey => (
-        <Space key={colorKey}>{swatch(colorKey)}</Space>
+        <Space key={colorKey}>{getSwatch(colorKey)}</Space>
       ))}
     </div>
   ));

@@ -17,7 +17,7 @@ Toc.Item = ({ date, slug, title }) => {
     <li className="Toc-item">
       <LinkElement
         className="Toc-itemLink"
-        href={!slug ? "#" : undefined}
+        href={slug ? undefined : "#"}
         to={slug && `/${slug}/`}
       >
         <span className="Toc-itemTitle">{title}</span>
@@ -26,6 +26,8 @@ Toc.Item = ({ date, slug, title }) => {
     </li>
   );
 };
+
+Toc.Item.displayName = "Toc.Item";
 
 Toc.Item.propTypes = {
   date: PropTypes.string,

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 import "../../../assets/android-chrome-192x192.png";
@@ -67,5 +68,7 @@ const Head = ({ meta }) => {
     </head>
   );
 };
+
+Head.propTypes = { meta: PropTypes.array };
 
 export default Head;

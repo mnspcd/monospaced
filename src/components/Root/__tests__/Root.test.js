@@ -1,3 +1,4 @@
+/* eslint-env jest */
 import React from "react";
 import { shallow } from "enzyme";
 
@@ -7,7 +8,7 @@ jest.mock("../../../../package.json", () => ({ version: "0.0.0" }));
 
 describe("Root component", () => {
   it("should render correctly", () => {
-    const component = shallow(<Root meta={[]} router={<div />} />);
+    const component = shallow(<Root meta={[]} router={[]} />);
     expect(component).toMatchSnapshot();
   });
 });

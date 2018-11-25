@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 import "../../assets/.htaccess";
@@ -23,6 +24,11 @@ const Root = ({ meta, router }) => {
       </body>
     </html>
   );
+};
+
+Root.propTypes = {
+  meta: PropTypes.array,
+  router: PropTypes.array,
 };
 
 export default Root;

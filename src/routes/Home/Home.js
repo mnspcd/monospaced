@@ -1,9 +1,10 @@
 import DocumentMeta from "react-document-meta";
+import PropTypes from "prop-types";
 import React from "react";
 
 import Grid from "../../components/Grid";
 import Group from "../../components/Group";
-import { Heading, Paragraph } from "../../components/Markdown";
+import { Heading } from "../../components/Markdown";
 import Logotype from "../../components/Logotype";
 import Masthead from "../../components/Masthead";
 import Tile from "../../components/Tile";
@@ -98,5 +99,7 @@ const Home = ({ content: { clients, description, mastheadLinks, title } }) => {
     </React.Fragment>
   );
 };
+
+Home.propTypes = { content: PropTypes.object };
 
 export default Home;

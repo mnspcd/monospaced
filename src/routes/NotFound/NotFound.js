@@ -1,4 +1,5 @@
 import DocumentMeta from "react-document-meta";
+import PropTypes from "prop-types";
 import React from "react";
 
 import Grid from "../../components/Grid";
@@ -7,7 +8,7 @@ import Logotype from "../../components/Logotype";
 import Masthead from "../../components/Masthead";
 import Space from "../../components/Space";
 
-const Legal = ({ content: { description, mastheadLinks, title } }) => {
+const NotFound = ({ content: { description, mastheadLinks, title } }) => {
   return (
     <React.Fragment>
       <DocumentMeta
@@ -39,4 +40,6 @@ const Legal = ({ content: { description, mastheadLinks, title } }) => {
   );
 };
 
-export default Legal;
+NotFound.propTypes = { content: PropTypes.object };
+
+export default NotFound;

@@ -1,9 +1,9 @@
 import DocumentMeta from "react-document-meta";
-import { Link } from "react-router";
+import PropTypes from "prop-types";
 import React from "react";
 
 import Grid from "../../../components/Grid";
-import { Heading, List, Rule } from "../../../components/Markdown";
+import { Rule } from "../../../components/Markdown";
 import Logotype from "../../../components/Logotype";
 import Masthead from "../../../components/Masthead";
 import Space from "../../../components/Space";
@@ -12,7 +12,7 @@ const Post = ({
   content: { blog, description, mastheadLinks, title },
   route: { path },
 }) => {
-  const post = blog.find(post => post.slug === path);
+  const post = blog.find(blogPost => blogPost.slug === path);
   const {
     mdx: {
       default: Mdx,
@@ -46,5 +46,7 @@ const Post = ({
     </React.Fragment>
   );
 };
+
+Post.propTypes = { content: PropTypes.object, route: PropTypes.object };
 
 export default Post;

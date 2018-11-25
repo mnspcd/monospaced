@@ -38,14 +38,14 @@ exports[`Post component should render correctly 1`] = `
     size="l"
   >
     <Grid>
-      <Component
+      <Grid.Item
         colSpan="4"
         colStart="2"
       >
         <layout>
           <_default />
         </layout>
-      </Component>
+      </Grid.Item>
     </Grid>
   </Space>
 </Fragment>

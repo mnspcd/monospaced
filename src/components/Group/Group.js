@@ -26,6 +26,8 @@ Group.Item = ({ children }) => (
   </div>
 );
 
+Group.Item.displayName = "Group.Item";
+
 Group.Item.propTypes = { children: PropTypes.node.isRequired };
 
 export default Group;
