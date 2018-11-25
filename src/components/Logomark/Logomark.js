@@ -25,8 +25,8 @@ const Logomark = ({
           viewBox="0 0 2048 2048"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden={!title || null}
+          aria-label={title}
         >
-          {title && <title>{title}</title>}
           <path
             d="M485.378 1921.317h1078.004v126.796H485.378zM1562.641 253.22v1541.238H485.368V253.227H1562.64zm-153.889 1387.632V406.852H1281.94l-258.81 615.277-258.78-615.277H639.257v1234.001h128.51V705.06l3.447-3.385 251.915 604.963 253.665-604.963h3.427v939.178h128.541z"
             fill={colors[color] || "currentColor"}
