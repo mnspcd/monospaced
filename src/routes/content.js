@@ -103,8 +103,8 @@ module.exports = {
       text: "design-system",
     }, */
     {
-      href: "mailto:info@monospaced.com",
-      text: "info@monospaced.com",
+      href: "mailto:hello@monospaced.com",
+      text: "hello@monospaced.com",
     },
   ],
 };
