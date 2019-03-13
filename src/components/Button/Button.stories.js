@@ -72,67 +72,12 @@ storiesOf("Components/Button", module)
           "Surface",
         )}
       >
-        {buttonText &&
-          Icon && (
+        {buttonText && Icon && (
+          <Space>
             <Space>
-              <Space>
-                <Group>
-                  <Group.Item>
-                    <Button icon={Icon && <Icon size="100%" />}>
-                      {buttonText}
-                    </Button>
-                  </Group.Item>
-                  <Group.Item>
-                    <Button
-                      icon={Icon && <Icon size="100%" />}
-                      styleVariant="outlined"
-                    >
-                      {buttonText}
-                    </Button>
-                  </Group.Item>
-                  <Group.Item>
-                    <Button
-                      icon={Icon && <Icon size="100%" />}
-                      styleVariant="flat"
-                    >
-                      {buttonText}
-                    </Button>
-                  </Group.Item>
-                </Group>
-              </Space>
-              <Space>
-                <Group>
-                  <Group.Item>
-                    <Button
-                      colorVariant="danger"
-                      icon={Icon && <Icon size="100%" />}
-                    >
-                      {buttonText}
-                    </Button>
-                  </Group.Item>
-                  <Group.Item>
-                    <Button
-                      colorVariant="danger"
-                      icon={Icon && <Icon size="100%" />}
-                      styleVariant="outlined"
-                    >
-                      {buttonText}
-                    </Button>
-                  </Group.Item>
-                  <Group.Item>
-                    <Button
-                      colorVariant="danger"
-                      icon={Icon && <Icon size="100%" />}
-                      styleVariant="flat"
-                    >
-                      {buttonText}
-                    </Button>
-                  </Group.Item>
-                </Group>
-              </Space>
               <Group>
                 <Group.Item>
-                  <Button icon={Icon && <Icon size="100%" />} disabled>
+                  <Button icon={Icon && <Icon size="100%" />}>
                     {buttonText}
                   </Button>
                 </Group.Item>
@@ -140,7 +85,6 @@ storiesOf("Components/Button", module)
                   <Button
                     icon={Icon && <Icon size="100%" />}
                     styleVariant="outlined"
-                    disabled
                   >
                     {buttonText}
                   </Button>
@@ -149,14 +93,69 @@ storiesOf("Components/Button", module)
                   <Button
                     icon={Icon && <Icon size="100%" />}
                     styleVariant="flat"
-                    disabled
                   >
                     {buttonText}
                   </Button>
                 </Group.Item>
               </Group>
             </Space>
-          )}
+            <Space>
+              <Group>
+                <Group.Item>
+                  <Button
+                    colorVariant="danger"
+                    icon={Icon && <Icon size="100%" />}
+                  >
+                    {buttonText}
+                  </Button>
+                </Group.Item>
+                <Group.Item>
+                  <Button
+                    colorVariant="danger"
+                    icon={Icon && <Icon size="100%" />}
+                    styleVariant="outlined"
+                  >
+                    {buttonText}
+                  </Button>
+                </Group.Item>
+                <Group.Item>
+                  <Button
+                    colorVariant="danger"
+                    icon={Icon && <Icon size="100%" />}
+                    styleVariant="flat"
+                  >
+                    {buttonText}
+                  </Button>
+                </Group.Item>
+              </Group>
+            </Space>
+            <Group>
+              <Group.Item>
+                <Button icon={Icon && <Icon size="100%" />} disabled>
+                  {buttonText}
+                </Button>
+              </Group.Item>
+              <Group.Item>
+                <Button
+                  icon={Icon && <Icon size="100%" />}
+                  styleVariant="outlined"
+                  disabled
+                >
+                  {buttonText}
+                </Button>
+              </Group.Item>
+              <Group.Item>
+                <Button
+                  icon={Icon && <Icon size="100%" />}
+                  styleVariant="flat"
+                  disabled
+                >
+                  {buttonText}
+                </Button>
+              </Group.Item>
+            </Group>
+          </Space>
+        )}
         {buttonText && (
           <Space>
             <Space>
