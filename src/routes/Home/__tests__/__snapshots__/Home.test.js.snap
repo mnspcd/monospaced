@@ -141,6 +141,7 @@ exports[`Home component should render correctly 1`] = `
               href="http://bladudflies.com"
             >
               <BladudFlies
+                aria-label="Bladud Flies!"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -156,6 +157,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://www.compass-group.co.uk"
             >
               <Chartwells
+                aria-label="Chartwells"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -171,6 +173,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://www.digitas.com"
             >
               <Digitas
+                aria-label="Digitas"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -186,6 +189,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://www.dowjones.com"
             >
               <DowJones
+                aria-label="Dow Jones"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -201,6 +205,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://www.findmypast.co.uk"
             >
               <FindMyPast
+                aria-label="Find My Past"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -216,6 +221,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://frfrm.com"
             >
               <Freeform
+                aria-label="Freeform Labs"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -231,6 +237,7 @@ exports[`Home component should render correctly 1`] = `
               href="http://www.thegrandunion.com"
             >
               <GrandUnion
+                aria-label="Grand Union"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -246,6 +253,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://hanno.co"
             >
               <Hanno
+                aria-label="Hanno"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -261,6 +269,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://www.majorplayers.co.uk"
             >
               <MajorPlayers
+                aria-label="Major Players"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -276,6 +285,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://www.national-lottery.co.uk"
             >
               <NationalLottery
+                aria-label="The National Lottery"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -291,6 +301,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://www.nhs.uk"
             >
               <Nhs
+                aria-label="NHS"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -306,6 +317,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://www.ogilvy.com"
             >
               <Ogilvy
+                aria-label="Oglivy"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -321,6 +333,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://www.social360monitoring.com"
             >
               <Social360
+                aria-label="Social 360"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -336,6 +349,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://www.stordis.com"
             >
               <Stordis
+                aria-label="Stordis"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -351,6 +365,7 @@ exports[`Home component should render correctly 1`] = `
               href="http://wearesuburb.com"
             >
               <Suburb
+                aria-label="Suburb"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -366,6 +381,7 @@ exports[`Home component should render correctly 1`] = `
               href="https://thomsonreuters.com"
             >
               <ThomsonReuters
+                aria-label="Thomson Reuters"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
