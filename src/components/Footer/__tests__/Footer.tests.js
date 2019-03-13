@@ -5,6 +5,14 @@ import { render } from "enzyme";
 import Footer from "../Footer";
 
 describe("Footer component", () => {
+  beforeAll(
+    (global.Date = () => {
+      return {
+        getFullYear: () => "2018",
+      };
+    }),
+  );
+
   it("should render correctly", () => {
     const component = render(<Footer copyright="copyright" />);
     expect(component).toMatchSnapshot();
