@@ -85,15 +85,3 @@
   background-color: rgba(var(--mnspcd-color-blue-8-rgb), var(--opacity-static));
   color: var(--mnspcd-color-blue-8);
 }
-
-.Masthead-navItem:last-child .Masthead-navLink {
-  border: calc(1rem / 16) solid var(--mnspcd-color-blue-2);
-}
-
-.Masthead-navItem:last-child .Masthead-navLink:hover {
-  border-color: var(--mnspcd-color-blue-3;)
-}
-
-.Masthead-navItem:last-child .Masthead-navLink:active {
-  border-color: var(--mnspcd-color-blue-4;)
-}
