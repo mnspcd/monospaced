@@ -10,13 +10,14 @@ const Space = ({ children, size }) => (
       Space: true,
       [`Space--l`]: size === "l",
       [`Space--s`]: size === "s",
+      [`Space--xl`]: size === "xl",
     })}
   >
     {children}
   </div>
 );
 
-Space.sizes = ["l", "s"];
+Space.sizes = ["l", "s", "xl"];
 
 Space.propTypes = {
   children: PropTypes.node.isRequired,
