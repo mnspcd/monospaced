@@ -1,6 +1,6 @@
 .Tile {
   align-items: center;
-  border: calc(1rem / 16) solid var(--mnspcd-color-blue-2);
+  border: calc(1rem / 16) solid var(--mnspcd-color-grey-2);
   color: var(--mnspcd-color-blue-9);
   display: flex;
   font-family: var(--font-monospaced);
@@ -11,5 +11,5 @@
 }
 
 .Tile--onDarkBackground {
-  border-color: var(--mnspcd-color-blue-8);
+  border-color: var(--mnspcd-color-grey-8);
 }
