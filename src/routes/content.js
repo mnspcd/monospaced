@@ -64,7 +64,7 @@ module.exports = {
       icon: "Suburb",
     },
     {
-      href: "https://thomsonreuters.com",
+      href: "https://www.thomsonreuters.com",
       icon: "ThomsonReuters",
     },
   ],
