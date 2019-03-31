@@ -13,18 +13,17 @@ const Blog = ({ content: { blog, description, mastheadLinks, title } }) => {
   return (
     <React.Fragment>
       <DocumentMeta title={`${title} Blog`} description={description} />
-      <Space>
+      <Space size="l">
         <Masthead
           activePath="/blog/"
           links={mastheadLinks}
           logo={<Logotype height="1.5em" />}
         />
-        <Rule />
       </Space>
-      <Space size="l">
+      <Space size="xl">
         <Grid>
           <Grid.Item colSpan="4" colStart="2">
-            <Space>
+            <Space size="s">
               <Heading level="1" size="xxxl">
                 Blog
               </Heading>

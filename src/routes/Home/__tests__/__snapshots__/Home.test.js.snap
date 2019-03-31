@@ -6,11 +6,15 @@ exports[`Home component should render correctly 1`] = `
     description="Modern front-end web development"
     title="Monospaced"
   />
-  <Space>
+  <Space
+    size="l"
+  >
     <Poster
-      padding="0 0 3.5em"
+      padding="0 0 4.5em"
     >
-      <Space>
+      <Space
+        size="l"
+      >
         <Masthead
           headingLevel="1"
           links={
@@ -51,7 +55,7 @@ exports[`Home component should render correctly 1`] = `
     </Poster>
   </Space>
   <Space
-    size="l"
+    size="xl"
   >
     <Grid>
       <Grid.Item
@@ -69,7 +73,9 @@ exports[`Home component should render correctly 1`] = `
         colSpan="4"
         colStart="3"
       >
-        <Space>
+        <Space
+          size="l"
+        >
           <Heading
             level="3"
             size="xl"
@@ -77,7 +83,9 @@ exports[`Home component should render correctly 1`] = `
             Design systems engineering
           </Heading>
         </Space>
-        <Space>
+        <Space
+          size="l"
+        >
           <Heading
             level="3"
             size="xl"
@@ -85,7 +93,9 @@ exports[`Home component should render correctly 1`] = `
             Front-end development
           </Heading>
         </Space>
-        <Space>
+        <Space
+          size="l"
+        >
           <Heading
             level="3"
             size="xl"
@@ -93,7 +103,9 @@ exports[`Home component should render correctly 1`] = `
             Legacy code rescue
           </Heading>
         </Space>
-        <Space>
+        <Space
+          size="l"
+        >
           <Heading
             level="3"
             size="xl"
@@ -101,7 +113,9 @@ exports[`Home component should render correctly 1`] = `
             Prototyping, concepts & MVPs
           </Heading>
         </Space>
-        <Space>
+        <Space
+          size="l"
+        >
           <Heading
             level="3"
             size="xl"
@@ -113,7 +127,7 @@ exports[`Home component should render correctly 1`] = `
     </Grid>
   </Space>
   <Space
-    size="l"
+    size="xl"
   >
     <Grid>
       <Grid.Item

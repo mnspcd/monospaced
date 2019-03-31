@@ -6,7 +6,9 @@ exports[`Blog component should render correctly 1`] = `
     description="Modern front-end web development"
     title="Monospaced Blog"
   />
-  <Space>
+  <Space
+    size="l"
+  >
     <Masthead
       activePath="/blog/"
       links={
@@ -32,17 +34,18 @@ exports[`Blog component should render correctly 1`] = `
         />
       }
     />
-    <Rule />
   </Space>
   <Space
-    size="l"
+    size="xl"
   >
     <Grid>
       <Grid.Item
         colSpan="4"
         colStart="2"
       >
-        <Space>
+        <Space
+          size="s"
+        >
           <Heading
             level="1"
             size="xxxl"

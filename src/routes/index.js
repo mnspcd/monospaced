@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import Footer from "../components/Footer";
-import { components, Rule } from "../components/Markdown";
+import { components } from "../components/Markdown";
 import content from "./content";
 
 import Blog, { Post } from "./Blog";
@@ -23,7 +23,6 @@ const App = ({
     <MDXProvider components={components}>
       <React.Fragment>
         {React.cloneElement(children, { content }, routes)}
-        <Rule />
         <Footer copyright={title} links={footerLinks} routes={routes} />
       </React.Fragment>
     </MDXProvider>

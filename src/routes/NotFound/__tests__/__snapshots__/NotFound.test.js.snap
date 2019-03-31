@@ -6,7 +6,9 @@ exports[`NotFound component should render correctly 1`] = `
     description="Modern front-end web development"
     title="Page not found | Monospaced"
   />
-  <Space>
+  <Space
+    size="l"
+  >
     <Masthead
       links={
         Array [
@@ -31,14 +33,14 @@ exports[`NotFound component should render correctly 1`] = `
         />
       }
     />
-    <Rule />
   </Space>
   <Space
-    size="l"
+    size="xl"
   >
     <Grid>
       <Grid.Item
-        colSpan="6"
+        colSpan="4"
+        colStart="2"
       >
         <Space
           size="s"
@@ -61,7 +63,7 @@ exports[`NotFound component should render correctly 1`] = `
         </Space>
         <Paragraph>
           <small>
-            The requested URL was not found on this server
+            The requested URL was not found on this server.
           </small>
         </Paragraph>
       </Grid.Item>

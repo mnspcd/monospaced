@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import Grid from "../../components/Grid";
-import { Heading, Paragraph, Rule } from "../../components/Markdown";
+import { Heading, Paragraph } from "../../components/Markdown";
 import Logotype from "../../components/Logotype";
 import Masthead from "../../components/Masthead";
 import Space from "../../components/Space";
@@ -12,11 +12,10 @@ const Legal = ({ content: { description, mastheadLinks, title } }) => {
   return (
     <React.Fragment>
       <DocumentMeta description={description} title={`Legal | ${title}`} />
-      <Space>
-        <Masthead links={mastheadLinks} logo={<Logotype height="1.5em" />} />
-        <Rule />
-      </Space>
       <Space size="l">
+        <Masthead links={mastheadLinks} logo={<Logotype height="1.5em" />} />
+      </Space>
+      <Space size="xl">
         <Grid>
           <Grid.Item colSpan="5">
             <Heading level="1" size="xxxl">
@@ -33,10 +32,12 @@ const Legal = ({ content: { description, mastheadLinks, title } }) => {
             </Heading>
           </Grid.Item>
           <Grid.Item colSpan="4" colStart="3">
-            <Space>
+            <Space size="s">
               <Heading level="3" size="xl">
                 Monospaced Ltd
               </Heading>
+            </Space>
+            <Space size="s">
               <Paragraph>
                 38 Ardfillan Road <br />
                 London SE6 1SS
@@ -51,7 +52,7 @@ const Legal = ({ content: { description, mastheadLinks, title } }) => {
           </Grid.Item>
         </Grid>
       </Space>
-      <Space size="l">
+      <Space size="xl">
         <Grid>
           <Grid.Item colSpan="2">
             <Heading color="brand-primary-dark-color" level="2" size="xl">
@@ -59,10 +60,12 @@ const Legal = ({ content: { description, mastheadLinks, title } }) => {
             </Heading>
           </Grid.Item>
           <Grid.Item colSpan="4" colStart="3">
-            <Space>
+            <Space size="s">
               <Heading level="3" size="xl">
                 Email
               </Heading>
+            </Space>
+            <Space>
               <Paragraph>
                 If you send an email to Monospaced, we’ll email you back. If we
                 end up working together, or think we may do in the future, we’ll
@@ -70,9 +73,11 @@ const Legal = ({ content: { description, mastheadLinks, title } }) => {
                 newsletters and no spam. That’s it!
               </Paragraph>
             </Space>
-            <Heading level="3" size="xl">
-              Website
-            </Heading>
+            <Space size="s">
+              <Heading level="3" size="xl">
+                Website
+              </Heading>
+            </Space>
             <Paragraph>
               This website does not store your personal data. At all. We don’t
               have a database to store it in. No cookies and no analytics. For

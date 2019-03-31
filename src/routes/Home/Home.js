@@ -17,9 +17,9 @@ const Home = ({ content: { clients, description, mastheadLinks, title } }) => {
   return (
     <React.Fragment>
       <DocumentMeta description={description} title={title} />
-      <Space>
-        <Poster padding="0 0 3.5em">
-          <Space>
+      <Space size="l">
+        <Poster padding="0 0 4.5em">
+          <Space size="l">
             <Masthead
               headingLevel="1"
               links={mastheadLinks}
@@ -33,7 +33,7 @@ const Home = ({ content: { clients, description, mastheadLinks, title } }) => {
           </Grid>
         </Poster>
       </Space>
-      <Space size="l">
+      <Space size="xl">
         <Grid>
           <Grid.Item colSpan="2">
             <Heading color="brand-primary-dark-color" level="2" size="xl">
@@ -41,27 +41,27 @@ const Home = ({ content: { clients, description, mastheadLinks, title } }) => {
             </Heading>
           </Grid.Item>
           <Grid.Item colSpan="4" colStart="3">
-            <Space>
+            <Space size="l">
               <Heading level="3" size="xl">
                 Design systems engineering
               </Heading>
             </Space>
-            <Space>
+            <Space size="l">
               <Heading level="3" size="xl">
                 Front-end development
               </Heading>
             </Space>
-            <Space>
+            <Space size="l">
               <Heading level="3" size="xl">
                 Legacy code rescue
               </Heading>
             </Space>
-            <Space>
+            <Space size="l">
               <Heading level="3" size="xl">
                 Prototyping, concepts & MVPs
               </Heading>
             </Space>
-            <Space>
+            <Space size="l">
               <Heading level="3" size="xl">
                 Web applications
               </Heading>
@@ -69,7 +69,7 @@ const Home = ({ content: { clients, description, mastheadLinks, title } }) => {
           </Grid.Item>
         </Grid>
       </Space>
-      <Space size="l">
+      <Space size="xl">
         <Grid>
           <Grid.Item colSpan="2">
             <Heading color="brand-primary-dark-color" level="2" size="xl">

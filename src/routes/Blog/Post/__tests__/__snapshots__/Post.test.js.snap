@@ -6,7 +6,9 @@ exports[`Post component should render correctly 1`] = `
     description="Modern front-end web development"
     title="title | Monospaced Blog"
   />
-  <Space>
+  <Space
+    size="l"
+  >
     <Masthead
       activePath="/blog/"
       links={
@@ -32,19 +34,42 @@ exports[`Post component should render correctly 1`] = `
         />
       }
     />
-    <Rule />
+  </Space>
+  <Space>
+    <Grid>
+      <Grid.Item
+        align="center"
+        colSpan="1"
+      >
+        <Heading
+          size="m"
+        >
+          2018-10-07
+        </Heading>
+      </Grid.Item>
+      <Grid.Item
+        colSpan="4"
+      >
+        <Heading
+          level="1"
+          size="xxxl"
+        >
+          title
+        </Heading>
+      </Grid.Item>
+    </Grid>
   </Space>
   <Space
-    size="l"
+    size="xl"
   >
     <Grid>
       <Grid.Item
         colSpan="4"
         colStart="2"
       >
-        <layout>
+        <Markdown>
           <_default />
-        </layout>
+        </Markdown>
       </Grid.Item>
     </Grid>
   </Space>

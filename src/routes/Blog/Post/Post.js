@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import Grid from "../../../components/Grid";
-import { Rule } from "../../../components/Markdown";
 import Logotype from "../../../components/Logotype";
+import Markdown, { Heading } from "../../../components/Markdown";
 import Masthead from "../../../components/Masthead";
 import Space from "../../../components/Space";
 
@@ -16,7 +16,7 @@ const Post = ({
   const {
     mdx: {
       default: Mdx,
-      meta: { layout: Layout, title: postTitle },
+      meta: { date: postDate, title: postTitle },
     },
   } = post;
 
@@ -26,20 +26,31 @@ const Post = ({
         title={`${postTitle} | ${title} Blog`}
         description={description}
       />
-      <Space>
+      <Space size="l">
         <Masthead
           activePath="/blog/"
           links={mastheadLinks}
           logo={<Logotype height="1.5em" />}
         />
-        <Rule />
       </Space>
-      <Space size="l">
+      <Space>
+        <Grid>
+          <Grid.Item align="center" colSpan="1">
+            <Heading size="m">{postDate}</Heading>
+          </Grid.Item>
+          <Grid.Item colSpan="4">
+            <Heading level="1" size="xxxl">
+              {postTitle}
+            </Heading>
+          </Grid.Item>
+        </Grid>
+      </Space>
+      <Space size="xl">
         <Grid>
           <Grid.Item colSpan="4" colStart="2">
-            <Layout>
+            <Markdown>
               <Mdx />
-            </Layout>
+            </Markdown>
           </Grid.Item>
         </Grid>
       </Space>
