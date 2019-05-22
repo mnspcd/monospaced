@@ -88,7 +88,7 @@
   color: var(--mnspcd-color-blue-7);
 }
 
-.Button--styleFlat:active  {
+.Button--styleFlat:active {
   background-color: rgba(var(--mnspcd-color-blue-8-rgb), var(--opacity-active));
   color: var(--mnspcd-color-blue-8);
 }
@@ -106,7 +106,7 @@
   color: var(--mnspcd-color-blue-4);
 }
 
-.Button--styleFlat.Button--onDarkBackground:active  {
+.Button--styleFlat.Button--onDarkBackground:active {
   background-color: rgba(var(--mnspcd-color-blue-3-rgb), var(--opacity-active));
   color: var(--mnspcd-color-blue-3);
 }
@@ -158,7 +158,7 @@
   color: var(--mnspcd-color-blue-7);
 }
 
-.Button--styleOutlined:active  {
+.Button--styleOutlined:active {
   background-color: rgba(var(--mnspcd-color-blue-8-rgb), var(--opacity-active));
   color: var(--mnspcd-color-blue-8);
 }
@@ -177,7 +177,7 @@
   color: var(--mnspcd-color-blue-4);
 }
 
-.Button--styleOutlined.Button--onDarkBackground:active  {
+.Button--styleOutlined.Button--onDarkBackground:active {
   background-color: rgba(var(--mnspcd-color-blue-3-rgb), var(--opacity-active));
   color: var(--mnspcd-color-blue-3);
 }

@@ -27,7 +27,7 @@
 
 .Heading--xl {
   font-size: calc(1em * var(--type-scale-xl));
-  line-height: calc(var(--leading-scale-xl)  / var(--type-scale-xl));
+  line-height: calc(var(--leading-scale-xl) / var(--type-scale-xl));
 }
 
 .Heading--l {

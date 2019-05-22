@@ -12,7 +12,10 @@
 }
 
 .Table--onDarkBackground tbody tr:nth-child(even) {
-  background-color: rgba(var(--mnspcd-color-white-rgb), var(--opacity-static-inverted));
+  background-color: rgba(
+    var(--mnspcd-color-white-rgb),
+    var(--opacity-static-inverted)
+  );
 }
 
 .Table td {

@@ -13,12 +13,12 @@
 }
 
 .Blockquote p:first-child::before {
- content: open-quote;
- margin-left: -0.75ch;
+  content: open-quote;
+  margin-left: -0.75ch;
 }
 
 .Blockquote p:first-child::after {
- content: close-quote;
+  content: close-quote;
 }
 
 .Blockquote p + p:last-child {
