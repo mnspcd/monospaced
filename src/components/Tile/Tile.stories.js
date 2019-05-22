@@ -14,7 +14,11 @@ storiesOf("Components/Tile", module)
     const Icon = icons[select("image", Object.keys(icons), "BladudFlies")];
 
     return (
-      <Tile href={href} width={text("width", "8.5em")}>
+      <Tile
+        href={href}
+        label={text("label", "Label")}
+        width={text("width", "8.5em")}
+      >
         <Icon width="100%" />
       </Tile>
     );
@@ -27,7 +31,10 @@ storiesOf("Components/Tile", module)
 
           return (
             <Group.Item key={key}>
-              <Tile href={text("href", "https://example.com")}>
+              <Tile
+                href={text("href", "https://example.com")}
+                label={text("label", "Label")}
+              >
                 <Icon width="100%" />
               </Tile>
             </Group.Item>
