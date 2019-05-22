@@ -62,4 +62,4 @@ App.propTypes = {
   routes: PropTypes.array,
 };
 
-module.exports = Routes;
+export default Routes;

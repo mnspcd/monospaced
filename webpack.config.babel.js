@@ -13,7 +13,7 @@ module.exports = () => {
   require.extensions[".css"] = () => {};
   require.extensions[".mdx"] = () => {};
 
-  const routes = reactRouterToArray(require("./src/routes"));
+  const routes = reactRouterToArray(require("./src/routes").default);
 
   const config = {
     devServer: { inline: false, stats: "minimal" },

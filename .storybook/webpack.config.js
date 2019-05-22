@@ -1,4 +1,4 @@
-require("babel-register");
+require("@babel/register");
 
 const emoji = require("remark-emoji");
 const highlight = require("remark-highlight.js");
