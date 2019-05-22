@@ -1,6 +1,5 @@
 import React from "react";
-import { addDecorator, configure } from "@storybook/react";
-import { setOptions } from "@storybook/addon-options";
+import { addDecorator, addParameters, configure } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs";
 import "./storybook.css";
 
@@ -13,11 +12,15 @@ const loadStories = () => {
 };
 const styles = story => <div style={{ margin: "0" }}>{story()}</div>;
 
-setOptions({
-  name: "Monospaced",
-  url: "https://monospaced.com",
-  addonPanelInRight: true,
-  sidebarAnimations: false,
+addParameters({
+  options: {
+    panelPosition: "right",
+    sidebarAnimations: false,
+    theme: {
+      brandTitle: "Monospaced",
+      brandUrl: "https://monospaced.com",
+    },
+  },
 });
 
 addDecorator(styles);

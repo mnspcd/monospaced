@@ -4,13 +4,10 @@ const emoji = require("remark-emoji");
 const highlight = require("remark-highlight.js");
 const path = require("path");
 
-module.exports = (baseConfig, env, defaultConfig) => {
-  defaultConfig.entry.styles = path.resolve(
-    __dirname,
-    "../src/components/Root/Root.css",
-  );
+module.exports = async ({ config }) => {
+  config.entry.push(path.resolve(__dirname, "../src/components/Root/Root.css"));
 
-  const cssRule = defaultConfig.module.rules.find(
+  const cssRule = config.module.rules.find(
     r => r.test.toString() === /\.css$/.toString(),
   );
   const postCssUse = cssRule.use.find(
@@ -19,7 +16,8 @@ module.exports = (baseConfig, env, defaultConfig) => {
 
   delete postCssUse.options;
 
-  defaultConfig.module.rules.push({
+  config.module.rules.push({
+    include: path.resolve(__dirname, "../"),
     test: /.mdx?$/,
     use: [
       "babel-loader",
@@ -30,5 +28,5 @@ module.exports = (baseConfig, env, defaultConfig) => {
     ],
   });
 
-  return defaultConfig;
+  return config;
 };
