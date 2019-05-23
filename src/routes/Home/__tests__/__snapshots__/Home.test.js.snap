@@ -153,9 +153,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="http://bladudflies.com"
+              label="Bladud Flies!"
             >
               <BladudFlies
-                aria-label="Bladud Flies!"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -169,9 +169,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="https://www.compass-group.co.uk"
+              label="Chartwells"
             >
               <Chartwells
-                aria-label="Chartwells"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -185,9 +185,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="https://www.digitas.com"
+              label="Digitas"
             >
               <Digitas
-                aria-label="Digitas"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -201,9 +201,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="https://www.dowjones.com"
+              label="Dow Jones"
             >
               <DowJones
-                aria-label="Dow Jones"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -217,9 +217,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="https://www.findmypast.co.uk"
+              label="Find My Past"
             >
               <FindMyPast
-                aria-label="Find My Past"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -233,9 +233,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="https://frfrm.com"
+              label="Freeform Labs"
             >
               <Freeform
-                aria-label="Freeform Labs"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -249,9 +249,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="http://www.thegrandunion.com"
+              label="Grand Union"
             >
               <GrandUnion
-                aria-label="Grand Union"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -265,9 +265,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="https://hanno.co"
+              label="Hanno"
             >
               <Hanno
-                aria-label="Hanno"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -281,9 +281,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="https://www.majorplayers.co.uk"
+              label="Major Players"
             >
               <MajorPlayers
-                aria-label="Major Players"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -297,9 +297,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="https://www.national-lottery.co.uk"
+              label="The National Lottery"
             >
               <NationalLottery
-                aria-label="The National Lottery"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -313,9 +313,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="https://www.nhs.uk"
+              label="NHS"
             >
               <Nhs
-                aria-label="NHS"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -329,9 +329,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="https://www.ogilvy.com"
+              label="Ogilvy"
             >
               <Ogilvy
-                aria-label="Oglivy"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -344,10 +344,10 @@ exports[`Home component should render correctly 1`] = `
             key="Social360"
           >
             <Tile
-              href="https://www.social360monitoring.com"
+              href="http://www.social360monitoring.com"
+              label="Social 360"
             >
               <Social360
-                aria-label="Social 360"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -361,9 +361,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="https://www.stordis.com"
+              label="Stordis"
             >
               <Stordis
-                aria-label="Stordis"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -377,9 +377,9 @@ exports[`Home component should render correctly 1`] = `
           >
             <Tile
               href="http://wearesuburb.com"
+              label="Suburb"
             >
               <Suburb
-                aria-label="Suburb"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"
@@ -392,10 +392,10 @@ exports[`Home component should render correctly 1`] = `
             key="ThomsonReuters"
           >
             <Tile
-              href="https://thomsonreuters.com"
+              href="https://www.thomsonreuters.com"
+              label="Thomson Reuters"
             >
               <ThomsonReuters
-                aria-label="Thomson Reuters"
                 fillRule="evenodd"
                 role="img"
                 viewBox="0 0 560 440"

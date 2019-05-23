@@ -79,13 +79,13 @@ const Home = ({ content: { clients, description, mastheadLinks, title } }) => {
           <Grid.Item colSpan="4" colStart="3">
             <Group tessellate>
               {clients.map(client => {
-                const { href, icon } = client;
+                const { href, icon, label } = client;
                 const Icon = clientIcons[icon];
 
                 return (
                   <Group.Item key={icon}>
                     {Icon && (
-                      <Tile href={href}>
+                      <Tile href={href} label={label}>
                         <Icon width="100%" />
                       </Tile>
                     )}
