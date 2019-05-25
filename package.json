@@ -104,7 +104,7 @@
     "lighthouse:deploy": "yarn lighthouse:build --quiet && bin/deploy-lighthouse.sh",
     "lint": "eslint --ext js,json --ignore-path .eslintignore ./",
     "start": "webpack-dev-server --progress",
-    "storybook": "start-storybook -s ./src/assets -p 9001",
+    "storybook": "start-storybook --ci -p 9001 -s ./src/assets",
     "storybook:build": "build-storybook -o build/storybook",
     "test": "jest --coverage"
   }
