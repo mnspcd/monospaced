@@ -92,5 +92,5 @@
     "strict": 2,
     "yoda": 2
   },
-  "settings": { "react": { "version": "16.3.0" } }
+  "settings": { "react": { "version": "16.8.0" } }
 }
