@@ -20,7 +20,7 @@ const Space = ({ children, size }) => (
 Space.sizes = ["l", "s", "xl"];
 
 Space.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   size: PropTypes.oneOf(Space.sizes),
 };
 
