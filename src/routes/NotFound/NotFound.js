@@ -10,7 +10,7 @@ import Space from "../../components/Space";
 
 const NotFound = ({ content: { description, mastheadLinks, title } }) => {
   return (
-    <React.Fragment>
+    <>
       <DocumentMeta
         description={description}
         title={`Page not found | ${title}`}
@@ -35,7 +35,7 @@ const NotFound = ({ content: { description, mastheadLinks, title } }) => {
           </Grid.Item>
         </Grid>
       </Space>
-    </React.Fragment>
+    </>
   );
 };
 

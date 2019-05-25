@@ -21,10 +21,10 @@ const App = ({
 }) => {
   return (
     <MDXProvider components={components}>
-      <React.Fragment>
+      <>
         {React.cloneElement(children, { content }, routes)}
         <Footer copyright={title} links={footerLinks} routes={routes} />
-      </React.Fragment>
+      </>
     </MDXProvider>
   );
 };

@@ -10,7 +10,7 @@ import Space from "../../components/Space";
 
 const Legal = ({ content: { description, mastheadLinks, title } }) => {
   return (
-    <React.Fragment>
+    <>
       <DocumentMeta description={description} title={`Legal | ${title}`} />
       <Space size="l">
         <Masthead links={mastheadLinks} logo={<Logotype height="1.5em" />} />
@@ -87,7 +87,7 @@ const Legal = ({ content: { description, mastheadLinks, title } }) => {
           </Grid.Item>
         </Grid>
       </Space>
-    </React.Fragment>
+    </>
   );
 };
 

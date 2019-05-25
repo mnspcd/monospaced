@@ -21,7 +21,7 @@ const Post = ({
   } = post;
 
   return (
-    <React.Fragment>
+    <>
       <DocumentMeta
         title={`${postTitle} | ${title} Blog`}
         description={description}
@@ -54,7 +54,7 @@ const Post = ({
           </Grid.Item>
         </Grid>
       </Space>
-    </React.Fragment>
+    </>
   );
 };
 

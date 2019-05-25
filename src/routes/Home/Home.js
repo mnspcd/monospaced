@@ -15,7 +15,7 @@ const clientIcons = require("../../assets/clients");
 
 const Home = ({ content: { clients, description, mastheadLinks, title } }) => {
   return (
-    <React.Fragment>
+    <>
       <DocumentMeta description={description} title={title} />
       <Space size="l">
         <Poster padding="0 0 4.5em">
@@ -96,7 +96,7 @@ const Home = ({ content: { clients, description, mastheadLinks, title } }) => {
           </Grid.Item>
         </Grid>
       </Space>
-    </React.Fragment>
+    </>
   );
 };
 

@@ -11,7 +11,7 @@ import Toc from "../../components/Toc";
 
 const Blog = ({ content: { blog, description, mastheadLinks, title } }) => {
   return (
-    <React.Fragment>
+    <>
       <DocumentMeta title={`${title} Blog`} description={description} />
       <Space size="l">
         <Masthead
@@ -53,7 +53,7 @@ const Blog = ({ content: { blog, description, mastheadLinks, title } }) => {
           </Grid.Item>
         </Grid>
       </Space>
-    </React.Fragment>
+    </>
   );
 };
 
