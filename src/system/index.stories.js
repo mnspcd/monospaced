@@ -3,20 +3,26 @@ import { boolean, select, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as Icons from "react-feather";
 
+import Grid from "../components/Grid";
 import { Heading } from "../components/Markdown";
-import Logotype from "../components/Logotype";
 import Space from "../components/Space";
 
 import colors, { colorKeys, colorTokens, defaultColors } from "./color";
 import typography from "./typography";
 
 storiesOf("System", module).add("Introduction", () => (
-  <React.Fragment>
-    <Space size="s">
-      <Logotype color="mnspcd-color-blue-9" height="3em" />
-    </Space>
-    <Heading size="xxl">Design System</Heading>
-  </React.Fragment>
+  <>
+    <Space />
+    <Grid>
+      <Grid.Item colSpan="6">
+        <Heading size="xxxl">
+          Monospaced <br />
+          Design <br />
+          System
+        </Heading>
+      </Grid.Item>
+    </Grid>
+  </>
 ));
 
 const getSwatch = colorKey => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { addDecorator, addParameters, configure } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs";
-import "./storybook.css";
+import theme from "./theme";
 
 const loadStories = () => {
   const req = require.context("../src", true, /^\.(.*)\.stories\.js$/);
@@ -16,10 +16,7 @@ addParameters({
   options: {
     panelPosition: "right",
     sidebarAnimations: false,
-    theme: {
-      brandTitle: "Monospaced",
-      brandUrl: "https://monospaced.com",
-    },
+    theme,
   },
 });
 
