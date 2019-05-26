@@ -1,3 +1,4 @@
+import { MDXProvider } from "@mdx-js/react";
 import React from "react";
 import { boolean, select, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
@@ -16,9 +17,13 @@ storiesOf("Components/Markdown/Code", module)
   ))
   .add("Highlighted", () => {
     return boolean("lightMode", false) ? (
-      <MdxMockJsCode components={{ code: Code.Block.LightMode }} />
+      <MDXProvider components={{ code: Code.Block.LightMode }}>
+        <MdxMockJsCode />
+      </MDXProvider>
     ) : (
-      <MdxMockJsCode components={{ code: Code.Block }} />
+      <MDXProvider components={{ code: Code.Block }}>
+        <MdxMockJsCode />
+      </MDXProvider>
     );
   })
   .add("Inline", () => {

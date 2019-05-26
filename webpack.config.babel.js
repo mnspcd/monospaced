@@ -59,7 +59,7 @@ module.exports = () => {
             "babel-loader",
             {
               loader: "@mdx-js/loader",
-              options: { mdPlugins: [emoji, highlight] },
+              options: { remarkPlugins: [emoji, highlight] },
             },
           ],
         },

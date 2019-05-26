@@ -1,3 +1,4 @@
+import { MDXProvider } from "@mdx-js/react";
 import React from "react";
 import { select } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
@@ -15,6 +16,8 @@ storiesOf("Components/Markdown", module).add("Sample", () => (
       "Surface",
     )}
   >
-    <Mdx components={components} />
+    <MDXProvider components={components}>
+      <Mdx />
+    </MDXProvider>
   </Surface>
 ));

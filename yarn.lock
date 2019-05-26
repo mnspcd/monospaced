@@ -29,7 +29,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.0.0", "@babel/core@^7.1.0", "@babel/core@^7.4.0", "@babel/core@^7.4.3":
+"@babel/core@^7.0.0", "@babel/core@^7.1.0", "@babel/core@^7.2.2", "@babel/core@^7.4.0", "@babel/core@^7.4.3":
   version "7.4.5"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.4.5.tgz#081f97e8ffca65a9b4b0fdc7e274e703f000c06a"
   integrity sha512-OvjIh6aqXtlsA8ujtGKfC7LYWksYSX8yQcM8Ay3LuvVeQ63lcOKgoZWVqcpFwkd29aYU9rVx7jxhfhiEDV9MZA==
@@ -1242,26 +1242,29 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
-"@mdx-js/loader@^0.20.3":
-  version "0.20.3"
-  resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-0.20.3.tgz#73c056ec3eef9f993cac28e9102898c8862f9def"
-  integrity sha512-rjJZ5bBTmRfrV6Wo4dAV7wBv5ChmpLJ+s/lziZ58F1NfijSSYq795qXrW+NMJAhBVr07lYp6FQrUJ3PsX2fHyw==
+"@mdx-js/loader@^1.0.20":
+  version "1.0.20"
+  resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-1.0.20.tgz#8472784c676fb64f5e0fcbd64a569a093f19e4ea"
+  integrity sha512-Q1DAuvg10JK3MYavfHfcvaFsU+m6MqdxAReiQC+/xbukREOWVqdeMAL3SwjXoD3s0lriNF28s36XehgWlLXLTQ==
   dependencies:
-    "@mdx-js/mdx" "^0.20.3"
-    "@mdx-js/tag" "^0.20.3"
+    "@mdx-js/mdx" "^1.0.20"
+    "@mdx-js/react" "^1.0.20"
     loader-utils "^1.1.0"
 
-"@mdx-js/mdx@^0.20.3":
-  version "0.20.3"
-  resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-0.20.3.tgz#1f32b4a4a0cc176a3192ef51a0a3502cdfdca3f0"
-  integrity sha512-IIlssEIPPAqo04krm270ifGjSVPqtTmjlryYGi8/4VXHCdi42l8v2piTJPo2NVc7J+HizY1uxxZb6AeoFsO/Iw==
+"@mdx-js/mdx@^1.0.20":
+  version "1.0.20"
+  resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.0.20.tgz#422e15bfa5ca6459402783fb57e8b5d5d37a719f"
+  integrity sha512-TSiHGyYBOwqKgDane9N/dB3VvpsmU7zZunJAUBL4QEcWcpd5wOzSb9vPoWGiOMmIdgFArm24QkTPFUVOgvKHAQ==
   dependencies:
-    "@babel/plugin-proposal-object-rest-spread" "^7.3.2"
+    "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-syntax-jsx" "^7.2.0"
+    "@babel/plugin-syntax-object-rest-spread" "^7.2.0"
     change-case "^3.0.2"
     detab "^2.0.0"
     hast-util-raw "^5.0.0"
+    lodash.uniq "^4.5.0"
     mdast-util-to-hast "^4.0.0"
+    remark-mdx "^1.0.20"
     remark-parse "^6.0.0"
     remark-squeeze-paragraphs "^3.0.1"
     to-style "^1.3.3"
@@ -1269,10 +1272,10 @@
     unist-builder "^1.0.1"
     unist-util-visit "^1.3.0"
 
-"@mdx-js/tag@^0.20.3":
-  version "0.20.3"
-  resolved "https://registry.yarnpkg.com/@mdx-js/tag/-/tag-0.20.3.tgz#9e2306040b6469248c45a5f5baf44d0014db0493"
-  integrity sha512-Co3gUFmNDv9z2LjuvLTpTj2NaOSHFxuoZjohcG0YK/KfECO+Ns9idzThMYjfEDe1vAf4c824rqlBYseedJdFNw==
+"@mdx-js/react@^1.0.20":
+  version "1.0.20"
+  resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.0.20.tgz#6af2191dee50ad659c328628f0e4dba86763ca42"
+  integrity sha512-gU/sGs2Yo0fuztSJeUqzHutQWPBXEO4vywyFT+pHPFW+BRAcwuaf3ub03HogJasMnE0S2kYt6ValwCGxViHIEA==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -6703,6 +6706,11 @@ is-alphabetical@^1.0.0:
   resolved "https://registry.yarnpkg.com/is-alphabetical/-/is-alphabetical-1.0.2.tgz#1fa6e49213cb7885b75d15862fb3f3d96c884f41"
   integrity sha512-V0xN4BYezDHcBSKb1QHUFMlR4as/XEuCZBzMJUU4n7+Cbt33SmUnSol+pnXFvLxSHNq2CemUXNdaXV6Flg7+xg==
 
+is-alphabetical@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/is-alphabetical/-/is-alphabetical-1.0.3.tgz#eb04cc47219a8895d8450ace4715abff2258a1f8"
+  integrity sha512-eEMa6MKpHFzw38eKm56iNNi6GJ7lf6aLLio7Kr23sJPAECscgRtZvOBYybejWDQ2bM949Y++61PY+udzj5QMLA==
+
 is-alphanumerical@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-alphanumerical/-/is-alphanumerical-1.0.2.tgz#1138e9ae5040158dc6ff76b820acd6b7a181fd40"
@@ -11097,6 +11105,19 @@ remark-highlight.js@^5.0.0:
   dependencies:
     lowlight "^1.2.0"
     unist-util-visit "^1.0.0"
+
+remark-mdx@^1.0.20:
+  version "1.0.20"
+  resolved "https://registry.yarnpkg.com/remark-mdx/-/remark-mdx-1.0.20.tgz#580e57c035bd1658beeacffc30f81ca56e8447e4"
+  integrity sha512-yUDI87lzeYsTL3LyArD2DWxzYMxdJuJuvVAjteWcJQvY6ZgYNcVPnVzDXiD80SRQOf3/tXW5P2E/EsnBlNW8lw==
+  dependencies:
+    "@babel/core" "^7.2.2"
+    "@babel/helper-plugin-utils" "^7.0.0"
+    "@babel/plugin-proposal-object-rest-spread" "^7.3.2"
+    "@babel/plugin-syntax-jsx" "^7.2.0"
+    is-alphabetical "^1.0.2"
+    remark-parse "^6.0.0"
+    unified "^7.0.0"
 
 remark-parse@^6.0.0:
   version "6.0.3"
