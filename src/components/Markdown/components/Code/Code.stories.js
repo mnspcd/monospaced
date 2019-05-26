@@ -8,13 +8,17 @@ import Surface from "../../../Surface";
 import MdxMockJsCode from "./__mocks__/code.js.mock.mdx";
 
 storiesOf("Components/Markdown/Code", module)
-  .add("Block", () => (
-    <pre>
-      <Code lightMode={boolean("lightMode", false)} block>
-        {text("text", 'const foo = "bar";')}
-      </Code>
-    </pre>
-  ))
+  .add(
+    "Block",
+    () => (
+      <pre>
+        <Code lightMode={boolean("lightMode", false)} block>
+          {text("text", 'const foo = "bar";')}
+        </Code>
+      </pre>
+    ),
+    { knobs: { escapeHTML: false } },
+  )
   .add("Highlighted", () => {
     return boolean("lightMode", false) ? (
       <MDXProvider components={{ code: Code.Block.LightMode }}>
@@ -26,19 +30,23 @@ storiesOf("Components/Markdown/Code", module)
       </MDXProvider>
     );
   })
-  .add("Inline", () => {
-    const code = text("text", 'const foo = "bar";', "Code");
+  .add(
+    "Inline",
+    () => {
+      const code = text("text", 'const foo = "bar";', "Code");
 
-    return (
-      <Surface
-        backgroundColor={select(
-          "backgroundColor",
-          Surface.backgroundColors,
-          "white",
-          "Surface",
-        )}
-      >
-        <Code>{code}</Code>
-      </Surface>
-    );
-  });
+      return (
+        <Surface
+          backgroundColor={select(
+            "backgroundColor",
+            Surface.backgroundColors,
+            "white",
+            "Surface",
+          )}
+        >
+          <Code>{code}</Code>
+        </Surface>
+      );
+    },
+    { knobs: { escapeHTML: false } },
+  );
