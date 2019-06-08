@@ -87,6 +87,15 @@
 
 @font-face {
   font-display: swap;
+  font-family: "FFLetterGothicText";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../system/fonts/37BCE3_3_0.woff2") format("woff2"),
+    url("../../system/fonts/37BCE3_3_0.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
   font-family: "DollyPro";
   font-style: italic;
   font-weight: 400;
