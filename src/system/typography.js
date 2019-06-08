@@ -17,7 +17,6 @@ const fontStackMonospaced = `
   SFMono-Standard,
   Consolas,
   "Liberation Mono",
-  Menlo,
   "Courier New",
   monospace,
   ${fontStackEmoji}
