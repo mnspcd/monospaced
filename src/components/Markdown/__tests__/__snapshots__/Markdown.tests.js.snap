@@ -7,3 +7,9 @@ exports[`Markdown component should render correctly 1`] = `
   children
 </div>
 `;
+
+exports[`Markdown component should render pre component correctly 1`] = `
+<pre>
+  children
+</pre>
+`;

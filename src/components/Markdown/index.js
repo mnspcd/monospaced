@@ -1,3 +1,5 @@
+import React from "react";
+
 import Blockquote from "./components/Blockquote";
 import Code from "./components/Code";
 import Heading from "./components/Heading";
@@ -5,6 +7,8 @@ import List from "./components/List";
 import Paragraph from "./components/Paragraph";
 import Rule from "./components/Rule";
 import Table from "./components/Table";
+
+const Pre = props => <pre {...props} />;
 
 const components = {
   blockquote: Blockquote,
@@ -19,6 +23,7 @@ const components = {
   inlineCode: Code,
   ol: List.Ordered,
   p: Paragraph,
+  pre: Pre,
   table: Table,
   ul: List,
 };
