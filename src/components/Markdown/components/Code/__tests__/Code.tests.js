@@ -21,4 +21,11 @@ describe("Code component", () => {
     );
     expect(component).toMatchSnapshot();
   });
+
+  it("should render a code language correctly", () => {
+    const component = render(
+      <Code.Block className="language-js">children</Code.Block>,
+    );
+    expect(component).toMatchSnapshot();
+  });
 });

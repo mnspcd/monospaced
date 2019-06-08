@@ -4,7 +4,6 @@ import OptimizeCSSAssetsPlugin from "optimize-css-assets-webpack-plugin";
 import StaticSiteGeneratorPlugin from "static-site-generator-webpack-plugin";
 import UglifyJsPlugin from "uglifyjs-webpack-plugin";
 import emoji from "remark-emoji";
-import highlight from "remark-highlight.js";
 import path from "path";
 import reactRouterToArray from "react-router-to-array";
 
@@ -59,7 +58,7 @@ module.exports = () => {
             "babel-loader",
             {
               loader: "@mdx-js/loader",
-              options: { remarkPlugins: [emoji, highlight] },
+              options: { remarkPlugins: [emoji] },
             },
           ],
         },

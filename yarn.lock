@@ -895,7 +895,7 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.4", "@babel/runtime@^7.4.5":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.4", "@babel/runtime@^7.4.5":
   version "7.4.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.5.tgz#582bb531f5f9dc67d2fcb682979894f75e253f12"
   integrity sha512-TuI4qpWZP6lGOGIuGWtp9sPluqYICmbk8T/1vpSysqJxRPkudh/ofFWyqdcMsDf2s7KvDL4/YHgKyvcS3g9CJQ==
@@ -6204,10 +6204,10 @@ highlight.js@~9.12.0:
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.12.0.tgz#e6d9dbe57cbefe60751f02af336195870c90c01e"
   integrity sha1-5tnb5Xy+/mB1HwKvM2GVhwyQwB4=
 
-highlight.js@~9.15.0:
-  version "9.15.6"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.15.6.tgz#72d4d8d779ec066af9a17cb14360c3def0aa57c4"
-  integrity sha512-zozTAWM1D6sozHo8kqhfYgsac+B+q0PmsjXeyDrYIHHcBN0zTVT66+s2GW1GZv7DbyaROdLXKdabwS/WqPyIdQ==
+highlight.js@~9.13.0:
+  version "9.13.1"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.13.1.tgz#054586d53a6863311168488a0f58d6c505ce641e"
+  integrity sha512-Sc28JNQNDzaH6PORtRLMvif9RSn1mYuOoX3omVjnb0+HbpPygU2ALBI0R/wsiqCb4/fcp07Gdo8g+fhtFrQl6A==
 
 history@^3.0.0:
   version "3.3.0"
@@ -8080,13 +8080,13 @@ lowercase-keys@^1.0.0:
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.1.tgz#6f9e30b47084d971a7c820ff15a6c5167b74c26f"
   integrity sha512-G2Lj61tXDnVFFOi8VZds+SoQjtQC3dgokKdDG2mTm1tx4m50NUHBOZSBwQQHyy0V12A0JTG4icfZQH+xPyh8VA==
 
-lowlight@^1.2.0:
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/lowlight/-/lowlight-1.12.0.tgz#9e851c16cdeb953eefad7b4c36f9a812844dc143"
-  integrity sha512-SRlH+ajYbZCE2cDIBC+XJHKxQjTuf+h8k6BwNYMpBRBXkoy5zzIs6ev/aCy7JoZa02/XYXcM67b1XARM08HPVw==
+lowlight@~1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/lowlight/-/lowlight-1.11.0.tgz#1304d83005126d4e8b1dc0f07981e9b689ec2efc"
+  integrity sha512-xrGGN6XLL7MbTMdPD6NfWPwY43SNkjf/d0mecSx/CW36fUZTjRHEq0/Cdug3TWKtRXLWi7iMl1eP0olYxj/a4A==
   dependencies:
     fault "^1.0.2"
-    highlight.js "~9.15.0"
+    highlight.js "~9.13.0"
 
 lowlight@~1.9.1:
   version "1.9.2"
@@ -10746,6 +10746,17 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
+react-syntax-highlighter@^10.3.0:
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-10.3.0.tgz#ffd9b80cf1b3dd6080af1683a0f054f5d8616960"
+  integrity sha512-pp95xqBkUD3L8mYdUzPqY6ckSi+WvC1DYZxQo4fTwEr1tbvGU7kELVJgOAPjRKHgJVBuRCigJvv6COMD46uwng==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    highlight.js "~9.13.0"
+    lowlight "~1.11.0"
+    prismjs "^1.8.4"
+    refractor "^2.4.1"
+
 react-syntax-highlighter@^8.0.1:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-8.1.0.tgz#59103ff17a828a27ed7c8f035ae2558f09b6b78c"
@@ -11097,14 +11108,6 @@ remark-emoji@^2.0.1:
   dependencies:
     node-emoji "^1.8.1"
     unist-util-visit "^1.4.0"
-
-remark-highlight.js@^5.0.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/remark-highlight.js/-/remark-highlight.js-5.1.0.tgz#0333fa214b409dd78b9935b7afd4a09fe2f4ab3a"
-  integrity sha512-m5d0RreEJ1z1Ug2LUCkCsNJ48Bcc15bx1lO3ZfQfYqMSI+J+bg8qz8p/cblJL1VB3oxqgbfRelj65AJAepn/zg==
-  dependencies:
-    lowlight "^1.2.0"
-    unist-util-visit "^1.0.0"
 
 remark-mdx@^1.0.20:
   version "1.0.20"

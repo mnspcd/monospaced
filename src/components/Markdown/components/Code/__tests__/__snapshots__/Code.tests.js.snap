@@ -4,7 +4,13 @@ exports[`Code component should render a code block correctly 1`] = `
 <code
   class="Code Code--block"
 >
-  children
+  <span
+    class="hljs"
+  >
+    <span>
+      children
+    </span>
+  </span>
 </code>
 `;
 
@@ -12,7 +18,27 @@ exports[`Code component should render a code block correctly in light mode 1`] =
 <code
   class="Code Code--block Code--lightMode"
 >
-  children
+  <span
+    class="hljs"
+  >
+    <span>
+      children
+    </span>
+  </span>
+</code>
+`;
+
+exports[`Code component should render a code language correctly 1`] = `
+<code
+  class="Code Code--block"
+>
+  <span
+    class="hljs"
+  >
+    <span>
+      children
+    </span>
+  </span>
 </code>
 `;
 

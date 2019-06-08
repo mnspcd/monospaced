@@ -1,7 +1,6 @@
 require("@babel/register");
 
 const emoji = require("remark-emoji");
-const highlight = require("remark-highlight.js");
 const path = require("path");
 
 module.exports = async ({ config }) => {
@@ -23,7 +22,7 @@ module.exports = async ({ config }) => {
       "babel-loader",
       {
         loader: "@mdx-js/loader",
-        options: { remarkPlugins: [emoji, highlight] },
+        options: { remarkPlugins: [emoji] },
       },
     ],
   });
