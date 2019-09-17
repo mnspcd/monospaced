@@ -2,6 +2,9 @@ import React from "react";
 import { select, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 
+import Grid from "../../../Grid";
+import Space from "../../../Space";
+
 import Heading from "./Heading";
 
 const defaultText = "Hamburgefonstiv";
@@ -19,13 +22,16 @@ storiesOf("Components/Markdown/Heading", module)
     </div>
   ))
   .add("Waterfall", () => (
-    <div>
-      {Heading.sizes
-        .map(size => (
-          <Heading key={size} size={size}>
-            {text("text", defaultText)}
-          </Heading>
-        ))
-        .reverse()}
-    </div>
+    <Grid>
+      <Grid.Item colSpan="6">
+        <Space />
+        {Heading.sizes
+          .map(size => (
+            <Heading key={size} size={size}>
+              {text("text", defaultText)}
+            </Heading>
+          ))
+          .reverse()}
+      </Grid.Item>
+    </Grid>
   ));
