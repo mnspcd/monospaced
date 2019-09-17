@@ -89,16 +89,3 @@ exports[`Grid component should render rowStart correctly 1`] = `
   </div>
 </div>
 `;
-
-exports[`Grid component should render rows correctly 1`] = `
-<div
-  class="Grid"
-  style="grid-template-rows:repeat(2, 1fr)"
->
-  <div
-    class="Grid-item"
-  >
-    children
-  </div>
-</div>
-`;

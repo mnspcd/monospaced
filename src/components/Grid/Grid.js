@@ -3,20 +3,12 @@ import React from "react";
 
 import "./Grid.css";
 
-const Grid = ({ children, rows }) => (
-  <div
-    className="Grid"
-    style={{ gridTemplateRows: rows && `repeat(${rows}, 1fr)` }}
-  >
-    {children}
-  </div>
-);
+const Grid = ({ children }) => <div className="Grid">{children}</div>;
 
 Grid.alignments = ["center", "end", "start"];
 
 Grid.propTypes = {
   children: PropTypes.node.isRequired,
-  rows: PropTypes.string,
 };
 
 Grid.Item = ({

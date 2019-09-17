@@ -18,7 +18,7 @@ storiesOf("Components/Grid", module).add("Component", () => {
   );
 
   return (
-    <Grid row={text("rows", "", "Grid")}>
+    <Grid>
       <Grid.Item
         align={
           select("align", [""].concat(Grid.alignments), "", "Grid.Item") || null

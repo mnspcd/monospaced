@@ -14,15 +14,6 @@ describe("Grid component", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("should render rows correctly", () => {
-    const component = render(
-      <Grid rows="2">
-        <Grid.Item>children</Grid.Item>
-      </Grid>,
-    );
-    expect(component).toMatchSnapshot();
-  });
-
   it("should render alignment correctly", () => {
     const component = render(
       <Grid>
