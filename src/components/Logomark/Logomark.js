@@ -37,7 +37,7 @@ const Logomark = ({
               fill={
                 typeof secondColor === "string"
                   ? colors[secondColor]
-                  : colors.white
+                  : colors["mnspcd-color-white"]
               }
             />
           )}

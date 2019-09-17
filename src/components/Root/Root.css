@@ -7,8 +7,8 @@
 }
 
 html {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--mnspcd-color-white);
+  color: var(--mnspcd-color-grey-9);
   font-family: var(--font-body-text);
   font-variant: common-ligatures contextual;
   line-height: var(--leading);

@@ -204,8 +204,6 @@ const mnspcdColor = {
 };
 
 const defaultColors = {
-  white: mnspcdColor["mnspcd-color-white"],
-  black: mnspcdColor["mnspcd-color-black"],
   grey: mnspcdColor["mnspcd-color-grey-4"],
   red: mnspcdColor["mnspcd-color-red-6"],
   pink: mnspcdColor["mnspcd-color-pink-6"],
@@ -220,23 +218,18 @@ const defaultColors = {
 const backgroundColors = {
   white: mnspcdColor["mnspcd-color-white"],
   "grey-light": mnspcdColor["mnspcd-color-grey-1"],
-  // "grey-light-darker": mnspcdColor["mnspcd-color-grey-2"],
   "grey-dark": mnspcdColor["mnspcd-color-grey-9"],
   black: mnspcdColor["mnspcd-color-black"],
 };
 
 const colorTokens = {
-  "background-color": backgroundColors.white,
-  "text-color": mnspcdColor["mnspcd-color-grey-9"],
-  "border-color": mnspcdColor["mnspcd-color-grey-3"],
   "brand-primary-dark-color": mnspcdColor["mnspcd-color-blue-9"],
   "brand-primary-color": mnspcdColor["mnspcd-color-blue-6"],
   "brand-primary-light-color": mnspcdColor["mnspcd-color-blue-1"],
   "error-color": mnspcdColor["mnspcd-color-red-6"],
-  "warning-color": mnspcdColor["mnspcd-color-yellow-6"],
   "success-color": mnspcdColor["mnspcd-color-green-6"],
+  "warning-color": mnspcdColor["mnspcd-color-yellow-6"],
   "info-color": mnspcdColor["mnspcd-color-azure-6"],
-  "interactive-color": mnspcdColor["mnspcd-color-blue-6"],
 };
 
 const colors = Object.assign({}, mnspcdColor, defaultColors, colorTokens);
