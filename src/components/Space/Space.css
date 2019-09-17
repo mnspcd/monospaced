@@ -25,7 +25,3 @@
     margin-bottom: calc(1em * var(--leading-scale-xxxl));
   }
 }
-
-.Space:last-child {
-  margin-bottom: 0;
-}
