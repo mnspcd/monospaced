@@ -78,44 +78,33 @@ storiesOf("System/Color", module)
 
 const iconKeys = Object.keys(Icons).sort();
 
-storiesOf("System/Iconography", module)
-  .add("Component", () => {
-    const Icon = Icons[select("Icon", iconKeys, "Activity")];
-
-    return (
-      <Icon
-        color={colors[select("color", [""].concat(colorKeys))] || undefined}
-        size={select("size", ["20", "24", "100%"], "24") || undefined}
-      />
-    );
-  })
-  .add("Library", () => {
-    return (
-      <div>
-        {iconKeys.map(icon => {
-          const Icon = Icons[icon];
-          return (
-            <div
-              key={icon}
-              style={{
-                float: "left",
-                padding: "1.5em 0",
-                textAlign: "center",
-                width: "8em",
-              }}
-            >
-              <div>
-                <Icon />
-              </div>
-              <small style={{ fontFamily: typography["font-monospaced"] }}>
-                {Icon.name}
-              </small>
+storiesOf("System/Iconography", module).add("Library", () => {
+  return (
+    <div>
+      {iconKeys.map(icon => {
+        const Icon = Icons[icon];
+        return (
+          <div
+            key={icon}
+            style={{
+              float: "left",
+              padding: "1.5em 0",
+              textAlign: "center",
+              width: "8em",
+            }}
+          >
+            <div>
+              <Icon />
             </div>
-          );
-        })}
-      </div>
-    );
-  });
+            <small style={{ fontFamily: typography["font-monospaced"] }}>
+              {Icon.name}
+            </small>
+          </div>
+        );
+      })}
+    </div>
+  );
+});
 
 const getFontSize = scale => `${typography[`type-scale-${scale}`]}em`;
 
