@@ -4,8 +4,6 @@ const emoji = require("remark-emoji");
 const path = require("path");
 
 module.exports = async ({ config }) => {
-  config.entry.push(path.resolve(__dirname, "../src/components/Root/Root.css"));
-
   const cssRule = config.module.rules.find(
     r => r.test.toString() === /\.css$/.toString(),
   );
@@ -15,17 +13,15 @@ module.exports = async ({ config }) => {
 
   delete postCssUse.options;
 
-  config.module.rules.push({
-    include: path.resolve(__dirname, "../"),
-    test: /.mdx?$/,
-    use: [
-      "babel-loader",
-      {
-        loader: "@mdx-js/loader",
-        options: { remarkPlugins: [emoji] },
-      },
-    ],
-  });
+  const mdxRule = config.module.rules.find(
+    r => r.test.toString() === /\.mdx$/.toString(),
+  );
+
+  const mdxJsUse = mdxRule.use.find(
+    u => u.loader && u.loader.indexOf("@mdx-js/loader") > -1,
+  );
+
+  mdxJsUse.options = { remarkPlugins: [emoji] };
 
   return config;
 };

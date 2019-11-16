@@ -1,25 +1,36 @@
 import React from "react";
-import { addDecorator, addParameters, configure } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs";
+import { addDecorator, addParameters, configure } from "@storybook/react";
+
+import Modern, { mdxComponents } from "../src/@monospaced/modern";
+
 import theme from "./theme";
 
-const loadStories = () => {
-  const req = require.context("../src", true, /^\.(.*)\.stories\.js$/);
-  const reqArray = req.keys().sort();
-
-  reqArray.unshift(reqArray.pop());
-  reqArray.forEach(filename => req(filename));
-};
-const styles = story => <div style={{ margin: "0" }}>{story()}</div>;
+const styles = story => <Modern>{story()}</Modern>;
 
 addParameters({
+  docs: { components: mdxComponents },
   options: {
-    panelPosition: "right",
     sidebarAnimations: false,
+    storySort: (a, b) => {
+      const aId = a[1].id;
+      const bId = b[1].id;
+      if (
+        (aId.includes("components") && bId.includes("page")) ||
+        (aId === "iconography--page" &&
+          (bId === "color--page" || bId === "introduction--page"))
+      ) {
+        return 1;
+      }
+      return -1;
+    },
     theme,
   },
 });
 
 addDecorator(styles);
 addDecorator(withKnobs);
-configure(loadStories, module);
+configure(
+  [require.context("../src/@monospaced/modern", true, /\.stories\.(js|mdx)$/)],
+  module,
+);
