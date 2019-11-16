@@ -35,10 +35,7 @@ module.exports = () => {
         },
         {
           test: /\.(ico|png|svg|webmanifest|xml)$/,
-          exclude: [
-            path.resolve(__dirname, "src/assets/clients"),
-            path.resolve(__dirname, "src/assets/images"),
-          ],
+          include: [path.resolve(__dirname, "src/assets")],
           loader: "file-loader",
           options: { name: "[name].[ext]" },
         },
@@ -64,7 +61,9 @@ module.exports = () => {
         },
         {
           test: /\.png$/,
-          include: [path.resolve(__dirname, "src/assets/images")],
+          include: [
+            path.resolve(__dirname, "src/@monospaced/modern/assets/images"),
+          ],
           loader: "file-loader",
           options: { name: "assets/[name].[ext]" },
         },
