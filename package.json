@@ -75,8 +75,8 @@
     "collectCoverageFrom": [
       "src/**/*.js",
       "!src/**/*.stories.js",
+      "!src/**/*Story.js",
       "!src/legacy/**/*.js",
-      "!src/routes/content.js",
       "!src/index.js"
     ],
     "coverageReporters": [
@@ -106,7 +106,9 @@
     "lint": "eslint --ext js,json --ignore-path .eslintignore ./",
     "start": "webpack-dev-server --progress",
     "storybook": "start-storybook --ci -p 9001 -s ./src/assets",
-    "storybook:build": "build-storybook -o build/storybook",
-    "test": "jest --coverage"
+    "storybook:build": "build-storybook --docs -o build/storybook",
+    "storybook:docs": "start-storybook --ci --docs -p 9001 -s ./src/assets",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch --coverage --changedSince=master"
   }
 }
