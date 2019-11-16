@@ -1,0 +1,336 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component should render correctly 1`] = `
+<Fragment>
+  <SideEffect(DocumentMeta)
+    description="Modern web software solutions"
+    title="Monospaced"
+  />
+  <Poster
+    padding="0 0 4.5em"
+  >
+    <Masthead
+      headingLevel="1"
+      links={
+        Array [
+          Object {
+            "href": "/blog/",
+            "routerLink": true,
+            "text": "blog",
+          },
+          Object {
+            "href": "/storybook/",
+            "text": "design-system",
+          },
+          Object {
+            "href": "mailto:hello@monospaced.com",
+            "text": "hello@monospaced.com",
+          },
+        ]
+      }
+      logo={
+        <Logotype
+          height="1.5em"
+        />
+      }
+    />
+    <Space
+      size="l"
+    />
+    <Grid>
+      <Grid.Item
+        colSpan="10"
+      >
+        <Heading
+          size="xxxl"
+        >
+          Modern web software solutions
+        </Heading>
+      </Grid.Item>
+    </Grid>
+  </Poster>
+  <Space
+    size="l"
+  />
+  <Grid>
+    <Grid.Item
+      colSpan="4"
+    >
+      <Heading
+        color="color-brand-primary-dark"
+        level="2"
+        size="xl"
+      >
+        Our services
+      </Heading>
+    </Grid.Item>
+    <Grid.Item
+      colSpan="8"
+      colStart="5"
+    >
+      <Heading
+        level="3"
+        size="xl"
+      >
+        Design systems engineering
+      </Heading>
+      <Space
+        size="l"
+      />
+      <Heading
+        level="3"
+        size="xl"
+      >
+        Front-end development
+      </Heading>
+      <Space
+        size="l"
+      />
+      <Heading
+        level="3"
+        size="xl"
+      >
+        Legacy code rescue
+      </Heading>
+      <Space
+        size="l"
+      />
+      <Heading
+        level="3"
+        size="xl"
+      >
+        Prototyping, concepts & MVPs
+      </Heading>
+      <Space
+        size="l"
+      />
+      <Heading
+        level="3"
+        size="xl"
+      >
+        Web applications
+      </Heading>
+    </Grid.Item>
+  </Grid>
+  <Space
+    size="xl"
+  />
+  <Grid>
+    <Grid.Item
+      colSpan="4"
+    >
+      <Heading
+        color="color-brand-primary-dark"
+        level="2"
+        size="xl"
+      >
+        Selected clients
+      </Heading>
+    </Grid.Item>
+    <Grid.Item
+      colSpan="8"
+      colStart="5"
+    >
+      <Group
+        tessellate={true}
+      >
+        <Group.Item
+          key="Bladud Flies!"
+        >
+          <Tile
+            href="http://bladudflies.com"
+            label="Bladud Flies!"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Chartwells"
+        >
+          <Tile
+            href="https://www.compass-group.co.uk"
+            label="Chartwells"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Digitas"
+        >
+          <Tile
+            href="https://www.digitas.com"
+            label="Digitas"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Dow Jones"
+        >
+          <Tile
+            href="https://www.dowjones.com"
+            label="Dow Jones"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Find My Past"
+        >
+          <Tile
+            href="https://www.findmypast.co.uk"
+            label="Find My Past"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Freeform Labs"
+        >
+          <Tile
+            href="https://frfrm.com"
+            label="Freeform Labs"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Grand Union"
+        >
+          <Tile
+            href="http://www.thegrandunion.com"
+            label="Grand Union"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Hanno"
+        >
+          <Tile
+            href="https://hanno.co"
+            label="Hanno"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Major Players"
+        >
+          <Tile
+            href="https://www.majorplayers.co.uk"
+            label="Major Players"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="The National Lottery"
+        >
+          <Tile
+            href="https://www.national-lottery.co.uk"
+            label="The National Lottery"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="NHS"
+        >
+          <Tile
+            href="https://www.nhs.uk"
+            label="NHS"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Ogilvy"
+        >
+          <Tile
+            href="https://www.ogilvy.com"
+            label="Ogilvy"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Social 360"
+        >
+          <Tile
+            href="http://www.social360monitoring.com"
+            label="Social 360"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Stordis"
+        >
+          <Tile
+            href="https://www.stordis.com"
+            label="Stordis"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Suburb"
+        >
+          <Tile
+            href="http://wearesuburb.com"
+            label="Suburb"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+        <Group.Item
+          key="Thomson Reuters"
+        >
+          <Tile
+            href="https://www.thomsonreuters.com"
+            label="Thomson Reuters"
+          >
+            <Logo
+              width="100%"
+            />
+          </Tile>
+        </Group.Item>
+      </Group>
+    </Grid.Item>
+  </Grid>
+  <Space
+    size="xl"
+  />
+</Fragment>
+`;

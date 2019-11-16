@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Legal component should render correctly 1`] = `
+<Fragment>
+  <SideEffect(DocumentMeta)
+    description="Modern web software solutions"
+    title="Legal | Monospaced"
+  />
+  <Masthead
+    links={
+      Array [
+        Object {
+          "href": "/blog/",
+          "routerLink": true,
+          "text": "blog",
+        },
+        Object {
+          "href": "/storybook/",
+          "text": "design-system",
+        },
+        Object {
+          "href": "mailto:hello@monospaced.com",
+          "text": "hello@monospaced.com",
+        },
+      ]
+    }
+    logo={
+      <Logotype
+        height="1.5em"
+      />
+    }
+  />
+  <Space
+    size="l"
+  />
+  <Grid>
+    <Grid.Item
+      colSpan="10"
+    >
+      <Heading
+        level="1"
+        size="xxxl"
+      >
+        Legal matters
+      </Heading>
+    </Grid.Item>
+  </Grid>
+  <Space
+    size="xl"
+  />
+  <Grid>
+    <Grid.Item
+      colSpan="4"
+    >
+      <Heading
+        color="color-brand-primary-dark"
+        level="2"
+        size="xl"
+      >
+        Company details
+      </Heading>
+    </Grid.Item>
+    <Grid.Item
+      colSpan="8"
+      colStart="5"
+    >
+      <Markdown>
+        <Mdx />
+      </Markdown>
+    </Grid.Item>
+  </Grid>
+  <Space
+    size="l"
+  />
+  <Grid>
+    <Grid.Item
+      colSpan="4"
+    >
+      <Heading
+        color="color-brand-primary-dark"
+        level="2"
+        size="xl"
+      >
+        Privacy policy
+      </Heading>
+    </Grid.Item>
+    <Grid.Item
+      colSpan="8"
+      colStart="5"
+    >
+      <Markdown>
+        <Mdx />
+      </Markdown>
+    </Grid.Item>
+  </Grid>
+  <Space
+    size="xl"
+  />
+</Fragment>
+`;

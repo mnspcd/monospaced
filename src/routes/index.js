@@ -3,30 +3,38 @@ import PropTypes from "prop-types";
 import React from "react";
 import { IndexRoute, Route } from "react-router";
 
-import Footer from "../components/Footer";
-import { components } from "../components/Markdown";
-import content from "./content";
+import Modern, { Footer, mdxComponents } from "../@monospaced/modern";
 
-import Blog, { Post } from "./Blog";
-import Home from "./Home";
-import Legal from "./Legal";
-import NotFound from "./NotFound";
+import Blog, { Post } from "./components/Blog";
+import Home from "./components/Home";
+import Legal from "./components/Legal";
+import NotFound from "./components/NotFound";
+import content from "./content";
 
 const App = ({
   children,
   route: {
-    content: { title, footerLinks },
+    content: {
+      footer: { links },
+      meta: { title },
+    },
   },
   routes,
 }) => {
   return (
-    <MDXProvider components={components}>
-      <>
+    <MDXProvider components={mdxComponents}>
+      <Modern>
         {React.cloneElement(children, { content }, routes)}
-        <Footer copyright={title} links={footerLinks} routes={routes} />
-      </>
+        <Footer copyright={title} links={links} routes={routes} />
+      </Modern>
     </MDXProvider>
   );
+};
+
+App.propTypes = {
+  children: PropTypes.node.isRequired,
+  route: PropTypes.object.isRequired,
+  routes: PropTypes.array.isRequired,
 };
 
 const forceTrailingSlash = (nextState, replace) => {
@@ -44,11 +52,10 @@ const Routes = (
   <Route onChange={forceTrailingSlashOnChange} onEnter={forceTrailingSlash}>
     <Route component={App} content={content} path="/">
       <IndexRoute component={Home} />
-      {content.blog.length && <Route component={Blog} path="blog" />}
-      {content.blog.map(post => {
-        const { slug } = post;
-        return <Route component={Post} key={slug} path={slug} />;
-      })}
+      {content.blog.posts.length && <Route component={Blog} path="blog" />}
+      {content.blog.posts.map(({ meta: { slug } }) => (
+        <Route component={Post} key={slug} path={slug} />
+      ))}
       <Route component={Legal} path="legal" />
       <Route component={NotFound} path="404" />
       <Route component={NotFound} path="*" />
@@ -56,10 +63,5 @@ const Routes = (
   </Route>
 );
 
-App.propTypes = {
-  children: PropTypes.node,
-  route: PropTypes.object,
-  routes: PropTypes.array,
-};
-
+export { App };
 export default Routes;
