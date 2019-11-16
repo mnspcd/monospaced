@@ -1,0 +1,87 @@
+.mdrn .Masthead {
+  align-items: center;
+  display: flex;
+  height: 4.5em;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 56.75em;
+  padding-left: 1em;
+  padding-right: 0.25em;
+  width: 100%;
+}
+
+@media (--larger-viewport) {
+  .mdrn .Masthead {
+    padding-right: 1em;
+  }
+}
+
+.mdrn .Masthead-logo {
+  color: var(--color-blue-9);
+  display: block;
+}
+
+.mdrn .Masthead-logo:hover,
+.mdrn .Masthead-logo:active {
+  color: var(--color-blue-9);
+}
+
+.mdrn .Masthead--onPoster .Masthead-logo,
+.mdrn .Masthead--onPoster .Masthead-logo:hover,
+.mdrn .Masthead--onPoster .Masthead-logo:active {
+  background: none;
+  color: var(--color-white);
+}
+
+.mdrn .Masthead-menu {
+  display: flex;
+}
+
+@media (--larger-viewport) {
+  .mdrn .Masthead-menuButton {
+    display: none;
+  }
+}
+
+.mdrn .Masthead-nav {
+  display: none;
+}
+
+@media (--larger-viewport) {
+  .mdrn .Masthead-nav {
+    display: block;
+  }
+}
+
+.mdrn .Masthead-navList {
+  font-family: var(--font-monospaced);
+  font-variant: slashed-zero;
+  list-style: none;
+  margin-bottom: 0;
+  margin-right: -0.5em;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.mdrn .Masthead-navItem {
+  display: inline-block;
+  margin-left: 0.75em;
+}
+
+.mdrn .Masthead-navLink {
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+}
+
+.mdrn .Masthead-navLink:hover {
+  background-color: rgba(var(--color-blue-7-rgb), var(--opacity-hover));
+}
+
+.mdrn .Masthead-navLink:active {
+  background-color: rgba(var(--color-blue-8-rgb), var(--opacity-active));
+}
+
+.mdrn .Masthead-navLinkActive {
+  background-color: rgba(var(--color-blue-8-rgb), var(--opacity-static));
+  color: var(--color-blue-8);
+}
