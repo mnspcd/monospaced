@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading component should render an H1 correctly 1`] = `
+<Heading
+  level="1"
+  size="xxxl"
+>
+  Hamburgefonstiv
+</Heading>
+`;
+
+exports[`Heading component should render an H2 correctly 1`] = `
+<Heading
+  level="2"
+  size="xxl"
+>
+  Hamburgefonstiv
+</Heading>
+`;
+
+exports[`Heading component should render an H3 correctly 1`] = `
+<Heading
+  level="3"
+  size="xl"
+>
+  Hamburgefonstiv
+</Heading>
+`;
+
+exports[`Heading component should render an H4 correctly 1`] = `
+<Heading
+  level="4"
+  size="l"
+>
+  Hamburgefonstiv
+</Heading>
+`;
+
+exports[`Heading component should render an H5 correctly 1`] = `
+<Heading
+  level="5"
+  size="m"
+>
+  Hamburgefonstiv
+</Heading>
+`;
+
+exports[`Heading component should render an H6 correctly 1`] = `
+<Heading
+  level="6"
+  size="s"
+>
+  Hamburgefonstiv
+</Heading>
+`;
+
+exports[`Heading component should render correctly 1`] = `
+<span
+  className="Heading"
+  style={
+    Object {
+      "color": null,
+    }
+  }
+>
+  Hamburgefonstiv
+</span>
+`;
+
+exports[`Heading component should render heading color correctly 1`] = `
+<span
+  className="Heading Heading--xl"
+  style={
+    Object {
+      "color": "#000a6e",
+    }
+  }
+>
+  Hamburgefonstiv
+</span>
+`;
+
+exports[`Heading component should render heading level correctly 1`] = `
+<h1
+  className="Heading Heading--xl"
+  style={
+    Object {
+      "color": null,
+    }
+  }
+>
+  Hamburgefonstiv
+</h1>
+`;

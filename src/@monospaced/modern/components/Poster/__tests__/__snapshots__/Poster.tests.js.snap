@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Poster component should render children correctly 1`] = `
+<div
+  class="Poster"
+>
+  children
+</div>
+`;
+
+exports[`Poster component should render correctly 1`] = `
+<div
+  class="Poster"
+/>
+`;
+
+exports[`Poster component should render padding correctly 1`] = `
+<div
+  class="Poster"
+  style="padding:1em"
+>
+  children
+</div>
+`;
