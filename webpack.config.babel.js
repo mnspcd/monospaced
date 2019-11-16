@@ -1,11 +1,11 @@
 import CopyWebpackPlugin from "copy-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import OptimizeCSSAssetsPlugin from "optimize-css-assets-webpack-plugin";
-import StaticSiteGeneratorPlugin from "static-site-generator-webpack-plugin";
-import UglifyJsPlugin from "uglifyjs-webpack-plugin";
-import emoji from "remark-emoji";
 import path from "path";
 import reactRouterToArray from "react-router-to-array";
+import emoji from "remark-emoji";
+import StaticSiteGeneratorPlugin from "static-site-generator-webpack-plugin";
+import UglifyJsPlugin from "uglifyjs-webpack-plugin";
 
 module.exports = () => {
   // Prevent webpack from trying to process files before loaders are configured
@@ -72,8 +72,8 @@ module.exports = () => {
     },
     optimization: {
       minimizer: [
-        new UglifyJsPlugin({ cache: true, parallel: true }),
         new OptimizeCSSAssetsPlugin(),
+        new UglifyJsPlugin({ cache: true, parallel: true }),
       ],
     },
     output: {

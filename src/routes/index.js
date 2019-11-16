@@ -1,7 +1,7 @@
-import { IndexRoute, Route } from "react-router";
 import { MDXProvider } from "@mdx-js/react";
 import PropTypes from "prop-types";
 import React from "react";
+import { IndexRoute, Route } from "react-router";
 
 import Footer from "../components/Footer";
 import { components } from "../components/Markdown";

@@ -1,11 +1,11 @@
 import "core-js/es/array/includes";
 import "core-js/es/object/assign";
 import "core-js/es/string/includes";
-import { browserHistory, createMemoryHistory, Router } from "react-router";
-import DocumentMeta from "react-document-meta";
 import React from "react";
+import DocumentMeta from "react-document-meta";
 import ReactDOM from "react-dom";
 import ReactDOMServer from "react-dom/server";
+import { browserHistory, createMemoryHistory, Router } from "react-router";
 
 import Root from "./components/Root";
 import routes from "./routes";
@@ -16,10 +16,10 @@ if (typeof document !== "undefined") {
   ReactDOM.hydrate(
     <Router
       history={browserHistory}
-      routes={routes}
       onUpdate={() => {
         window.scrollTo(0, 0);
       }}
+      routes={routes}
     />,
     router,
   );
