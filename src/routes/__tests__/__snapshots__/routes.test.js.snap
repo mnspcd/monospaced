@@ -9,3 +9,231 @@ Array [
   "/404",
 ]
 `;
+
+exports[`Routes should render App correctly 1`] = `
+<MDXProvider
+  components={
+    Object {
+      "blockquote": [Function],
+      "code": [Function],
+      "h1": [Function],
+      "h2": [Function],
+      "h3": [Function],
+      "h4": [Function],
+      "h5": [Function],
+      "h6": [Function],
+      "hr": [Function],
+      "inlineCode": [Function],
+      "ol": [Function],
+      "p": [Function],
+      "pre": [Function],
+      "table": [Function],
+      "ul": [Function],
+    }
+  }
+>
+  <Base>
+    <div
+      content={
+        Object {
+          "blog": Object {
+            "heading": "Blog",
+            "posts": Array [
+              Object {
+                "default": [Function],
+                "meta": Object {
+                  "date": "2018-10-07",
+                  "layout": [Function],
+                  "slug": "slug",
+                  "title": "title",
+                },
+              },
+            ],
+          },
+          "clients": Object {
+            "heading": "Selected clients",
+            "list": Array [
+              Object {
+                "Logo": [Function],
+                "href": "http://bladudflies.com",
+                "label": "Bladud Flies!",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "https://www.compass-group.co.uk",
+                "label": "Chartwells",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "https://www.digitas.com",
+                "label": "Digitas",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "https://www.dowjones.com",
+                "label": "Dow Jones",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "https://www.findmypast.co.uk",
+                "label": "Find My Past",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "https://frfrm.com",
+                "label": "Freeform Labs",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "http://www.thegrandunion.com",
+                "label": "Grand Union",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "https://hanno.co",
+                "label": "Hanno",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "https://www.majorplayers.co.uk",
+                "label": "Major Players",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "https://www.national-lottery.co.uk",
+                "label": "The National Lottery",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "https://www.nhs.uk",
+                "label": "NHS",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "https://www.ogilvy.com",
+                "label": "Ogilvy",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "http://www.social360monitoring.com",
+                "label": "Social 360",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "https://www.stordis.com",
+                "label": "Stordis",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "http://wearesuburb.com",
+                "label": "Suburb",
+              },
+              Object {
+                "Logo": [Function],
+                "href": "https://www.thomsonreuters.com",
+                "label": "Thomson Reuters",
+              },
+            ],
+          },
+          "footer": Object {
+            "links": Array [
+              Object {
+                "href": "/storybook/",
+                "text": "design-system",
+              },
+              Object {
+                "href": "/legal/",
+                "routerLink": true,
+                "text": "legal",
+              },
+              Object {
+                "href": "/lighthouse.report.html",
+                "text": "lighthouse",
+              },
+              Object {
+                "href": "/login/",
+                "text": "login",
+              },
+              Object {
+                "href": "https://github.com/monospaced/monospaced.com",
+                "text": "view-source",
+              },
+            ],
+          },
+          "legal": Object {
+            "company": Object {
+              "content": [Function],
+              "heading": "Company details",
+            },
+            "heading": "Legal matters",
+            "privacy": Object {
+              "content": [Function],
+              "heading": "Privacy policy",
+            },
+          },
+          "masthead": Object {
+            "links": Array [
+              Object {
+                "href": "/blog/",
+                "routerLink": true,
+                "text": "blog",
+              },
+              Object {
+                "href": "/storybook/",
+                "text": "design-system",
+              },
+              Object {
+                "href": "mailto:hello@monospaced.com",
+                "text": "hello@monospaced.com",
+              },
+            ],
+          },
+          "meta": Object {
+            "description": "Modern web software solutions",
+            "title": "Monospaced",
+          },
+          "services": Object {
+            "heading": "Our services",
+            "list": Array [
+              "Design systems engineering",
+              "Front-end development",
+              "Legacy code rescue",
+              "Prototyping, concepts & MVPs",
+              "Web applications",
+            ],
+          },
+        }
+      }
+    >
+      <Component />
+      <Component />
+      <Component />
+      <Component />
+      <Component />
+    </div>
+    <Footer
+      copyright="foo"
+      links={Array []}
+      routes={
+        Array [
+          Object {
+            "path": "/",
+          },
+          Object {
+            "path": "/blog",
+          },
+          Object {
+            "path": "/slug",
+          },
+          Object {
+            "path": "/legal",
+          },
+          Object {
+            "path": "/404",
+          },
+        ]
+      }
+    />
+  </Base>
+</MDXProvider>
+`;

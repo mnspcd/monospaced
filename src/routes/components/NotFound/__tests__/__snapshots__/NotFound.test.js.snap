@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound component should render correctly 1`] = `
+<Fragment>
+  <SideEffect(DocumentMeta)
+    description="Modern web software solutions"
+    title="Page not found | Monospaced"
+  />
+  <Masthead
+    links={
+      Array [
+        Object {
+          "href": "/blog/",
+          "routerLink": true,
+          "text": "blog",
+        },
+        Object {
+          "href": "/storybook/",
+          "text": "design-system",
+        },
+        Object {
+          "href": "mailto:hello@monospaced.com",
+          "text": "hello@monospaced.com",
+        },
+      ]
+    }
+    logo={
+      <Logotype
+        height="1.5em"
+      />
+    }
+  />
+  <Space
+    size="l"
+  />
+  <Grid>
+    <Grid.Item
+      colSpan="8"
+      colStart="3"
+    >
+      <Heading
+        size="xxxl"
+      >
+        <span
+          className="u-monospaced"
+        >
+          404
+        </span>
+      </Heading>
+      <Heading
+        level="1"
+        size="xl"
+      >
+        Page not found
+      </Heading>
+      <Space
+        size="s"
+      />
+      <Paragraph>
+        <small>
+          The requested URL was not found on this server.
+        </small>
+      </Paragraph>
+    </Grid.Item>
+  </Grid>
+  <Space
+    size="xl"
+  />
+</Fragment>
+`;
