@@ -106,7 +106,7 @@
     "lint": "eslint --ext js,json --ignore-path .eslintignore ./",
     "start": "webpack-dev-server --progress",
     "storybook": "start-storybook --ci -p 9001 -s ./src/assets",
-    "storybook:build": "build-storybook --docs -o build/storybook",
+    "storybook:build": "build-storybook --docs -o build/design-system",
     "storybook:docs": "start-storybook --ci --docs -p 9001 -s ./src/assets",
     "test": "jest --coverage",
     "test:watch": "jest --watch --coverage --changedSince=master"

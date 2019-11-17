@@ -110,7 +110,7 @@ export default {
   footer: {
     links: [
       {
-        href: "/storybook/",
+        href: "/design-system/",
         text: "design-system",
       },
       {
@@ -151,7 +151,7 @@ export default {
         text: "blog",
       },
       {
-        href: "/storybook/",
+        href: "/design-system/",
         text: "design-system",
       }, */
       {
