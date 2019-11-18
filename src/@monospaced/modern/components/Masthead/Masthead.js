@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import React from "react";
-import { Mail, Menu } from "react-feather";
+import React, { useEffect, useState } from "react";
+import { Mail, Menu, X } from "react-feather";
 import { Link } from "react-router";
 
 import Button from "../Button";
@@ -19,17 +19,34 @@ const Masthead = ({
   links = null,
   logo,
 }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add("mdrn-is-overlayed");
+    } else {
+      document.body.classList.remove("mdrn-is-overlayed");
+    }
+  }, [menuOpen]);
+
   return (
     <PosterConsumer>
       {poster => (
         <div
           className={classNames({
             Masthead: true,
+            [`Masthead--menuOpen`]: menuOpen,
             [`Masthead--onPoster`]: poster,
           })}
         >
           <Heading level={headingLevel}>
-            <Link className="Masthead-logo" to="/">
+            <Link
+              className="Masthead-logo"
+              onClick={() => {
+                setMenuOpen(false);
+              }}
+              to="/"
+            >
               {logo}
             </Link>
           </Heading>
@@ -38,7 +55,16 @@ const Masthead = ({
               {links &&
                 (links.length > 1 ? (
                   <Button
-                    icon={<Menu aria-label="Menu" role="img" size="100%" />}
+                    icon={
+                      menuOpen ? (
+                        <X aria-label="Close" role="img" size="100%" />
+                      ) : (
+                        <Menu aria-label="Menu" role="img" size="100%" />
+                      )
+                    }
+                    onClick={() => {
+                      setMenuOpen(!menuOpen);
+                    }}
                     styleVariant="flat"
                   />
                 ) : (

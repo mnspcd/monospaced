@@ -10,15 +10,44 @@
   width: 100%;
 }
 
+.mdrn .Masthead--menuOpen {
+  align-items: flex-start;
+  background-color: var(--color-white);
+  bottom: 0;
+  height: auto;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.mdrn .Masthead--menuOpen.Masthead--onPoster {
+  background-color: var(--color-grey-9);
+}
+
 @media (--larger-viewport) {
   .mdrn .Masthead {
     padding-right: 1em;
+  }
+
+  .mdrn .Masthead--menuOpen {
+    align-items: center;
+    background-color: transparent;
+    height: 4.5em;
+    position: static;
+  }
+
+  .mdrn .Masthead--menuOpen.Masthead--onPoster {
+    background-color: transparent;
   }
 }
 
 .mdrn .Masthead-logo {
   color: var(--color-blue-9);
   display: block;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
 }
 
 .mdrn .Masthead-logo:hover,
@@ -37,6 +66,11 @@
   display: flex;
 }
 
+.mdrn .Masthead-menuButton {
+  padding-bottom: 0.75em;
+  padding-top: 0.75em;
+}
+
 @media (--larger-viewport) {
   .mdrn .Masthead-menuButton {
     display: none;
@@ -47,9 +81,25 @@
   display: none;
 }
 
+.mdrn .Masthead--menuOpen .Masthead-nav {
+  bottom: 0;
+  display: block;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  right: 0;
+  top: 4.5em;
+}
+
 @media (--larger-viewport) {
   .mdrn .Masthead-nav {
     display: block;
+  }
+
+  .mdrn .Masthead--menuOpen .Masthead-nav {
+    overflow-y: hidden;
+    position: static;
   }
 }
 
@@ -63,14 +113,29 @@
   padding-left: 0;
 }
 
-.mdrn .Masthead-navItem {
-  display: inline-block;
-  margin-left: 0.75em;
+@media (--larger-viewport) {
+  .mdrn .Masthead-navItem {
+    display: inline-block;
+    margin-left: 0.75em;
+  }
 }
 
 .mdrn .Masthead-navLink {
-  border-radius: 0.25em;
-  padding: 0.25em 0.5em;
+  display: block;
+  font-size: calc(1em * var(--type-scale-l));
+  line-height: calc(var(--leading) / var(--type-scale-l));
+  padding: calc(0.25em * var(--leading) / var(--type-scale-l))
+    calc(0.6666em * var(--leading) / var(--type-scale-l));
+}
+
+
+@media (--larger-viewport) {
+  .mdrn .Masthead-navLink {
+    border-radius: 0.25em;
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.25em 0.5em;
+  }
 }
 
 .mdrn .Masthead-navLink:hover {
