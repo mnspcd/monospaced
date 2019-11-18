@@ -110,10 +110,6 @@ export default {
   footer: {
     links: [
       {
-        href: "/design-system/",
-        text: "design-system",
-      },
-      {
         href: "/legal/",
         routerLink: true,
         text: "legal",
@@ -149,11 +145,11 @@ export default {
         href: "/blog/",
         routerLink: true,
         text: "blog",
-      },
-      {
-        href: "/design-system/",
-        text: "design-system",
       }, */
+      {
+        href: "/design-system/?path=/docs/introduction--page",
+        text: "design-system",
+      },
       {
         href: "mailto:hello@monospaced.com",
         text: "hello@monospaced.com",
