@@ -1,5 +1,11 @@
 @import url("../../assets/fonts/index.css");
 
+@media (--smaller-viewport) {
+  body.mdrn-is-overlayed {
+    overflow: hidden;
+  }
+}
+
 .mdrn {
   background-color: var(--color-white);
   color: var(--color-grey-9);
