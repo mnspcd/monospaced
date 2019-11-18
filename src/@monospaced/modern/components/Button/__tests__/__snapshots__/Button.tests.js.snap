@@ -1,5 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button component should handle default onClick function correctly 1`] = `
+<Button
+  icon={<div />}
+>
+  <button
+    className="Button Button--withIcon Button--iconOnly"
+    disabled={null}
+    onClick={[Function]}
+    style={
+      Object {
+        "minWidth": null,
+      }
+    }
+  >
+    <span
+      className="Button-icon"
+    >
+      <div />
+    </span>
+  </button>
+</Button>
+`;
+
 exports[`Button component should render an icon and no children correctly 1`] = `
 <button
   class="Button Button--withIcon Button--iconOnly"

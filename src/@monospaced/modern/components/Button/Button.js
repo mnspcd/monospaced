@@ -16,6 +16,7 @@ const Button = ({
   disabled = null,
   icon = null,
   minWidth = null,
+  onClick = () => {},
   styleVariant = null,
 }) => {
   return (
@@ -35,6 +36,9 @@ const Button = ({
                 [`Button--onPoster`]: poster,
               })}
               disabled={disabled}
+              onClick={(...args) => {
+                onClick(...args);
+              }}
               style={{ minWidth }}
             >
               {icon && <span className="Button-icon">{icon}</span>}
@@ -79,6 +83,11 @@ Button.propTypes = {
    * A valid CSS min-width value for the Button.
    */
   minWidth: PropTypes.string,
+
+  /**
+   * Callback when the Button is activated.
+   */
+  onClick: PropTypes.func,
 
   /**
    * Visual Button style variants.
