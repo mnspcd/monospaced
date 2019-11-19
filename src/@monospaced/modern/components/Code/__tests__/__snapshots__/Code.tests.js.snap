@@ -1,51 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Code component should render a code block correctly 1`] = `
-<code
-  class="Code Code--block"
->
-  <span
-    class="hljs"
+<div>
+  <code
+    class="Code Code--block"
   >
-    <span>
-      children
+    <span
+      class="hljs"
+    >
+      <span>
+        children
+      </span>
     </span>
-  </span>
-</code>
+  </code>
+</div>
 `;
 
 exports[`Code component should render a code block correctly in light mode 1`] = `
-<code
-  class="Code Code--block Code--lightMode"
->
-  <span
-    class="hljs"
+<div>
+  <code
+    class="Code Code--block Code--lightMode"
   >
-    <span>
-      children
+    <span
+      class="hljs"
+    >
+      <span>
+        children
+      </span>
     </span>
-  </span>
-</code>
+  </code>
+</div>
 `;
 
 exports[`Code component should render a code language correctly 1`] = `
-<code
-  class="Code Code--block"
->
-  <span
-    class="hljs"
+<div>
+  <code
+    class="Code Code--block"
   >
-    <span>
-      children
+    <span
+      class="hljs"
+    >
+      <span>
+        children
+      </span>
     </span>
-  </span>
-</code>
+  </code>
+</div>
 `;
 
 exports[`Code component should render correctly 1`] = `
-<code
-  class="Code"
->
-  children
-</code>
+<div>
+  <code
+    class="Code"
+  >
+    children
+  </code>
+</div>
 `;

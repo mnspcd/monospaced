@@ -1,15 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Markdown component should render correctly 1`] = `
-<div
-  class="Markdown"
->
-  children
+<div>
+  <div
+    class="Markdown"
+  >
+    children
+  </div>
 </div>
 `;
 
 exports[`Markdown component should render pre component correctly 1`] = `
-<pre>
-  children
-</pre>
+<div>
+  <pre>
+    children
+  </pre>
+</div>
 `;

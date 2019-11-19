@@ -1,14 +1,15 @@
 /* eslint-env jest */
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
 import React from "react";
 
 import content from "../../../content/__mocks__";
 
-import Legal from "../";
+import Legal from "..";
 
 describe("Legal component", () => {
   it("should render correctly", () => {
-    const component = shallow(<Legal content={content} />);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Legal content={content} />);
+
+    expect(container).toMatchSnapshot();
   });
 });

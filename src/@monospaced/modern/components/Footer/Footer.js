@@ -10,7 +10,8 @@ import "./Footer.css";
  * a page.
  */
 const Footer = ({ copyright, links = null, routes = null }) => {
-  const path = routes && routes[routes.length - 1].path;
+  const path =
+    routes && routes[routes.length - 1] && routes[routes.length - 1].path;
 
   return (
     <div className="Footer">

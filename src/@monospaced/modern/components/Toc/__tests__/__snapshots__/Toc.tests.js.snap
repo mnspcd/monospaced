@@ -1,68 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Toc component should render correctly 1`] = `
-<ol
-  class="Toc"
->
-  <li
-    class="Toc-item"
+<div>
+  <ol
+    class="Toc"
   >
-    <a
-      class="Toc-itemLink"
-      href="#"
+    <li
+      class="Toc-item"
     >
-      <span
-        class="Toc-itemTitle"
+      <a
+        class="Toc-itemLink"
+        href="#"
       >
-        title
-      </span>
-    </a>
-  </li>
-</ol>
+        <span
+          class="Toc-itemTitle"
+        >
+          title
+        </span>
+      </a>
+    </li>
+  </ol>
+</div>
 `;
 
 exports[`Toc component should render date correctly 1`] = `
-<ol
-  class="Toc"
->
-  <li
-    class="Toc-item"
+<div>
+  <ol
+    class="Toc"
   >
-    <a
-      class="Toc-itemLink"
-      href="#"
+    <li
+      class="Toc-item"
     >
-      <span
-        class="Toc-itemTitle"
+      <a
+        class="Toc-itemLink"
+        href="#"
       >
-        title
-      </span>
-      <span
-        class="Toc-itemDate"
-      >
-        2018-11-15
-      </span>
-    </a>
-  </li>
-</ol>
+        <span
+          class="Toc-itemTitle"
+        >
+          title
+        </span>
+        <span
+          class="Toc-itemDate"
+        >
+          2018-11-15
+        </span>
+      </a>
+    </li>
+  </ol>
+</div>
 `;
 
 exports[`Toc component should render slug correctly 1`] = `
-<ol
-  class="Toc"
->
-  <li
-    class="Toc-item"
+<div>
+  <ol
+    class="Toc"
   >
-    <a
-      class="Toc-itemLink"
+    <li
+      class="Toc-item"
     >
-      <span
-        class="Toc-itemTitle"
+      <a
+        class="Toc-itemLink"
       >
-        title
-      </span>
-    </a>
-  </li>
-</ol>
+        <span
+          class="Toc-itemTitle"
+        >
+          title
+        </span>
+      </a>
+    </li>
+  </ol>
+</div>
 `;

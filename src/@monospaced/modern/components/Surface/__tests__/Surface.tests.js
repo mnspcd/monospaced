@@ -1,19 +1,21 @@
 /* eslint-env jest */
-import { render } from "enzyme";
+import { render } from "@testing-library/react";
 import React from "react";
 
-import Surface from "../Surface";
+import Surface from "..";
 
 describe("Surface component", () => {
   it("should render correctly", () => {
-    const component = render(<Surface>children</Surface>);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Surface>children</Surface>);
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render dark background correctly", () => {
-    const component = render(
+    const { container } = render(
       <Surface backgroundColor="grey-dark">children</Surface>,
     );
-    expect(component).toMatchSnapshot();
+
+    expect(container).toMatchSnapshot();
   });
 });

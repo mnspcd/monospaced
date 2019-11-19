@@ -1,11 +1,13 @@
 /* eslint-env jest */
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
 import React from "react";
 
-import Base from "../Base";
+import Base from "..";
 
 describe("Base component", () => {
   it("should render correctly", () => {
-    expect(shallow(<Base>children</Base>)).toMatchSnapshot();
+    const { container } = render(<Base>children</Base>);
+
+    expect(container).toMatchSnapshot();
   });
 });

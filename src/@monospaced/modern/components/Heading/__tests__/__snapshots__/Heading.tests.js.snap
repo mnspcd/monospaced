@@ -1,94 +1,92 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading component should render an H1 correctly 1`] = `
-<Heading
-  level="1"
-  size="xxxl"
->
-  Hamburgefonstiv
-</Heading>
+<div>
+  <h1
+    class="Heading Heading--xxxl"
+  >
+    Hamburgefonstiv
+  </h1>
+</div>
 `;
 
 exports[`Heading component should render an H2 correctly 1`] = `
-<Heading
-  level="2"
-  size="xxl"
->
-  Hamburgefonstiv
-</Heading>
+<div>
+  <h2
+    class="Heading Heading--xxl"
+  >
+    Hamburgefonstiv
+  </h2>
+</div>
 `;
 
 exports[`Heading component should render an H3 correctly 1`] = `
-<Heading
-  level="3"
-  size="xl"
->
-  Hamburgefonstiv
-</Heading>
+<div>
+  <h3
+    class="Heading Heading--xl"
+  >
+    Hamburgefonstiv
+  </h3>
+</div>
 `;
 
 exports[`Heading component should render an H4 correctly 1`] = `
-<Heading
-  level="4"
-  size="l"
->
-  Hamburgefonstiv
-</Heading>
+<div>
+  <h4
+    class="Heading Heading--l"
+  >
+    Hamburgefonstiv
+  </h4>
+</div>
 `;
 
 exports[`Heading component should render an H5 correctly 1`] = `
-<Heading
-  level="5"
-  size="m"
->
-  Hamburgefonstiv
-</Heading>
+<div>
+  <h5
+    class="Heading Heading--m"
+  >
+    Hamburgefonstiv
+  </h5>
+</div>
 `;
 
 exports[`Heading component should render an H6 correctly 1`] = `
-<Heading
-  level="6"
-  size="s"
->
-  Hamburgefonstiv
-</Heading>
+<div>
+  <h6
+    class="Heading Heading--s"
+  >
+    Hamburgefonstiv
+  </h6>
+</div>
 `;
 
 exports[`Heading component should render correctly 1`] = `
-<span
-  className="Heading"
-  style={
-    Object {
-      "color": null,
-    }
-  }
->
-  Hamburgefonstiv
-</span>
+<div>
+  <span
+    class="Heading"
+  >
+    Hamburgefonstiv
+  </span>
+</div>
 `;
 
 exports[`Heading component should render heading color correctly 1`] = `
-<span
-  className="Heading Heading--xl"
-  style={
-    Object {
-      "color": "#000a6e",
-    }
-  }
->
-  Hamburgefonstiv
-</span>
+<div>
+  <span
+    class="Heading Heading--xl"
+    style="color: rgb(0, 10, 110);"
+  >
+    Hamburgefonstiv
+  </span>
+</div>
 `;
 
 exports[`Heading component should render heading level correctly 1`] = `
-<h1
-  className="Heading Heading--xl"
-  style={
-    Object {
-      "color": null,
-    }
-  }
->
-  Hamburgefonstiv
-</h1>
+<div>
+  <h1
+    class="Heading Heading--xl"
+  >
+    Hamburgefonstiv
+  </h1>
+</div>
 `;

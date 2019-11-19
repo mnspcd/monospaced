@@ -1,41 +1,50 @@
 /* eslint-env jest */
-import { render } from "enzyme";
+import { render } from "@testing-library/react";
 import React from "react";
 
-import Footer from "../Footer";
+import Footer from "..";
 
 describe("Footer component", () => {
-  beforeAll(
-    (global.Date = () => {
+  let globalDate;
+
+  beforeAll(() => {
+    globalDate = global.Date;
+
+    global.Date = () => {
       return {
         getFullYear: () => "2018",
       };
-    }),
-  );
+    };
+    global.Date.now = jest.fn(() => {});
+  });
+
+  afterAll(() => (global.Date = globalDate));
 
   it("should render correctly", () => {
-    const component = render(<Footer copyright="copyright" />);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Footer copyright="copyright" />);
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render links correctly", () => {
-    const component = render(
+    const { container } = render(
       <Footer
         copyright="copyright"
         links={[
           {
             href: "href",
             routerLink: true,
-            text: "text",
+            text: "foo",
           },
           {
             href: "href",
-            text: "text",
+            text: "bar",
           },
         ]}
         routes={[{ path: "foo" }]}
       />,
     );
-    expect(component).toMatchSnapshot();
+
+    expect(container).toMatchSnapshot();
   });
 });

@@ -1,18 +1,20 @@
 /* eslint-env jest */
-import { render } from "enzyme";
+import { render } from "@testing-library/react";
 import React from "react";
 
-import Markdown, { mdxComponents } from "../";
+import Markdown, { mdxComponents } from "..";
 
 describe("Markdown component", () => {
   it("should render correctly", () => {
-    const component = render(<Markdown>children</Markdown>);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Markdown>children</Markdown>);
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render pre component correctly", () => {
     const Pre = mdxComponents.pre;
-    const component = render(<Pre>children</Pre>);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Pre>children</Pre>);
+
+    expect(container).toMatchSnapshot();
   });
 });

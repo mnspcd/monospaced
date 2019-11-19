@@ -1,71 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component should handle default onClick function correctly 1`] = `
-<Button
-  icon={<div />}
->
+exports[`Button container should handle default onClick function correctly 1`] = `
+<div>
   <button
-    className="Button Button--withIcon Button--iconOnly"
-    disabled={null}
-    onClick={[Function]}
-    style={
-      Object {
-        "minWidth": null,
-      }
-    }
+    class="Button"
   >
     <span
-      className="Button-icon"
+      class="Button-text"
+    >
+      Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button container should render an icon and no children correctly 1`] = `
+<div>
+  <button
+    class="Button Button--withIcon Button--iconOnly"
+  >
+    <span
+      class="Button-icon"
     >
       <div />
     </span>
   </button>
-</Button>
+</div>
 `;
 
-exports[`Button component should render an icon and no children correctly 1`] = `
-<button
-  class="Button Button--withIcon Button--iconOnly"
->
-  <span
-    class="Button-icon"
+exports[`Button container should render an icon correctly 1`] = `
+<div>
+  <button
+    class="Button Button--withIcon"
   >
-    <div />
-  </span>
-</button>
+    <span
+      class="Button-icon"
+    >
+      <div />
+    </span>
+    <span
+      class="Button-text"
+    >
+      children
+    </span>
+  </button>
+</div>
 `;
 
-exports[`Button component should render an icon correctly 1`] = `
-<button
-  class="Button Button--withIcon"
->
-  <span
-    class="Button-icon"
+exports[`Button container should render children correctly 1`] = `
+<div>
+  <button
+    class="Button"
   >
-    <div />
-  </span>
-  <span
-    class="Button-text"
-  >
-    children
-  </span>
-</button>
+    <span
+      class="Button-text"
+    >
+      children
+    </span>
+  </button>
+</div>
 `;
 
-exports[`Button component should render children correctly 1`] = `
-<button
-  class="Button"
->
-  <span
-    class="Button-text"
-  >
-    children
-  </span>
-</button>
-`;
-
-exports[`Button component should render correctly 1`] = `
-<button
-  class="Button"
-/>
+exports[`Button container should render correctly 1`] = `
+<div>
+  <button
+    class="Button"
+  />
+</div>
 `;

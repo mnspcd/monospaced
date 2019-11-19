@@ -1,10 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tile component should render correctly 1`] = `
-<a
-  class="Tile"
-  href="http://example.com"
->
-  children
-</a>
+<div>
+  <a
+    class="Tile"
+    href="http://example.com"
+  >
+    children
+  </a>
+</div>
 `;

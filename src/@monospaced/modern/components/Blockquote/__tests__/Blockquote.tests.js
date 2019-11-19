@@ -1,10 +1,13 @@
 /* eslint-env jest */
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
+import React from "react";
 
-import { basic } from "../Blockquote.stories";
+import Blockquote from "..";
 
 describe("Blockquote component", () => {
   it("should render correctly", () => {
-    expect(shallow(basic())).toMatchSnapshot();
+    const { container } = render(<Blockquote>children</Blockquote>);
+
+    expect(container).toMatchSnapshot();
   });
 });

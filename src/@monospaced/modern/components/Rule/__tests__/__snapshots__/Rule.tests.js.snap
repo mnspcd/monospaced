@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Rule component should render correctly 1`] = `
-<hr
-  class="Rule"
-/>
+<div>
+  <hr
+    class="Rule"
+  />
+</div>
 `;

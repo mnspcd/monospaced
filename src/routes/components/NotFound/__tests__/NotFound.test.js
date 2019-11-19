@@ -1,14 +1,15 @@
 /* eslint-env jest */
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
 import React from "react";
 
 import content from "../../../content/__mocks__";
 
-import NotFound from "../";
+import NotFound from "..";
 
 describe("NotFound component", () => {
   it("should render correctly", () => {
-    const component = shallow(<NotFound content={content} />);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<NotFound content={content} />);
+
+    expect(container).toMatchSnapshot();
   });
 });

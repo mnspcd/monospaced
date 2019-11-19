@@ -3,16 +3,18 @@ import { fireEvent, render } from "@testing-library/react";
 import React from "react";
 import { createMemoryHistory, Router, Route } from "react-router";
 
-import Masthead from "../Masthead";
+import Masthead from "..";
 
 describe("Masthead component", () => {
   it("should render correctly", () => {
     const { container } = render(<Masthead logo={<div />} />);
+
     expect(container).toMatchSnapshot();
   });
 
   it("should render heading level correctly", () => {
     const { container } = render(<Masthead headingLevel="1" logo={<div />} />);
+
     expect(container).toMatchSnapshot();
   });
 
@@ -28,6 +30,7 @@ describe("Masthead component", () => {
         logo={<div />}
       />,
     );
+
     expect(container).toMatchSnapshot();
   });
 
@@ -48,6 +51,7 @@ describe("Masthead component", () => {
         logo={<div />}
       />,
     );
+
     expect(container).toMatchSnapshot();
   });
 
@@ -89,7 +93,6 @@ describe("Masthead component", () => {
         logo={<div aria-label="Logo" />}
       />
     );
-
     const { container, getByLabelText } = render(
       <Router history={createMemoryHistory()}>
         <Route path="/" component={MockPage} />

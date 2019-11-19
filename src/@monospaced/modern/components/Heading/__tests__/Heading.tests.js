@@ -1,5 +1,5 @@
 /* eslint-env jest */
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
 
 import {
   basic,
@@ -15,47 +15,56 @@ import {
 
 describe("Heading component", () => {
   it("should render correctly", () => {
-    const component = shallow(basic());
-    expect(component).toMatchSnapshot();
+    const { container } = render(basic());
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render heading color correctly", () => {
-    const component = shallow(color());
-    expect(component).toMatchSnapshot();
+    const { container } = render(color());
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render heading level correctly", () => {
-    const component = shallow(level());
-    expect(component).toMatchSnapshot();
+    const { container } = render(level());
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render an H1 correctly", () => {
-    const component = shallow(h1());
-    expect(component).toMatchSnapshot();
+    const { container } = render(h1());
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render an H2 correctly", () => {
-    const component = shallow(h2());
-    expect(component).toMatchSnapshot();
+    const { container } = render(h2());
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render an H3 correctly", () => {
-    const component = shallow(h3());
-    expect(component).toMatchSnapshot();
+    const { container } = render(h3());
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render an H4 correctly", () => {
-    const component = shallow(h4());
-    expect(component).toMatchSnapshot();
+    const { container } = render(h4());
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render an H5 correctly", () => {
-    const component = shallow(h5());
-    expect(component).toMatchSnapshot();
+    const { container } = render(h5());
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render an H6 correctly", () => {
-    const component = shallow(h6());
-    expect(component).toMatchSnapshot();
+    const { container } = render(h6());
+
+    expect(container).toMatchSnapshot();
   });
 });

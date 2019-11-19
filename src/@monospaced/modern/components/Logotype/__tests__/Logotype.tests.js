@@ -1,22 +1,25 @@
 /* eslint-env jest */
-import { render } from "enzyme";
+import { render } from "@testing-library/react";
 import React from "react";
 
-import Logotype from "../Logotype";
+import Logotype from "..";
 
 describe("Logotype component", () => {
   it("should render correctly", () => {
-    const component = render(<Logotype />);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Logotype />);
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render width correctly", () => {
-    const component = render(<Logotype width="6rem" />);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Logotype width="6rem" />);
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render height correctly", () => {
-    const component = render(<Logotype height="3rem" />);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Logotype height="3rem" />);
+
+    expect(container).toMatchSnapshot();
   });
 });

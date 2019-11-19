@@ -1,14 +1,15 @@
 /* eslint-env jest */
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
 import React from "react";
 
 import content from "../../../content/__mocks__";
 
-import Home from "../";
+import Home from "..";
 
 describe("Home component", () => {
   it("should render correctly", () => {
-    const component = shallow(<Home content={content} />);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Home content={content} />);
+
+    expect(container).toMatchSnapshot();
   });
 });

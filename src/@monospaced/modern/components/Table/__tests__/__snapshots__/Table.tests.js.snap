@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Table component should render correctly 1`] = `
-Array [
-  "children",
+<div>
   <table
     class="Table"
-  />,
-]
+  >
+    <tbody />
+  </table>
+</div>
 `;

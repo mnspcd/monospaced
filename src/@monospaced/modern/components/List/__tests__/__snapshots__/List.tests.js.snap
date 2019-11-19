@@ -1,17 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List component should render an ordered list correctly 1`] = `
-<ol
-  class="List List--ordered"
->
-  children
-</ol>
+<div>
+  <ol
+    class="List List--ordered"
+  >
+    children
+  </ol>
+</div>
 `;
 
 exports[`List component should render correctly 1`] = `
-<ul
-  class="List"
->
-  children
-</ul>
+<div>
+  <ul
+    class="List"
+  >
+    children
+  </ul>
+</div>
 `;

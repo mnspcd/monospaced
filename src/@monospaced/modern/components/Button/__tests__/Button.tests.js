@@ -1,46 +1,52 @@
 /* eslint-env jest */
-import { mount, render } from "enzyme";
+import { fireEvent, render } from "@testing-library/react";
 import React from "react";
 
-import Button from "../Button";
+import Button from "..";
 
-describe("Button component", () => {
+describe("Button container", () => {
   it("should render correctly", () => {
-    const component = render(<Button />);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Button />);
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render children correctly", () => {
-    const component = render(<Button>children</Button>);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Button>children</Button>);
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render an icon correctly", () => {
-    const component = render(<Button icon={<div />}>children</Button>);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Button icon={<div />}>children</Button>);
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should render an icon and no children correctly", () => {
-    const component = render(<Button icon={<div />} />);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Button icon={<div />} />);
+
+    expect(container).toMatchSnapshot();
   });
 
   it("should handle default onClick function correctly", () => {
-    const component = mount(<Button icon={<div />} />);
+    const { container, getByText } = render(<Button>Button</Button>);
 
-    component.simulate("click");
+    fireEvent.click(getByText("Button"));
 
-    expect(component).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it("should call onClick function correctly", () => {
     const mockFunction = jest.fn();
 
-    const component = mount(<Button icon={<div />} onClick={mockFunction} />);
+    const { getByText } = render(
+      <Button onClick={mockFunction}>Button</Button>,
+    );
 
     expect(mockFunction).not.toHaveBeenCalled();
 
-    component.simulate("click");
+    fireEvent.click(getByText("Button"));
 
     expect(mockFunction).toHaveBeenCalledTimes(1);
   });

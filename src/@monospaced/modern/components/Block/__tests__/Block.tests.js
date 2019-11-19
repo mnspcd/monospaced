@@ -1,11 +1,13 @@
 /* eslint-env jest */
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
 import React from "react";
 
-import Block from "../Block";
+import Block from "..";
 
 describe("Block component", () => {
   it("should render correctly", () => {
-    expect(shallow(<Block>children</Block>)).toMatchSnapshot();
+    const { container } = render(<Block>children</Block>);
+
+    expect(container).toMatchSnapshot();
   });
 });

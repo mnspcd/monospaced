@@ -1,12 +1,13 @@
 /* eslint-env jest */
-import { render } from "enzyme";
+import { render } from "@testing-library/react";
 import React from "react";
 
-import Space from "../Space";
+import Space from "..";
 
 describe("Space component", () => {
   it("should render correctly", () => {
-    const component = render(<Space>children</Space>);
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Space>children</Space>);
+
+    expect(container).toMatchSnapshot();
   });
 });
