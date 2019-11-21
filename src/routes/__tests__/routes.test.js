@@ -5,6 +5,7 @@ import { createMemoryHistory, Router } from "react-router";
 import reactRouterToArray from "react-router-to-array";
 
 import routes, { App } from "..";
+import { HelmetProvider } from "react-helmet-async";
 
 jest.mock("../content");
 
@@ -43,7 +44,11 @@ describe("Routes", () => {
 
   it("should force trailing slashes on urls", () => {
     const history = createMemoryHistory("/foo");
-    render(<Router history={history} routes={routes} />);
+    render(
+      <HelmetProvider>
+        <Router history={history} routes={routes} />
+      </HelmetProvider>,
+    );
 
     expect(history.getCurrentLocation().pathname).toBe("/foo/");
 

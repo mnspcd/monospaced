@@ -3,9 +3,9 @@ import "core-js/es/object/assign";
 import "core-js/es/string/includes";
 import PropTypes from "prop-types";
 import React from "react";
-import DocumentMeta from "react-document-meta";
 import ReactDOM from "react-dom";
 import ReactDOMServer from "react-dom/server";
+import { HelmetProvider } from "react-helmet-async";
 import { browserHistory, createMemoryHistory, Router } from "react-router";
 
 import { version } from "../package.json";
@@ -24,14 +24,15 @@ import "./assets/mstile-150x150.png";
 import "./assets/safari-pinned-tab.svg";
 import routes from "./routes";
 
-const Document = ({ meta, router }) => {
+const Document = ({ meta, router, title }) => {
   const themeColor = tokens["color-brand-primary"];
 
   return (
     <html lang="en-gb">
       <head>
         <meta charSet="utf-8" />
-        {meta}
+        {title.toComponent()}
+        {meta && meta.toComponent()}
         <meta content={themeColor} name="msapplication-TileColor" />
         <meta content={themeColor} name="theme-color" />
         <meta content="width=device-width" name="viewport" />
@@ -98,35 +99,43 @@ const Document = ({ meta, router }) => {
 };
 
 Document.propTypes = {
-  meta: PropTypes.array.isRequired,
+  meta: PropTypes.object,
   router: PropTypes.array.isRequired,
+  title: PropTypes.object.isRequired,
 };
 
 if (typeof document !== "undefined") {
   const router = document.getElementById("router");
 
   ReactDOM.hydrate(
-    <Router
-      history={browserHistory}
-      onUpdate={() => {
-        window.scrollTo(0, 0);
-      }}
-      routes={routes}
-    />,
+    <HelmetProvider>
+      <Router
+        history={browserHistory}
+        onUpdate={() => {
+          window.scrollTo(0, 0);
+        }}
+        routes={routes}
+      />
+    </HelmetProvider>,
     router,
   );
 }
 
 export default ({ path }, callback) => {
+  const helmetContext = {};
   const history = createMemoryHistory(path);
   const router = {
     __html: ReactDOMServer.renderToString(
-      <Router history={history} routes={routes} />,
+      <HelmetProvider context={helmetContext}>
+        <Router history={history} routes={routes} />
+      </HelmetProvider>,
     ),
   };
-  const meta = DocumentMeta.renderAsReact();
+  const {
+    helmet: { meta, title },
+  } = helmetContext;
   const html = ReactDOMServer.renderToStaticMarkup(
-    <Document meta={meta} router={router} />,
+    <Document meta={meta} router={router} title={title} />,
   );
 
   callback(null, `<!DOCTYPE html>${html}`);

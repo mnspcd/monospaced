@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import DocumentMeta from "react-document-meta";
+import { Helmet } from "react-helmet-async";
 
 import {
   Heading,
@@ -23,7 +23,10 @@ const Home = ({
 }) => {
   return (
     <>
-      <DocumentMeta description={description} title={title} />
+      <Helmet>
+        <title>{title}</title>
+        <meta content={description} name="description" />
+      </Helmet>
       <Poster padding="0 0 4.5em">
         <Masthead
           headingLevel="1"

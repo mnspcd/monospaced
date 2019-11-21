@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import DocumentMeta from "react-document-meta";
+import { Helmet } from "react-helmet-async";
 
 import {
   Grid,
@@ -24,7 +24,10 @@ const Legal = ({
 }) => {
   return (
     <>
-      <DocumentMeta description={description} title={`Legal | ${title}`} />
+      <Helmet>
+        <title>{`Legal | ${title}`}</title>
+        <meta content={description} name="description" />
+      </Helmet>
       <Masthead links={links} logo={<Logotype height="1.5em" />} />
       <Space size="l" />
       <Grid>

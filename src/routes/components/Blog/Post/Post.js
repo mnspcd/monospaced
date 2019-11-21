@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import DocumentMeta from "react-document-meta";
+import { Helmet } from "react-helmet-async";
 
 import {
   Grid,
@@ -26,10 +26,10 @@ const Post = ({
 
   return (
     <>
-      <DocumentMeta
-        title={`${postTitle} | ${title} Blog`}
-        description={description}
-      />
+      <Helmet>
+        <title>{`${postTitle} | ${title} Blog`}</title>
+        <meta content={description} name="description" />
+      </Helmet>
       <Masthead
         activePath="/blog/"
         links={links}

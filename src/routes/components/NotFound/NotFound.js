@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import DocumentMeta from "react-document-meta";
+import { Helmet } from "react-helmet-async";
 
 import {
   Grid,
@@ -19,10 +19,10 @@ const NotFound = ({
 }) => {
   return (
     <>
-      <DocumentMeta
-        description={description}
-        title={`Page not found | ${title}`}
-      />
+      <Helmet>
+        <title>{`Page not found | ${title}`}</title>
+        <meta content={description} name="description" />
+      </Helmet>
       <Masthead links={links} logo={<Logotype height="1.5em" />} />
       <Space size="l" />
       <Grid>
