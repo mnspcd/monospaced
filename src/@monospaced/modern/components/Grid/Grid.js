@@ -12,7 +12,9 @@ const Grid = ({ children, padding = "0 1em" }) => (
   </div>
 );
 
-Grid.alignments = ["center", "end", "start"];
+const alignments = ["center", "end", "start"];
+
+Grid.alignments = alignments;
 
 Grid.propTypes = {
   /**
@@ -26,7 +28,7 @@ Grid.propTypes = {
   padding: PropTypes.string,
 };
 
-Grid.Item = ({
+const Item = ({
   align,
   children,
   colSpan,
@@ -50,16 +52,46 @@ Grid.Item = ({
   </div>
 );
 
-Grid.Item.displayName = "Grid.Item";
+Item.displayName = "Grid.Item";
 
-Grid.Item.propTypes = {
-  align: PropTypes.oneOf(Grid.alignments),
+Item.propTypes = {
+  /**
+   * Vertical alignment of the Grid.Item.
+   */
+  align: PropTypes.oneOf(alignments),
+
+  /**
+   * Content to display in the Grid.Item.
+   */
   children: PropTypes.node,
+
+  /**
+   * Number of columns the Grid.Item should span.
+   */
   colSpan: PropTypes.string,
+
+  /**
+   * Column number the Grid.Item should start at.
+   */
   colStart: PropTypes.string,
-  justify: PropTypes.oneOf(Grid.alignments),
+
+  /**
+   * Horizontal alignment of the Grid.Item.
+   */
+  justify: PropTypes.oneOf(alignments),
+
+  /**
+   * Number of rows the Grid.Item should span.
+   */
   rowSpan: PropTypes.string,
+
+  /**
+   * Row number the Grid.Item should start at.
+   */
   rowStart: PropTypes.string,
 };
 
+Grid.Item = Item;
+
+export { Item };
 export default Grid;

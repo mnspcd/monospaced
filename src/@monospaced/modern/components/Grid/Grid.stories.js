@@ -3,10 +3,15 @@ import React from "react";
 
 import Block from "../Block";
 
-import Grid from "./Grid";
+import Grid, { Item } from "./Grid";
 
 export default {
   component: Grid,
+  parameters: {
+    subcomponents: {
+      "Grid.Item": Item,
+    },
+  },
   title: "Components/Grid",
 };
 

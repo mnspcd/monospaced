@@ -30,14 +30,22 @@ Group.propTypes = {
   tessellate: PropTypes.bool,
 };
 
-Group.Item = ({ children }) => (
+const Item = ({ children }) => (
   <div className="Group-item">
     <div className="Group-itemInner">{children}</div>
   </div>
 );
 
-Group.Item.displayName = "Group.Item";
+Item.displayName = "Group.Item";
 
-Group.Item.propTypes = { children: PropTypes.node.isRequired };
+Item.propTypes = {
+  /**
+   * Content to display in the Group.Item.
+   */
+  children: PropTypes.node.isRequired,
+};
 
+Group.Item = Item;
+
+export { Item };
 export default Group;

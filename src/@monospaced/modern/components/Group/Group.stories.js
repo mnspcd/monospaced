@@ -3,10 +3,15 @@ import React from "react";
 
 import Block from "../Block";
 
-import Group from "./Group";
+import Group, { Item } from "./Group";
 
 export default {
   component: Group,
+  parameters: {
+    subcomponents: {
+      "Group.Item": Item,
+    },
+  },
   title: "Components/Group",
 };
 
