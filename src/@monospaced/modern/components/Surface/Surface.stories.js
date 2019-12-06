@@ -8,48 +8,40 @@ export default {
   title: "Components/Surface",
 };
 
+const ExampleContent = () => (
+  <div className="u-monospaced" style={{ padding: "1em" }}>
+    Text <br />
+    <a href="#">Link</a>
+  </div>
+);
+
 export const basic = () => (
   <Surface backgroundColor="grey-light">
-    <div className="u-monospaced" style={{ padding: "1em" }}>
-      Text <br />
-      <a href="#">Link</a>
-    </div>
+    <ExampleContent />
   </Surface>
 );
 
 export const white = () => (
   <Surface backgroundColor="white">
-    <div className="u-monospaced">
-      Text <br />
-      <a href="#">Link</a>
-    </div>
+    <ExampleContent />
   </Surface>
 );
 
 export const greyLight = () => (
   <Surface backgroundColor="grey-light">
-    <div className="u-monospaced" style={{ padding: "1em" }}>
-      Text <br />
-      <a href="#">Link</a>
-    </div>
+    <ExampleContent />
   </Surface>
 );
 
 export const greyDark = () => (
   <Surface backgroundColor="grey-dark">
-    <div className="u-monospaced" style={{ padding: "1em" }}>
-      Text <br />
-      <a href="#">Link</a>
-    </div>
+    <ExampleContent />
   </Surface>
 );
 
 export const black = () => (
   <Surface backgroundColor="black">
-    <div className="u-monospaced" style={{ padding: "1em" }}>
-      Text <br />
-      <a href="#">Link</a>
-    </div>
+    <ExampleContent />
   </Surface>
 );
 
@@ -61,10 +53,7 @@ export const knobs = () => (
       "white",
     )}
   >
-    <div className="u-monospaced">
-      Text <br />
-      <a href="#">Link</a>
-    </div>
+    <ExampleContent />
   </Surface>
 );
 
