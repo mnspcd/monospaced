@@ -17,7 +17,6 @@ const Table = ({ children }) => {
       className={classNames({
         Table: true,
         [`Table--onDarkBackground`]: surfaceBackground === "dark",
-        [`Table--onLightBlueBackground`]: surfaceBackground === "blue-light",
       })}
     >
       {children}
