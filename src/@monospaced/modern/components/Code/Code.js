@@ -1,9 +1,9 @@
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useContext } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 
-import { SurfaceConsumer } from "../Surface";
+import { SurfaceContext } from "../Surface";
 
 import "./Code.css";
 
@@ -11,22 +11,22 @@ import "./Code.css";
  * Use `Code` to display code samples. As inline text, or code blocks with
  * optional syntax highlighting.
  */
-const Code = ({ block = false, children, lightMode = false }) => (
-  <SurfaceConsumer>
-    {surfaceBackground => (
-      <code
-        className={classNames({
-          Code: true,
-          [`Code--block`]: block,
-          [`Code--lightMode`]: lightMode,
-          [`Code--onDarkBackground`]: surfaceBackground === "dark",
-        })}
-      >
-        {children}
-      </code>
-    )}
-  </SurfaceConsumer>
-);
+const Code = ({ block = false, children, lightMode = false }) => {
+  const surfaceBackground = useContext(SurfaceContext);
+
+  return (
+    <code
+      className={classNames({
+        Code: true,
+        [`Code--block`]: block,
+        [`Code--lightMode`]: lightMode,
+        [`Code--onDarkBackground`]: surfaceBackground === "dark",
+      })}
+    >
+      {children}
+    </code>
+  );
+};
 
 Code.propTypes = {
   /**

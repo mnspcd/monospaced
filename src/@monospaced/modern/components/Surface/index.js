@@ -1,1 +1,1 @@
-export { default, SurfaceConsumer } from "./Surface";
+export { default, SurfaceContext } from "./Surface";

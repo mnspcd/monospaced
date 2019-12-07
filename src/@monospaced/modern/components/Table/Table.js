@@ -1,29 +1,29 @@
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useContext } from "react";
 
-import { SurfaceConsumer } from "../Surface";
+import { SurfaceContext } from "../Surface";
 
 import "./Table.css";
 
 /**
  * Use `Table` to display tabular data.
  */
-const Table = ({ children }) => (
-  <SurfaceConsumer>
-    {surfaceBackground => (
-      <table
-        className={classNames({
-          Table: true,
-          [`Table--onDarkBackground`]: surfaceBackground === "dark",
-          [`Table--onLightBlueBackground`]: surfaceBackground === "blue-light",
-        })}
-      >
-        {children}
-      </table>
-    )}
-  </SurfaceConsumer>
-);
+const Table = ({ children }) => {
+  const surfaceBackground = useContext(SurfaceContext);
+
+  return (
+    <table
+      className={classNames({
+        Table: true,
+        [`Table--onDarkBackground`]: surfaceBackground === "dark",
+        [`Table--onLightBlueBackground`]: surfaceBackground === "blue-light",
+      })}
+    >
+      {children}
+    </table>
+  );
+};
 
 Table.propTypes = {
   /**

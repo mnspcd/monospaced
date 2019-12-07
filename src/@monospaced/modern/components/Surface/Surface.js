@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import React from "react";
+import React, { createContext } from "react";
 
 import tokens from "../../tokens";
 
@@ -13,7 +13,9 @@ const backgroundColors = {
   black: tokens["color-black"],
 };
 
-const { Consumer, Provider } = React.createContext();
+const Context = createContext("white");
+
+const { Provider } = Context;
 
 /**
  * Use `Surface` to display components on different background colors.
@@ -57,5 +59,5 @@ Surface.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
+export { Context as SurfaceContext };
 export default Surface;
-export { Consumer as SurfaceConsumer };

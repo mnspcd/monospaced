@@ -1,24 +1,24 @@
 import classNames from "classnames";
-import React from "react";
+import React, { useContext } from "react";
 
-import { SurfaceConsumer } from "../Surface";
+import { SurfaceContext } from "../Surface";
 
 import "./Rule.css";
 
 /**
  * Use `Rule` to display a horizontal rule.
  */
-const Rule = () => (
-  <SurfaceConsumer>
-    {surfaceBackground => (
-      <hr
-        className={classNames({
-          Rule: true,
-          [`Rule--onDarkBackground`]: surfaceBackground === "dark",
-        })}
-      />
-    )}
-  </SurfaceConsumer>
-);
+const Rule = () => {
+  const surfaceBackground = useContext(SurfaceContext);
+
+  return (
+    <hr
+      className={classNames({
+        Rule: true,
+        [`Rule--onDarkBackground`]: surfaceBackground === "dark",
+      })}
+    />
+  );
+};
 
 export default Rule;

@@ -1,31 +1,31 @@
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useContext } from "react";
 
-import { SurfaceConsumer } from "../Surface";
+import { SurfaceContext } from "../Surface";
 
 import "./Tile.css";
 
 /**
  * Use `Tile` to display content in a block link.
  */
-const Tile = ({ children, href, label, width }) => (
-  <SurfaceConsumer>
-    {surfaceBackground => (
-      <a
-        aria-label={label}
-        className={classNames({
-          Tile: true,
-          [`Tile--onDarkBackground`]: surfaceBackground === "dark",
-        })}
-        href={href}
-        style={{ width }}
-      >
-        {children}
-      </a>
-    )}
-  </SurfaceConsumer>
-);
+const Tile = ({ children, href, label, width }) => {
+  const surfaceBackground = useContext(SurfaceContext);
+
+  return (
+    <a
+      aria-label={label}
+      className={classNames({
+        Tile: true,
+        [`Tile--onDarkBackground`]: surfaceBackground === "dark",
+      })}
+      href={href}
+      style={{ width }}
+    >
+      {children}
+    </a>
+  );
+};
 
 Tile.propTypes = {
   /**
