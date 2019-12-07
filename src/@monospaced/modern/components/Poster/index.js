@@ -1,1 +1,1 @@
-export { default, PosterConsumer } from "./Poster";
+export { default, PosterContext } from "./Poster";

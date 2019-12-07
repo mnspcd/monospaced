@@ -1,9 +1,11 @@
 import PropTypes from "prop-types";
-import React from "react";
+import React, { createContext } from "react";
 
 import "./Poster.css";
 
-const { Consumer, Provider } = React.createContext();
+const Context = createContext(false);
+
+const { Provider } = Context;
 
 /**
  * Use `Poster` to display content on an image.
@@ -28,5 +30,5 @@ Poster.propTypes = {
   padding: PropTypes.string,
 };
 
+export { Context as PosterContext };
 export default Poster;
-export { Consumer as PosterConsumer };

@@ -1,12 +1,12 @@
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Mail, Menu, X } from "react-feather";
 import { Link } from "react-router";
 
 import Button from "../Button";
 import Heading from "../Heading";
-import { PosterConsumer } from "../Poster";
+import { PosterContext } from "../Poster";
 
 import "./Masthead.css";
 
@@ -19,6 +19,7 @@ const Masthead = ({
   links = null,
   logo,
 }) => {
+  const poster = useContext(PosterContext);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -30,85 +31,81 @@ const Masthead = ({
   }, [menuOpen]);
 
   return (
-    <PosterConsumer>
-      {poster => (
-        <div
-          className={classNames({
-            Masthead: true,
-            [`Masthead--menuOpen`]: menuOpen,
-            [`Masthead--onPoster`]: poster,
-          })}
+    <div
+      className={classNames({
+        Masthead: true,
+        [`Masthead--menuOpen`]: menuOpen,
+        [`Masthead--onPoster`]: poster,
+      })}
+    >
+      <Heading level={headingLevel}>
+        <Link
+          className="Masthead-logo"
+          onClick={() => {
+            setMenuOpen(false);
+          }}
+          to="/"
         >
-          <Heading level={headingLevel}>
-            <Link
-              className="Masthead-logo"
-              onClick={() => {
-                setMenuOpen(false);
-              }}
-              to="/"
-            >
-              {logo}
-            </Link>
-          </Heading>
-          <div className="Masthead-menu">
-            <div className="Masthead-menuButton">
-              {links &&
-                (links.length > 1 ? (
-                  <Button
-                    icon={
-                      menuOpen ? (
-                        <X aria-label="Close" role="img" size="100%" />
-                      ) : (
-                        <Menu aria-label="Menu" role="img" size="100%" />
-                      )
-                    }
-                    onClick={() => {
-                      setMenuOpen(!menuOpen);
-                    }}
-                    styleVariant="flat"
-                  />
-                ) : (
-                  <a href={links[0].href}>
-                    <Button
-                      icon={<Mail aria-label="Email" role="img" size="100%" />}
-                      styleVariant="flat"
-                    />
-                  </a>
-                ))}
-            </div>
-            {links && (
-              <nav className="Masthead-nav">
-                <ul className="Masthead-navList">
-                  {links.map(link => {
-                    const { href, routerLink, text } = link;
-
-                    return (
-                      <li className="Masthead-navItem" key={text}>
-                        {routerLink ? (
-                          <Link
-                            className={classNames({
-                              [`Masthead-navLink`]: true,
-                              [`Masthead-navLinkActive`]: href === activePath,
-                            })}
-                            to={href}
-                          >
-                            {text}
-                          </Link>
-                        ) : (
-                          <a className="Masthead-navLink" href={href}>
-                            {text}
-                          </a>
-                        )}
-                      </li>
-                    );
-                  })}
-                </ul>
-              </nav>
-            )}
-          </div>
+          {logo}
+        </Link>
+      </Heading>
+      <div className="Masthead-menu">
+        <div className="Masthead-menuButton">
+          {links &&
+            (links.length > 1 ? (
+              <Button
+                icon={
+                  menuOpen ? (
+                    <X aria-label="Close" role="img" size="100%" />
+                  ) : (
+                    <Menu aria-label="Menu" role="img" size="100%" />
+                  )
+                }
+                onClick={() => {
+                  setMenuOpen(!menuOpen);
+                }}
+                styleVariant="flat"
+              />
+            ) : (
+              <a href={links[0].href}>
+                <Button
+                  icon={<Mail aria-label="Email" role="img" size="100%" />}
+                  styleVariant="flat"
+                />
+              </a>
+            ))}
         </div>
-      )}
-    </PosterConsumer>
+        {links && (
+          <nav className="Masthead-nav">
+            <ul className="Masthead-navList">
+              {links.map(link => {
+                const { href, routerLink, text } = link;
+
+                return (
+                  <li className="Masthead-navItem" key={text}>
+                    {routerLink ? (
+                      <Link
+                        className={classNames({
+                          [`Masthead-navLink`]: true,
+                          [`Masthead-navLinkActive`]: href === activePath,
+                        })}
+                        to={href}
+                      >
+                        {text}
+                      </Link>
+                    ) : (
+                      <a className="Masthead-navLink" href={href}>
+                        {text}
+                      </a>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+        )}
+      </div>
+    </div>
   );
 };
 
