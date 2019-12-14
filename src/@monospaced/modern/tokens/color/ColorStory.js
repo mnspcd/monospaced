@@ -8,7 +8,7 @@ import { colorTokens, mdrnColor } from "./";
 
 const defaultColors = {
   "color-grey": mdrnColor["color-grey-4"],
-  "color-red": mdrnColor["color-red-6"],
+  "color-red": mdrnColor["color-red-5"],
   "color-pink": mdrnColor["color-pink-6"],
   "color-blue": mdrnColor["color-blue-6"],
   "color-azure": mdrnColor["color-azure-4"],
