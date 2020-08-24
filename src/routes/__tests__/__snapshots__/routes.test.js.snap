@@ -17,7 +17,7 @@ exports[`Routes should render App correctly 1`] = `
         © 
         foo
          
-        2019
+        2018
       </div>
       <ul
         class="Footer-list"

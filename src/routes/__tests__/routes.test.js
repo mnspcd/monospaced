@@ -10,6 +10,21 @@ import { HelmetProvider } from "react-helmet-async";
 jest.mock("../content");
 
 describe("Routes", () => {
+  let globalDate;
+
+  beforeAll(() => {
+    globalDate = global.Date;
+
+    global.Date = () => {
+      return {
+        getFullYear: () => "2018",
+      };
+    };
+    global.Date.now = jest.fn(() => {});
+  });
+
+  afterAll(() => (global.Date = globalDate));
+
   it("should render App correctly", () => {
     const { container } = render(
       <App
