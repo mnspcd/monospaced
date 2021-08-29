@@ -1,4 +1,4 @@
-import CopyWebpackPlugin from "copy-webpack-plugin";
+// import CopyWebpackPlugin from "copy-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import OptimizeCSSAssetsPlugin from "optimize-css-assets-webpack-plugin";
 import path from "path";
@@ -83,7 +83,7 @@ module.exports = () => {
       publicPath: "/",
     },
     plugins: [
-      new CopyWebpackPlugin([{ context: "src/legacy", from: "**/*" }]),
+      // new CopyWebpackPlugin([{ context: "src/legacy", from: "**/*" }]),
       new MiniCssExtractPlugin({ filename: "styles.css" }),
       new StaticSiteGeneratorPlugin("bundle.js", routes),
     ],
