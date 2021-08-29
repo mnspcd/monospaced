@@ -7,13 +7,13 @@ import {
   Freeform,
   GrandUnion,
   Hanno,
+  Hubble,
   MajorPlayers,
   NationalLottery,
   Nhs,
   Ogilvy,
   Social360,
   Stordis,
-  Suburb,
   ThomsonReuters,
 } from "./svg";
 
@@ -66,6 +66,11 @@ export default {
         Logo: Hanno,
       },
       {
+        href: "https://hubblehq.com/",
+        label: "Hubble",
+        Logo: Hubble,
+      },
+      {
         href: "https://www.majorplayers.co.uk",
         label: "Major Players",
         Logo: MajorPlayers,
@@ -94,11 +99,6 @@ export default {
         href: "https://www.stordis.com",
         label: "Stordis",
         Logo: Stordis,
-      },
-      {
-        href: "http://wearesuburb.com",
-        label: "Suburb",
-        Logo: Suburb,
       },
       {
         href: "https://www.thomsonreuters.com",
