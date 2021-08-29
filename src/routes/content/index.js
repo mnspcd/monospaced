@@ -114,16 +114,16 @@ export default {
         routerLink: true,
         text: "legal",
       },
-      {
-        href: "/lighthouse.report.html",
-        text: "lighthouse",
-      },
+      // {
+      //   href: "/lighthouse.report.html",
+      //   text: "lighthouse",
+      // },
       {
         href: "/login/",
         text: "login",
       },
       {
-        href: "https://github.com/monospaced/monospaced.com",
+        href: "https://github.com/mnspcd/monospaced.com",
         text: "view-source",
       },
     ],
