@@ -119,10 +119,6 @@ export default {
       //   text: "lighthouse",
       // },
       {
-        href: "/login/",
-        text: "login",
-      },
-      {
         href: "https://github.com/mnspcd/monospaced.com",
         text: "view-source",
       },
