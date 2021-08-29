@@ -35,16 +35,16 @@
 /* dark background */
 
 .mdrn .Button--onDarkBackground {
-  background-color: var(--color-blue-5);
+  background-color: var(--color-blue-4);
   color: var(--color-grey-9);
 }
 
 .mdrn .Button--onDarkBackground:hover {
-  background-color: var(--color-blue-4);
+  background-color: var(--color-blue-3);
 }
 
 .mdrn .Button--onDarkBackground:active {
-  background-color: var(--color-blue-3);
+  background-color: var(--color-blue-2);
 }
 
 /* danger */
@@ -64,15 +64,15 @@
 /* danger on dark background */
 
 .mdrn .Button--colorDanger.Button--onDarkBackground {
-  background-color: var(--color-red-5);
-}
-
-.mdrn .Button--colorDanger.Button--onDarkBackground:hover {
   background-color: var(--color-red-4);
 }
 
-.mdrn .Button--colorDanger.Button--onDarkBackground:active {
+.mdrn .Button--colorDanger.Button--onDarkBackground:hover {
   background-color: var(--color-red-3);
+}
+
+.mdrn .Button--colorDanger.Button--onDarkBackground:active {
+  background-color: var(--color-red-2);
 }
 
 /* flat
@@ -96,19 +96,19 @@
 /* flat on dark background */
 
 .mdrn .Button--styleFlat.Button--onDarkBackground {
-  color: var(--color-blue-5);
+  color: var(--color-blue-4);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .mdrn .Button--styleFlat.Button--onDarkBackground:hover {
-  background-color: rgba(var(--color-blue-4-rgb), var(--opacity-hover));
-  color: var(--color-blue-4);
+  background-color: rgba(var(--color-blue-3-rgb), var(--opacity-hover));
+  color: var(--color-blue-3);
 }
 
 .mdrn .Button--styleFlat.Button--onDarkBackground:active {
-  background-color: rgba(var(--color-blue-3-rgb), var(--opacity-active));
-  color: var(--color-blue-3);
+  background-color: rgba(var(--color-blue-2-rgb), var(--opacity-active));
+  color: var(--color-blue-2);
 }
 
 /* flat danger */
@@ -131,17 +131,17 @@
 /* flat danger on dark background */
 
 .mdrn .Button--styleFlat.Button--colorDanger.Button--onDarkBackground {
-  color: var(--color-red-5);
-}
-
-.mdrn .Button--styleFlat.Button--colorDanger.Button--onDarkBackground:hover {
-  background-color: rgba(var(--color-red-4-rgb), var(--opacity-hover));
   color: var(--color-red-4);
 }
 
-.mdrn .Button--styleFlat.Button--colorDanger.Button--onDarkBackground:active {
-  background-color: rgba(var(--color-red-3-rgb), var(--opacity-active));
+.mdrn .Button--styleFlat.Button--colorDanger.Button--onDarkBackground:hover {
+  background-color: rgba(var(--color-red-3-rgb), var(--opacity-hover));
   color: var(--color-red-3);
+}
+
+.mdrn .Button--styleFlat.Button--colorDanger.Button--onDarkBackground:active {
+  background-color: rgba(var(--color-red-2-rgb), var(--opacity-active));
+  color: var(--color-red-2);
 }
 
 /* outlined
@@ -166,20 +166,20 @@
 /* outlined on dark background */
 
 .mdrn .Button--styleOutlined.Button--onDarkBackground {
-  border-color: var(--color-grey-7);
-  color: var(--color-blue-5);
+  border-color: var(--color-grey-6);
+  color: var(--color-blue-4);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .mdrn .Button--styleOutlined.Button--onDarkBackground:hover {
-  background-color: rgba(var(--color-blue-4-rgb), var(--opacity-hover));
-  color: var(--color-blue-4);
+  background-color: rgba(var(--color-blue-3-rgb), var(--opacity-hover));
+  color: var(--color-blue-3);
 }
 
 .mdrn .Button--styleOutlined.Button--onDarkBackground:active {
-  background-color: rgba(var(--color-blue-3-rgb), var(--opacity-active));
-  color: var(--color-blue-3);
+  background-color: rgba(var(--color-blue-2-rgb), var(--opacity-active));
+  color: var(--color-blue-2);
 }
 
 /* outlined danger */
@@ -202,17 +202,17 @@
 /* outlined danger on dark background */
 
 .mdrn .Button--styleOutlined.Button--colorDanger.Button--onDarkBackground {
-  color: var(--color-red-5);
-}
-
-.mdrn .Button--styleOutlined.Button--colorDanger.Button--onDarkBackground:hover {
-  background-color: rgba(var(--color-red-4-rgb), var(--opacity-hover));
   color: var(--color-red-4);
 }
 
-.mdrn .Button--styleOutlined.Button--colorDanger.Button--onDarkBackground:active {
-  background-color: rgba(var(--color-red-3-rgb), var(--opacity-active));
+.mdrn .Button--styleOutlined.Button--colorDanger.Button--onDarkBackground:hover {
+  background-color: rgba(var(--color-red-3-rgb), var(--opacity-hover));
   color: var(--color-red-3);
+}
+
+.mdrn .Button--styleOutlined.Button--colorDanger.Button--onDarkBackground:active {
+  background-color: rgba(var(--color-red-2-rgb), var(--opacity-active));
+  color: var(--color-red-2);
 }
 
 /* on Poster
@@ -235,7 +235,7 @@
 }
 
 .mdrn .Button--onPoster.Button--colorDanger {
-  color: var(--color-red-5);
+  color: var(--color-red-3);
 }
 
 .mdrn .Button--onPoster.Button--colorDanger:hover {
@@ -245,7 +245,7 @@
 
 .mdrn .Button--onPoster.Button--colorDanger:active {
   background-color: rgba(var(--color-red-8-rgb), var(--opacity-active));
-  color: var(--color-red-3);
+  color: var(--color-red-5);
 }
 
 /* disabled
@@ -253,8 +253,8 @@
 
 .mdrn .Button:disabled,
 .mdrn .Button--colorDanger:disabled {
-  background-color: var(--color-grey-3);
-  color: var(--color-grey-5);
+  background-color: var(--color-grey-2);
+  color: var(--color-grey-4);
 }
 
 .mdrn .Button.Button--onDarkBackground:disabled,
@@ -272,7 +272,7 @@
 .mdrn .Button--styleFlat.Button--onDarkBackground:disabled,
 .mdrn .Button--styleFlat.Button--colorDanger.Button--onDarkBackground:disabled {
   background-color: transparent;
-  color: var(--color-grey-7);
+  color: var(--color-grey-6);
 }
 
 .mdrn .Button--styleOutlined:disabled,
@@ -285,13 +285,13 @@
 .mdrn .Button--styleOutlined.Button--onDarkBackground:disabled,
 .mdrn .Button--styleOutlined.Button--colorDanger.Button--onDarkBackground:disabled {
   background-color: transparent;
-  border-color: var(--color-grey-8);
-  color: var(--color-grey-7);
+  border-color: var(--color-grey-7);
+  color: var(--color-grey-6);
 }
 
 .mdrn .Button--onPoster:disabled {
   background-color: transparent;
-  color: var(--color-grey-4);
+  color: var(--color-grey-5);
 }
 
 /* text
