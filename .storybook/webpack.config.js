@@ -4,6 +4,12 @@ const emoji = require("remark-emoji");
 const path = require("path");
 
 module.exports = async ({ config }) => {
+  // Workaround for legacy SSL removal in Node 17+
+  const crypto = require("crypto");
+  const cryptoOrigCreateHash = crypto.createHash;
+  crypto.createHash = algorithm =>
+    cryptoOrigCreateHash(algorithm === "md4" ? "sha256" : algorithm);
+
   const cssRule = config.module.rules.find(
     r => r.test.toString() === /\.css$/.toString(),
   );

@@ -12,6 +12,12 @@ module.exports = () => {
   require.extensions[".css"] = () => {};
   require.extensions[".mdx"] = () => {};
 
+  // Workaround for legacy SSL removal in Node 17+
+  const crypto = require("crypto");
+  const cryptoOrigCreateHash = crypto.createHash;
+  crypto.createHash = algorithm =>
+    cryptoOrigCreateHash(algorithm === "md4" ? "sha256" : algorithm);
+
   const routes = reactRouterToArray(require("./src/routes").default);
 
   const config = {
