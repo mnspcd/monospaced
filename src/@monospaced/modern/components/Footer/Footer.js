@@ -16,7 +16,7 @@ const Footer = ({ copyright, links = null, routes = null }) => {
   return (
     <div className="Footer">
       <div className="Footer-copyright">
-        © {copyright} {new Date().getFullYear()}
+        © {copyright} 2024 {/* new Date().getFullYear() */}
       </div>
       {links && (
         <ul className="Footer-list">

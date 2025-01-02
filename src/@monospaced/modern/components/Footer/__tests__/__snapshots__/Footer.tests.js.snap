@@ -10,8 +10,7 @@ exports[`Footer component should render correctly 1`] = `
     >
       © 
       copyright
-       
-      2018
+       2024 
     </div>
   </div>
 </div>
@@ -27,8 +26,7 @@ exports[`Footer component should render links correctly 1`] = `
     >
       © 
       copyright
-       
-      2018
+       2024 
     </div>
     <ul
       class="Footer-list"
